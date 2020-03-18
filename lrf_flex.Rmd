@@ -1,0 +1,185 @@
+---
+title: "LRF municípios catarinenses "
+output: 
+  flexdashboard::flex_dashboard:
+    orientation: rows
+    source_code: https://github.com/andreferraribr/lrf
+    social: [ "twitter", "facebook", "menu" ]
+runtime : shiny  
+---
+
+```{r setup, include=FALSE}
+library(flexdashboard)
+library(shiny)
+library(httr)
+library(tidyverse)
+library(readxl)
+library(DT)
+library(plotly)
+library(leaflet)
+library(brazilmaps)
+library(shinyWidgets)
+library(shiny)
+library(sf)
+library(vroom)
+library(spdplyr)
+library(htmltools)
+```
+
+```{r}
+rreo <- read_csv("rreo_uf.csv")
+
+rgf <- read_csv("rgf_uf.csv")
+```
+
+
+Row
+-----------------------------------------------------------------------
+
+
+
+### Despesa Pessoal
+
+```{r, chart 1}
+rgf <- read_csv("rgf_uf.csv")
+desp_pesssoal<- rgf %>% filter(startsWith(rgf$coluna, "%"), periodo > 1,conta =="Despesa Total com Pessoal - DTP", (startsWith (rgf$instituicao, "Governo do"))) %>% group_by(instituicao, exercicio, conta, periodo, periodicidade)  %>% summarise(limite = valor)
+
+
+
+desp_pessoal_plot <- ggplot(desp_pesssoal,aes(x=exercicio, y=limite, colour=limite)) +
+  geom_jitter(aes(text=paste("instituicao: ", instituicao)), width=0.25, alpha=0.5, ) +
+  geom_hline(yintercept=49) +
+  geom_smooth(method = "lm")+
+  theme(axis.text.x = element_text( hjust = 0.1)) +
+  labs(title = "série histórica do % de comprometimento da Receita Corrente Líquida das UFs com a Despesa de Pessoal",
+       x = "Ano",
+       y = "%")+ theme_classic()
+
+(desp_pessoal_plot <- ggplotly(desp_pessoal_plot)%>% add_trace(y = ~limite, name = 'trace 0',mode = 'lines'))
+
+
+
+
+```
+
+
+
+### Chart 2
+
+```{r eval=FALSE, include=FALSE}
+dcl<- rgf %>% filter(coluna == "Até o 3º Quadrimestre", conta == "% da DCL sobre a RCL (III/RCL)",(startsWith (rgf$instituicao, "Governo do"))) %>% group_by(instituicao, exercicio, conta, periodo, periodicidade)  %>% summarise(limite = valor)
+
+
+dcl_plot <- ggplot(dcl,aes(x=exercicio, y=limite, colour=limite)) +
+  geom_jitter(aes(text=paste("instituicao: ", instituicao)), width=0.25, alpha=0.5, ) +
+  geom_hline(yintercept=200) +
+  geom_smooth(method = "lm")+
+  theme(axis.text.x = element_text( hjust = 0.1)) +
+  labs(title = "UFs: % da DCL sobre a RCL (2015 a 2019)",
+       x = "Ano",
+       y = "%")+ theme_classic()
+
+(dcl_plot <- ggplotly(dcl_plot)%>% add_trace(y = ~limite, name = 'trace 0',mode = 'lines'))
+
+dcl_plot
+```
+
+
+
+### Chart 3
+
+```{r eval=FALSE, include=FALSE}
+divida<- rgf %>% filter(coluna == "% SOBRE A RCL", conta == "Dívida Consolidada Líquida", uf != "BR") 
+
+
+
+p <- ggplot(divida,aes(x=exercicio, y=limite, colour=limite)) +
+  geom_jitter(aes(text=paste("instituicao: ", instituicao)), width=0.25, alpha=0.5, ) +
+  geom_hline(yintercept=200) +
+  geom_smooth(method = "lm")+
+  theme(axis.text.x = element_text( hjust = 0.1)) +
+  labs(title = "Despesa com pessoal",
+       x = "Ano",
+       y = "%")
+fig <- ggplotly(p)%>% add_trace(y = ~limite, name = 'trace 0',mode = 'lines')
+
+
+fig
+
+```
+
+Row
+-----------------------------------------------------------------------
+
+### Chart 4
+
+```{r eval=FALSE, include=FALSE}
+rgf <- read_csv("rgf.csv")
+limites<- rgf %>% filter(startsWith(rgf$coluna, "%"), periodo > 1,conta =="Despesa Total com Pessoal - DTP", !(startsWith (rgf$instituicao, "Governo do"))) %>% group_by(instituicao, exercicio, conta, periodo, periodicidade)  %>% summarise(limite = valor)
+
+divida<- rgf %>% filter(startsWith(rgf$coluna, "%"), periodo > 1,conta =="Operações de Crédito Internas e Externas", !(startsWith (rgf$instituicao, "Governo do"))) %>% group_by(instituicao, exercicio, conta, periodo, periodicidade)  %>% summarise(limite = valor)
+
+divida <- divida %>% mutate(credito = case_when(limite < -100 ~ -100, 
+                                               limite > 20 ~ 20,
+                                               TRUE ~ limite))
+
+p <- ggplot(divida,aes(x=exercicio, y=credito, colour=limite)) +
+  geom_jitter(aes(text=paste("instituicao: ", instituicao)), width=0.25, alpha=0.5, ) +
+  geom_hline(yintercept=16) +
+  geom_smooth(method = "lm")+
+  theme(axis.text.x = element_text( hjust = 0.1)) +
+  labs(title = "Despesa com pessoal",
+       x = "Ano",
+       y = "%")
+fig <- ggplotly(p)%>% add_trace(y = ~divida, name = 'trace 0',mode = 'lines')
+
+
+fig
+
+
+```
+
+
+
+### Chart 5
+
+```{r eval=FALSE, include=FALSE}
+p <- ggplot(limites,aes(x=exercicio, y=limite, colour=limite)) +
+  geom_jitter(aes(text=paste("instituicao: ", instituicao)), width=0.25, alpha=0.5, ) +
+  geom_hline(yintercept=55) +
+  geom_hline(yintercept=60)+
+  geom_smooth(method = "lm")+
+  theme(axis.text.x = element_text( hjust = 0.1)) +
+  labs(title = "Despesa com pessoal",
+       x = "Ano",
+       y = "%")
+fig <- ggplotly(p)%>% add_trace(y = ~limite, name = 'trace 0',mode = 'lines')
+
+
+fig
+```
+
+### Chart 6
+
+```{r eval=FALSE, include=FALSE}
+divida<- rgf %>% filter(startsWith(rgf$coluna, "%"), periodo > 1, (startsWith (rgf$conta, "Dí"))) %>% group_by(instituicao, exercicio, conta, periodo, periodicidade)  %>% summarise(limite = valor)
+
+divida <- divida %>% mutate(divida = case_when(limite < -100 ~ -100, 
+                                               limite > 250 ~ 250,
+                                               TRUE ~ limite))
+
+p <- ggplot(divida,aes(x=exercicio, y=divida, colour=divida)) +
+  geom_jitter(aes(text=paste("instituicao: ", instituicao)), width=0.25, alpha=0.5, ) +
+  geom_hline(yintercept=200) +
+  geom_smooth(method = "lm")+
+  theme(axis.text.x = element_text( hjust = 0.1)) +
+  labs(title = "Despesa com pessoal",
+       x = "Ano",
+       y = "%")
+  
+fig <- ggplotly(p)%>% add_trace(y = ~divida, name = 'trace 0',mode = 'lines')
+
+
+fig
+
+```
