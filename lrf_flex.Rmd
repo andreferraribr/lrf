@@ -27,7 +27,7 @@ library(htmltools)
 ```
 
 ```{r}
-rreo <- read_csv("rreo_uf.csv")
+rreo <- read_csv("rreo_uf_lrf_invest.csv")
 
 rgf <- read_csv("rgf_uf.csv")
 ```
@@ -64,9 +64,9 @@ desp_pessoal_plot <- ggplot(desp_pesssoal,aes(x=exercicio, y=limite, colour=limi
 
 
 
-### Chart 2
+### DCL
 
-```{r eval=FALSE, include=FALSE}
+```{r, DCL}
 dcl<- rgf %>% filter(coluna == "Até o 3º Quadrimestre", conta == "% da DCL sobre a RCL (III/RCL)",(startsWith (rgf$instituicao, "Governo do"))) %>% group_by(instituicao, exercicio, conta, periodo, periodicidade)  %>% summarise(limite = valor)
 
 
@@ -86,14 +86,14 @@ dcl_plot
 
 
 
-### Chart 3
+### Investimento
 
-```{r eval=FALSE, include=FALSE}
-divida<- rgf %>% filter(coluna == "% SOBRE A RCL", conta == "Dívida Consolidada Líquida", uf != "BR") 
+```{r, investimento}
+invest<- rreo %>% filter%>% filter(startsWith (rreo$conta, "INVES"), startsWith (rreo$coluna,"DESPESAS PAGAS ATÉ"), !startsWith (rreo$cod_conta,"InvestimentosIntra")) 
 
 
 
-p <- ggplot(divida,aes(x=exercicio, y=limite, colour=limite)) +
+p <- ggplot(invest,aes(x=exercicio, y=valor, colour=valor)) +
   geom_jitter(aes(text=paste("instituicao: ", instituicao)), width=0.25, alpha=0.5, ) +
   geom_hline(yintercept=200) +
   geom_smooth(method = "lm")+
@@ -101,7 +101,7 @@ p <- ggplot(divida,aes(x=exercicio, y=limite, colour=limite)) +
   labs(title = "Despesa com pessoal",
        x = "Ano",
        y = "%")
-fig <- ggplotly(p)%>% add_trace(y = ~limite, name = 'trace 0',mode = 'lines')
+fig <- ggplotly(p)%>% add_trace(y = ~valor, name = 'trace 0',mode = 'lines')
 
 
 fig
@@ -111,27 +111,22 @@ fig
 Row
 -----------------------------------------------------------------------
 
-### Chart 4
+### previdencia
 
-```{r eval=FALSE, include=FALSE}
-rgf <- read_csv("rgf.csv")
-limites<- rgf %>% filter(startsWith(rgf$coluna, "%"), periodo > 1,conta =="Despesa Total com Pessoal - DTP", !(startsWith (rgf$instituicao, "Governo do"))) %>% group_by(instituicao, exercicio, conta, periodo, periodicidade)  %>% summarise(limite = valor)
+```{r}
+prev<- rreo %>% filter%>% filter(startsWith (rreo$conta, "Resultado Previdenciário"), startsWith (rreo$coluna,"Até o Bimestre")) %>% group_by(instituicao, exercicio) %>% summarise(valor = sum(valor))
 
-divida<- rgf %>% filter(startsWith(rgf$coluna, "%"), periodo > 1,conta =="Operações de Crédito Internas e Externas", !(startsWith (rgf$instituicao, "Governo do"))) %>% group_by(instituicao, exercicio, conta, periodo, periodicidade)  %>% summarise(limite = valor)
 
-divida <- divida %>% mutate(credito = case_when(limite < -100 ~ -100, 
-                                               limite > 20 ~ 20,
-                                               TRUE ~ limite))
 
-p <- ggplot(divida,aes(x=exercicio, y=credito, colour=limite)) +
+p <- ggplot(prev,aes(x=exercicio, y=valor, colour=valor)) +
   geom_jitter(aes(text=paste("instituicao: ", instituicao)), width=0.25, alpha=0.5, ) +
-  geom_hline(yintercept=16) +
+  geom_hline(yintercept=200) +
   geom_smooth(method = "lm")+
   theme(axis.text.x = element_text( hjust = 0.1)) +
   labs(title = "Despesa com pessoal",
        x = "Ano",
        y = "%")
-fig <- ggplotly(p)%>% add_trace(y = ~divida, name = 'trace 0',mode = 'lines')
+fig <- ggplotly(p)%>% add_trace(y = ~valor, name = 'trace 0',mode = 'lines')
 
 
 fig

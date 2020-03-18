@@ -1,0 +1,433 @@
+exercicio,demonstrativo,periodo,periodicidade,instituicao,cod_ibge,uf,populacao,anexo,rotulo,coluna,cod_conta,conta,valor
+2019,RREO,6,B,Governo Federal,1,BR,8569324,RREO-Anexo 01,Padrão,DESPESAS PAGAS ATÉ O BIMESTRE (j),Investimentos,INVESTIMENTOS,16369614297
+2019,RREO,6,B,Governo do Estado de Rondônia,11,RO,1757589,RREO-Anexo 01,Padrão,DESPESAS PAGAS ATÉ O BIMESTRE (j),Investimentos,INVESTIMENTOS,239100757.79
+2019,RREO,6,B,Governo do Estado do Acre,12,AC,869265,RREO-Anexo 01,Padrão,DESPESAS PAGAS ATÉ O BIMESTRE (j),Investimentos,INVESTIMENTOS,131439420.42
+2019,RREO,6,B,Governo do Estado do Amazonas,13,AM,4080611,RREO-Anexo 01,Padrão,DESPESAS PAGAS ATÉ O BIMESTRE (j),Investimentos,INVESTIMENTOS,617012349.64
+2019,RREO,6,B,Governo do Estado de Roraima,14,RR,576568,RREO-Anexo 01,Padrão,DESPESAS PAGAS ATÉ O BIMESTRE (j),Investimentos,INVESTIMENTOS,58116214.52
+2019,RREO,6,B,Governo do Estado do Pará,15,PA,8513497,RREO-Anexo 01,Padrão,DESPESAS PAGAS ATÉ O BIMESTRE (j),Investimentos,INVESTIMENTOS,1264953951.87
+2019,RREO,6,B,Governo do Estado do Amapá,16,AP,829494,RREO-Anexo 01,Padrão,DESPESAS PAGAS ATÉ O BIMESTRE (j),Investimentos,INVESTIMENTOS,128287275.26
+2019,RREO,6,B,Governo do Estado do Tocantins,17,TO,1555229,RREO-Anexo 01,Padrão,DESPESAS PAGAS ATÉ O BIMESTRE (j),Investimentos,INVESTIMENTOS,205147091.22
+2019,RREO,6,B,Governo do Estado do Maranhão,21,MA,7035055,RREO-Anexo 01,Padrão,DESPESAS PAGAS ATÉ O BIMESTRE (j),Investimentos,INVESTIMENTOS,723490016.75
+2019,RREO,6,B,Governo do Estado do Piauí,22,PI,3264531,RREO-Anexo 01,Padrão,DESPESAS PAGAS ATÉ O BIMESTRE (j),Investimentos,INVESTIMENTOS,507132435.72
+2019,RREO,6,B,Governo do Estado do Ceará,23,CE,9075649,RREO-Anexo 01,Padrão,DESPESAS PAGAS ATÉ O BIMESTRE (j),Investimentos,INVESTIMENTOS,1791549345.93
+2019,RREO,6,B,Governo do Estado do Rio Grande do Norte,24,RN,3479010,RREO-Anexo 01,Padrão,DESPESAS PAGAS ATÉ O BIMESTRE (j),Investimentos,INVESTIMENTOS,460340426.84
+2019,RREO,6,B,Governo do Estado da Paraíba,25,PB,3996496,RREO-Anexo 01,Padrão,DESPESAS PAGAS ATÉ O BIMESTRE (j),Investimentos,INVESTIMENTOS,445159947.53
+2019,RREO,6,B,Governo do Estado de Pernambuco,26,PE,9496294,RREO-Anexo 01,Padrão,DESPESAS PAGAS ATÉ O BIMESTRE (j),Investimentos,INVESTIMENTOS,567196166.45
+2019,RREO,6,B,Governo do Estado de Alagoas,27,AL,3322820,RREO-Anexo 01,Padrão,DESPESAS PAGAS ATÉ O BIMESTRE (j),Investimentos,INVESTIMENTOS,636096306.53
+2019,RREO,6,B,Governo do Estado de Sergipe,28,SE,2278308,RREO-Anexo 01,Padrão,DESPESAS PAGAS ATÉ O BIMESTRE (j),Investimentos,INVESTIMENTOS,202217762.74
+2019,RREO,6,B,Governo do Estado da Bahia,29,BA,14812617,RREO-Anexo 01,Padrão,DESPESAS PAGAS ATÉ O BIMESTRE (j),Investimentos,INVESTIMENTOS,2201690453.05
+2019,RREO,6,B,Governo do Estado de Minas Gerais,31,MG,21040662,RREO-Anexo 01,Padrão,DESPESAS PAGAS ATÉ O BIMESTRE (j),Investimentos,INVESTIMENTOS,755238995.28
+2019,RREO,6,B,Governo do Estado do Espírito Santo,32,ES,3972388,RREO-Anexo 01,Padrão,DESPESAS PAGAS ATÉ O BIMESTRE (j),Investimentos,INVESTIMENTOS,790107508.12
+2019,RREO,6,B,Governo do Estado do Rio de Janeiro,33,RJ,17159960,RREO-Anexo 01,Padrão,DESPESAS PAGAS ATÉ O BIMESTRE (j),Investimentos,INVESTIMENTOS,844690137
+2019,RREO,6,B,Governo do Estado de São Paulo,35,SP,45538936,RREO-Anexo 01,Padrão,DESPESAS PAGAS ATÉ O BIMESTRE (j),Investimentos,INVESTIMENTOS,5375977208.11
+2019,RREO,6,B,Governo do Estado do Paraná,41,PR,11348937,RREO-Anexo 01,Padrão,DESPESAS PAGAS ATÉ O BIMESTRE (j),Investimentos,INVESTIMENTOS,944654047.17
+2019,RREO,6,B,Governo do Estado de Santa Catarina,42,SC,7075494,RREO-Anexo 01,Padrão,DESPESAS PAGAS ATÉ O BIMESTRE (j),Investimentos,INVESTIMENTOS,904835923.37
+2019,RREO,6,B,Governo do Estado do Rio Grande do Sul,43,RS,11329605,RREO-Anexo 01,Padrão,DESPESAS PAGAS ATÉ O BIMESTRE (j),Investimentos,INVESTIMENTOS,440482305.96
+2019,RREO,6,B,Governo do Estado do Mato Grosso do Sul,50,MS,2748023,RREO-Anexo 01,Padrão,DESPESAS PAGAS ATÉ O BIMESTRE (j),Investimentos,INVESTIMENTOS,907852690.43
+2019,RREO,6,B,Governo do Estado do Mato Grosso,51,MT,3441998,RREO-Anexo 01,Padrão,DESPESAS PAGAS ATÉ O BIMESTRE (j),Investimentos,INVESTIMENTOS,614245232.8
+2019,RREO,6,B,Governo do Estado de Goiás,52,GO,6921161,RREO-Anexo 01,Padrão,DESPESAS PAGAS ATÉ O BIMESTRE (j),Investimentos,INVESTIMENTOS,325367553.52
+2019,RREO,6,B,Governo do Distrito Federal,53,DF,2974703,RREO-Anexo 01,Padrão,DESPESAS PAGAS ATÉ O BIMESTRE (j),Investimentos,INVESTIMENTOS,610898226.76
+2018,RREO,6,B,Governo Federal,1,BR,8569324,RREO-Anexo 01,Padrão,DESPESAS PAGAS ATÉ O BIMESTRE (j),Investimentos,INVESTIMENTOS,19474707829
+2018,RREO,6,B,Governo do Estado de Rondônia,11,RO,1787279,RREO-Anexo 01,Padrão,DESPESAS PAGAS ATÉ O BIMESTRE (j),Investimentos,INVESTIMENTOS,517748751.62
+2018,RREO,6,B,Governo do Estado do Acre,12,AC,816687,RREO-Anexo 01,Padrão,DESPESAS PAGAS ATÉ O BIMESTRE (j),Investimentos,INVESTIMENTOS,390824496.8
+2018,RREO,6,B,Governo do Estado do Amazonas,13,AM,4001667,RREO-Anexo 01,Padrão,DESPESAS PAGAS ATÉ O BIMESTRE (j),Investimentos,INVESTIMENTOS,1083776184.22
+2018,RREO,6,B,Governo do Estado de Roraima,14,RR,514229,RREO-Anexo 01,Padrão,DESPESAS PAGAS ATÉ O BIMESTRE (j),Investimentos,INVESTIMENTOS,83568842.67
+2018,RREO,6,B,Governo do Estado do Pará,15,PA,8272724,RREO-Anexo 01,Padrão,DESPESAS PAGAS ATÉ O BIMESTRE (j),Investimentos,INVESTIMENTOS,2354810447.15
+2018,RREO,6,B,Governo do Estado do Amapá,16,AP,782295,RREO-Anexo 01,Padrão,DESPESAS PAGAS ATÉ O BIMESTRE (j),Investimentos,INVESTIMENTOS,74088475.02
+2018,RREO,6,B,Governo do Estado do Tocantins,17,TO,1532902,RREO-Anexo 01,Padrão,DESPESAS PAGAS ATÉ O BIMESTRE (j),Investimentos,INVESTIMENTOS,276805134.84
+2018,RREO,6,B,Governo do Estado do Maranhão,21,MA,6954036,RREO-Anexo 01,Padrão,DESPESAS PAGAS ATÉ O BIMESTRE (j),Investimentos,INVESTIMENTOS,960620301.55
+2018,RREO,6,B,Governo do Estado do Piauí,22,PI,3212180,RREO-Anexo 01,Padrão,DESPESAS PAGAS ATÉ O BIMESTRE (j),Investimentos,INVESTIMENTOS,702572341.27
+2018,RREO,6,B,Governo do Estado do Ceará,23,CE,8963663,RREO-Anexo 01,Padrão,DESPESAS PAGAS ATÉ O BIMESTRE (j),Investimentos,INVESTIMENTOS,2708967076.16
+2018,RREO,6,B,Governo do Estado do Rio Grande do Norte,24,RN,3474998,RREO-Anexo 01,Padrão,DESPESAS PAGAS ATÉ O BIMESTRE (j),Investimentos,INVESTIMENTOS,639886659.07
+2018,RREO,6,B,Governo do Estado da Paraíba,25,PB,3999415,RREO-Anexo 01,Padrão,DESPESAS PAGAS ATÉ O BIMESTRE (j),Investimentos,INVESTIMENTOS,631758501.29
+2018,RREO,6,B,Governo do Estado de Pernambuco,26,PE,9410336,RREO-Anexo 01,Padrão,DESPESAS PAGAS ATÉ O BIMESTRE (j),Investimentos,INVESTIMENTOS,726715402.27
+2018,RREO,6,B,Governo do Estado de Alagoas,27,AL,3358963,RREO-Anexo 01,Padrão,DESPESAS PAGAS ATÉ O BIMESTRE (j),Investimentos,INVESTIMENTOS,883675963.98
+2018,RREO,6,B,Governo do Estado de Sergipe,28,SE,2265779,RREO-Anexo 01,Padrão,DESPESAS PAGAS ATÉ O BIMESTRE (j),Investimentos,INVESTIMENTOS,365307625.74
+2018,RREO,6,B,Governo do Estado da Bahia,29,BA,15276566,RREO-Anexo 01,Padrão,DESPESAS PAGAS ATÉ O BIMESTRE (j),Investimentos,INVESTIMENTOS,2406758547.09
+2018,RREO,6,B,Governo do Estado de Minas Gerais,31,MG,20997560,RREO-Anexo 01,Padrão,DESPESAS PAGAS ATÉ O BIMESTRE (j),Investimentos,INVESTIMENTOS,802349182.78
+2018,RREO,6,B,Governo do Estado do Espírito Santo,32,ES,3973697,RREO-Anexo 01,Padrão,DESPESAS PAGAS ATÉ O BIMESTRE (j),Investimentos,INVESTIMENTOS,741345984.99
+2018,RREO,6,B,Governo do Estado do Rio de Janeiro,33,RJ,16635996,RREO-Anexo 01,Padrão,DESPESAS PAGAS ATÉ O BIMESTRE (j),Investimentos,INVESTIMENTOS,1023341860.4
+2018,RREO,6,B,Governo do Estado de São Paulo,35,SP,44749699,RREO-Anexo 01,Padrão,DESPESAS PAGAS ATÉ O BIMESTRE (j),Investimentos,INVESTIMENTOS,5845819081.62
+2018,RREO,6,B,Governo do Estado do Paraná,41,PR,11242720,RREO-Anexo 01,Padrão,DESPESAS PAGAS ATÉ O BIMESTRE (j),Investimentos,INVESTIMENTOS,1626138468.86
+2018,RREO,6,B,Governo do Estado de Santa Catarina,42,SC,6910553,RREO-Anexo 01,Padrão,DESPESAS PAGAS ATÉ O BIMESTRE (j),Investimentos,INVESTIMENTOS,1300101680.81
+2018,RREO,6,B,Governo do Estado do Rio Grande do Sul,43,RS,11286500,RREO-Anexo 01,Padrão,DESPESAS PAGAS ATÉ O BIMESTRE (j),Investimentos,INVESTIMENTOS,979499572.5
+2018,RREO,6,B,Governo do Estado do Mato Grosso do Sul,50,MS,2682386,RREO-Anexo 01,Padrão,DESPESAS PAGAS ATÉ O BIMESTRE (j),Investimentos,INVESTIMENTOS,1169351278.1
+2018,RREO,6,B,Governo do Estado do Mato Grosso,51,MT,3305531,RREO-Anexo 01,Padrão,DESPESAS PAGAS ATÉ O BIMESTRE (j),Investimentos,INVESTIMENTOS,522683002.12
+2018,RREO,6,B,Governo do Estado de Goiás,52,GO,6695855,RREO-Anexo 01,Padrão,DESPESAS PAGAS ATÉ O BIMESTRE (j),Investimentos,INVESTIMENTOS,916471442
+2018,RREO,6,B,Governo do Distrito Federal,53,DF,2977216,RREO-Anexo 01,Padrão,DESPESAS PAGAS ATÉ O BIMESTRE (j),Investimentos,INVESTIMENTOS,795015140.61
+2017,RREO,6,B,Governo do Estado de Rondônia,11,RO,1787279,RREO-Anexo 01,NA,DESPESAS PAGAS ATÉ O BIMESTRE (j),Investimentos,INVESTIMENTOS,337032349.22
+2017,RREO,6,B,Governo do Estado do Acre,12,AC,816687,RREO-Anexo 01,NA,DESPESAS PAGAS ATÉ O BIMESTRE (j),Investimentos,INVESTIMENTOS,270632815.53
+2017,RREO,6,B,Governo do Estado do Amazonas,13,AM,4001667,RREO-Anexo 01,NA,DESPESAS PAGAS ATÉ O BIMESTRE (j),Investimentos,INVESTIMENTOS,518215752.29
+2017,RREO,6,B,Governo do Estado de Roraima,14,RR,514229,RREO-Anexo 01,NA,DESPESAS PAGAS ATÉ O BIMESTRE (j),Investimentos,INVESTIMENTOS,90192835.58
+2017,RREO,6,B,Governo do Estado do Pará,15,PA,8272724,RREO-Anexo 01,NA,DESPESAS PAGAS ATÉ O BIMESTRE (j),Investimentos,INVESTIMENTOS,1035697063.56
+2017,RREO,6,B,Governo do Estado do Amapá,16,AP,782295,RREO-Anexo 01,NA,DESPESAS PAGAS ATÉ O BIMESTRE (j),Investimentos,INVESTIMENTOS,91376635.79
+2017,RREO,6,B,Governo do Estado do Tocantins,17,TO,1532902,RREO-Anexo 01,NA,DESPESAS PAGAS ATÉ O BIMESTRE (j),Investimentos,INVESTIMENTOS,418900727.99
+2017,RREO,6,B,Governo do Estado do Maranhão,21,MA,6954036,RREO-Anexo 01,NA,DESPESAS PAGAS ATÉ O BIMESTRE (j),Investimentos,INVESTIMENTOS,1013011478.96
+2017,RREO,6,B,Governo do Estado do Piauí,22,PI,3212180,RREO-Anexo 01,NA,DESPESAS PAGAS ATÉ O BIMESTRE (j),Investimentos,INVESTIMENTOS,615427352.42
+2017,RREO,6,B,Governo do Estado do Ceará,23,CE,8963663,RREO-Anexo 01,NA,DESPESAS PAGAS ATÉ O BIMESTRE (j),Investimentos,INVESTIMENTOS,2100624401.05
+2017,RREO,6,B,Governo do Estado do Rio Grande do Norte,24,RN,3474998,RREO-Anexo 01,NA,DESPESAS PAGAS ATÉ O BIMESTRE (j),Investimentos,INVESTIMENTOS,355017511.36
+2017,RREO,6,B,Governo do Estado da Paraíba,25,PB,3999415,RREO-Anexo 01,NA,DESPESAS PAGAS ATÉ O BIMESTRE (j),Investimentos,INVESTIMENTOS,537483461.19
+2017,RREO,6,B,Governo do Estado de Pernambuco,26,PE,9410336,RREO-Anexo 01,NA,DESPESAS PAGAS ATÉ O BIMESTRE (j),Investimentos,INVESTIMENTOS,926191153.76
+2017,RREO,6,B,Governo do Estado de Alagoas,27,AL,3358963,RREO-Anexo 01,NA,DESPESAS PAGAS ATÉ O BIMESTRE (j),Investimentos,INVESTIMENTOS,612047717.8
+2017,RREO,6,B,Governo do Estado de Sergipe,28,SE,2265779,RREO-Anexo 01,NA,DESPESAS PAGAS ATÉ O BIMESTRE (j),Investimentos,INVESTIMENTOS,289834105.9
+2017,RREO,6,B,Governo do Estado da Bahia,29,BA,15276566,RREO-Anexo 01,NA,DESPESAS PAGAS ATÉ O BIMESTRE (j),Investimentos,INVESTIMENTOS,2436673352.12
+2017,RREO,6,B,Governo do Estado de Minas Gerais,31,MG,20997560,RREO-Anexo 01,NA,DESPESAS PAGAS ATÉ O BIMESTRE (j),Investimentos,INVESTIMENTOS,957755840.36
+2017,RREO,6,B,Governo do Estado do Espírito Santo,32,ES,3973697,RREO-Anexo 01,NA,DESPESAS PAGAS ATÉ O BIMESTRE (j),Investimentos,INVESTIMENTOS,443578613.24
+2017,RREO,6,B,Governo do Estado do Rio de Janeiro,33,RJ,16635996,RREO-Anexo 01,NA,DESPESAS PAGAS ATÉ O BIMESTRE (j),Investimentos,INVESTIMENTOS,474789273
+2017,RREO,6,B,Governo do Estado de São Paulo,35,SP,44749699,RREO-Anexo 01,NA,DESPESAS PAGAS ATÉ O BIMESTRE (j),Investimentos,INVESTIMENTOS,6700200529.06
+2017,RREO,6,B,Governo do Estado do Paraná,41,PR,11242720,RREO-Anexo 01,NA,DESPESAS PAGAS ATÉ O BIMESTRE (j),Investimentos,INVESTIMENTOS,1998636012.61
+2017,RREO,6,B,Governo do Estado de Santa Catarina,42,SC,6910553,RREO-Anexo 01,NA,DESPESAS PAGAS ATÉ O BIMESTRE (j),Investimentos,INVESTIMENTOS,1660378616.02
+2017,RREO,6,B,Governo do Estado do Rio Grande do Sul,43,RS,11286500,RREO-Anexo 01,NA,DESPESAS PAGAS ATÉ O BIMESTRE (j),Investimentos,INVESTIMENTOS,512000040.13
+2017,RREO,6,B,Governo do Estado do Mato Grosso do Sul,50,MS,2682386,RREO-Anexo 01,NA,DESPESAS PAGAS ATÉ O BIMESTRE (j),Investimentos,INVESTIMENTOS,938103481.02
+2017,RREO,6,B,Governo do Estado do Mato Grosso,51,MT,3305531,RREO-Anexo 01,NA,DESPESAS PAGAS ATÉ O BIMESTRE (j),Investimentos,INVESTIMENTOS,719968421.92
+2017,RREO,6,B,Governo do Estado de Goiás,52,GO,6695855,RREO-Anexo 01,NA,DESPESAS PAGAS ATÉ O BIMESTRE (j),Investimentos,INVESTIMENTOS,1047628796.55
+2017,RREO,6,B,Governo do Distrito Federal,53,DF,2977216,RREO-Anexo 01,NA,DESPESAS PAGAS ATÉ O BIMESTRE (j),Investimentos,INVESTIMENTOS,619420451.48
+2016,RREO,6,B,Governo do Estado de Rondônia,11,RO,1768204,RREO-Anexo 01,NA,DESPESAS PAGAS ATÉ O BIMESTRE (j),Investimentos,INVESTIMENTOS,297173243.77
+2016,RREO,6,B,Governo do Estado do Acre,12,AC,803513,RREO-Anexo 01,NA,DESPESAS PAGAS ATÉ O BIMESTRE (j),Investimentos,INVESTIMENTOS,230944261.07
+2016,RREO,6,B,Governo do Estado do Amazonas,13,AM,3938336,RREO-Anexo 01,NA,DESPESAS PAGAS ATÉ O BIMESTRE (j),Investimentos,INVESTIMENTOS,685201462.8
+2016,RREO,6,B,Governo do Estado de Roraima,14,RR,505665,RREO-Anexo 01,NA,DESPESAS PAGAS ATÉ O BIMESTRE (j),Investimentos,INVESTIMENTOS,94407858.67
+2016,RREO,6,B,Governo do Estado do Pará,15,PA,8175113,RREO-Anexo 01,NA,DESPESAS PAGAS ATÉ O BIMESTRE (j),Investimentos,INVESTIMENTOS,918076254.06
+2016,RREO,6,B,Governo do Estado do Amapá,16,AP,766679,RREO-Anexo 01,NA,DESPESAS PAGAS ATÉ O BIMESTRE (j),Investimentos,INVESTIMENTOS,79524020.15
+2016,RREO,6,B,Governo do Estado do Tocantins,17,TO,1515126,RREO-Anexo 01,NA,DESPESAS PAGAS ATÉ O BIMESTRE (j),Investimentos,INVESTIMENTOS,463684125.57
+2016,RREO,6,B,Governo do Estado do Maranhão,21,MA,6904241,RREO-Anexo 01,NA,DESPESAS PAGAS ATÉ O BIMESTRE (j),Investimentos,INVESTIMENTOS,785038010.36
+2016,RREO,6,B,Governo do Estado do Piauí,22,PI,3204028,RREO-Anexo 01,NA,DESPESAS PAGAS ATÉ O BIMESTRE (j),Investimentos,INVESTIMENTOS,795633862
+2016,RREO,6,B,Governo do Estado do Ceará,23,CE,8904459,RREO-Anexo 01,NA,DESPESAS PAGAS ATÉ O BIMESTRE (j),Investimentos,INVESTIMENTOS,1965242515.56
+2016,RREO,6,B,Governo do Estado do Rio Grande do Norte,24,RN,3442175,RREO-Anexo 01,NA,DESPESAS PAGAS ATÉ O BIMESTRE (j),Investimentos,INVESTIMENTOS,350295345.78
+2016,RREO,6,B,Governo do Estado da Paraíba,25,PB,3972202,RREO-Anexo 01,NA,DESPESAS PAGAS ATÉ O BIMESTRE (j),Investimentos,INVESTIMENTOS,604768802.98
+2016,RREO,6,B,Governo do Estado de Pernambuco,26,PE,9345173,RREO-Anexo 01,NA,DESPESAS PAGAS ATÉ O BIMESTRE (j),Investimentos,INVESTIMENTOS,1015673046
+2016,RREO,6,B,Governo do Estado de Alagoas,27,AL,3340932,RREO-Anexo 01,NA,DESPESAS PAGAS ATÉ O BIMESTRE (j),Investimentos,INVESTIMENTOS,499888592.58
+2016,RREO,6,B,Governo do Estado de Sergipe,28,SE,2242937,RREO-Anexo 01,NA,DESPESAS PAGAS ATÉ O BIMESTRE (j),Investimentos,INVESTIMENTOS,356429818.12
+2016,RREO,6,B,Governo do Estado da Bahia,29,BA,15203934,RREO-Anexo 01,NA,DESPESAS PAGAS ATÉ O BIMESTRE (j),Investimentos,INVESTIMENTOS,3153825771.24
+2016,RREO,6,B,Governo do Estado de Minas Gerais,31,MG,20869101,RREO-Anexo 01,NA,DESPESAS PAGAS ATÉ O BIMESTRE (j),Investimentos,INVESTIMENTOS,1226504975.4
+2016,RREO,6,B,Governo do Estado do Espírito Santo,32,ES,3929911,RREO-Anexo 01,NA,DESPESAS PAGAS ATÉ O BIMESTRE (j),Investimentos,INVESTIMENTOS,441449109.4
+2016,RREO,6,B,Governo do Estado do Rio de Janeiro,33,RJ,16550024,RREO-Anexo 01,NA,DESPESAS PAGAS ATÉ O BIMESTRE (j),Investimentos,INVESTIMENTOS,1944984549
+2016,RREO,6,B,Governo do Estado de São Paulo,35,SP,44396484,RREO-Anexo 01,NA,DESPESAS PAGAS ATÉ O BIMESTRE (j),Investimentos,INVESTIMENTOS,6073880929.67
+2016,RREO,6,B,Governo do Estado do Paraná,41,PR,11163018,RREO-Anexo 01,NA,DESPESAS PAGAS ATÉ O BIMESTRE (j),Investimentos,INVESTIMENTOS,1376035716.3
+2016,RREO,6,B,Governo do Estado de Santa Catarina,42,SC,6819190,RREO-Anexo 01,NA,DESPESAS PAGAS ATÉ O BIMESTRE (j),Investimentos,INVESTIMENTOS,1620210551.73
+2016,RREO,6,B,Governo do Estado do Rio Grande do Sul,43,RS,11247972,RREO-Anexo 01,NA,DESPESAS PAGAS ATÉ O BIMESTRE (j),Investimentos,INVESTIMENTOS,483461637.49
+2016,RREO,6,B,Governo do Estado do Mato Grosso do Sul,50,MS,2651235,RREO-Anexo 01,NA,DESPESAS PAGAS ATÉ O BIMESTRE (j),Investimentos,INVESTIMENTOS,754211009.71
+2016,RREO,6,B,Governo do Estado do Mato Grosso,51,MT,3265486,RREO-Anexo 01,NA,DESPESAS PAGAS ATÉ O BIMESTRE (j),Investimentos,INVESTIMENTOS,718984211.58
+2016,RREO,6,B,Governo do Estado de Goiás,52,GO,6610681,RREO-Anexo 01,NA,DESPESAS PAGAS ATÉ O BIMESTRE (j),Investimentos,INVESTIMENTOS,409955086.24
+2016,RREO,6,B,Governo do Distrito Federal,53,DF,2914830,RREO-Anexo 01,NA,DESPESAS PAGAS ATÉ O BIMESTRE (j),Investimentos,INVESTIMENTOS,476251549.95
+2015,RREO,6,B,Governo do Estado de Rondônia,11,RO,1748531,RREO-Anexo 01,NA,DESPESAS PAGAS ATÉ O BIMESTRE (j),Investimentos,INVESTIMENTOS,207351319.03
+2015,RREO,6,B,Governo do Estado do Acre,12,AC,790101,RREO-Anexo 01,NA,DESPESAS PAGAS ATÉ O BIMESTRE (j),Investimentos,INVESTIMENTOS,340065385.4
+2015,RREO,6,B,Governo do Estado do Amazonas,13,AM,3873743,RREO-Anexo 01,NA,DESPESAS PAGAS ATÉ O BIMESTRE (j),Investimentos,INVESTIMENTOS,733734953.04
+2015,RREO,6,B,Governo do Estado de Roraima,14,RR,496936,RREO-Anexo 01,NA,DESPESAS PAGAS ATÉ O BIMESTRE (j),Investimentos,INVESTIMENTOS,100369449.25
+2015,RREO,6,B,Governo do Estado do Pará,15,PA,8104880,RREO-Anexo 01,NA,DESPESAS PAGAS ATÉ O BIMESTRE (j),Investimentos,INVESTIMENTOS,1332524894.24
+2015,RREO,6,B,Governo do Estado do Amapá,16,AP,750912,RREO-Anexo 01,NA,DESPESAS PAGAS ATÉ O BIMESTRE (j),Investimentos,INVESTIMENTOS,215736634.41
+2015,RREO,6,B,Governo do Estado do Tocantins,17,TO,1496880,RREO-Anexo 01,NA,DESPESAS PAGAS ATÉ O BIMESTRE (j),Investimentos,INVESTIMENTOS,244536095.55
+2015,RREO,6,B,Governo do Estado do Maranhão,21,MA,6850884,RREO-Anexo 01,NA,DESPESAS PAGAS ATÉ O BIMESTRE (j),Investimentos,INVESTIMENTOS,649829949.03
+2015,RREO,6,B,Governo do Estado do Piauí,22,PI,3194718,RREO-Anexo 01,NA,DESPESAS PAGAS ATÉ O BIMESTRE (j),Investimentos,INVESTIMENTOS,461862582.57
+2015,RREO,6,B,Governo do Estado do Ceará,23,CE,8842791,RREO-Anexo 01,NA,DESPESAS PAGAS ATÉ O BIMESTRE (j),Investimentos,INVESTIMENTOS,2210451001.57
+2015,RREO,6,B,Governo do Estado do Rio Grande do Norte,24,RN,3408510,RREO-Anexo 01,NA,DESPESAS PAGAS ATÉ O BIMESTRE (j),Investimentos,INVESTIMENTOS,281083599.34
+2015,RREO,6,B,Governo do Estado da Paraíba,25,PB,3943885,RREO-Anexo 01,NA,DESPESAS PAGAS ATÉ O BIMESTRE (j),Investimentos,INVESTIMENTOS,684423333.31
+2015,RREO,6,B,Governo do Estado de Pernambuco,26,PE,9277727,RREO-Anexo 01,NA,DESPESAS PAGAS ATÉ O BIMESTRE (j),Investimentos,INVESTIMENTOS,897264966.48
+2015,RREO,6,B,Governo do Estado de Alagoas,27,AL,3321730,RREO-Anexo 01,NA,DESPESAS PAGAS ATÉ O BIMESTRE (j),Investimentos,INVESTIMENTOS,438884209.42
+2015,RREO,6,B,Governo do Estado de Sergipe,28,SE,2219574,RREO-Anexo 01,NA,DESPESAS PAGAS ATÉ O BIMESTRE (j),Investimentos,INVESTIMENTOS,318772528.07
+2015,RREO,6,B,Governo do Estado da Bahia,29,BA,15126371,RREO-Anexo 01,NA,DESPESAS PAGAS ATÉ O BIMESTRE (j),Investimentos,INVESTIMENTOS,2215409259.79
+2015,RREO,6,B,Governo do Estado de Minas Gerais,31,MG,20734097,RREO-Anexo 01,NA,DESPESAS PAGAS ATÉ O BIMESTRE (j),Investimentos,INVESTIMENTOS,1562796965.48
+2015,RREO,6,B,Governo do Estado do Espírito Santo,32,ES,3885049,RREO-Anexo 01,NA,DESPESAS PAGAS ATÉ O BIMESTRE (j),Investimentos,INVESTIMENTOS,496574527.82
+2015,RREO,6,B,Governo do Estado do Rio de Janeiro,33,RJ,16461173,RREO-Anexo 01,NA,DESPESAS PAGAS ATÉ O BIMESTRE (j),Investimentos,INVESTIMENTOS,5829950109.6
+2015,RREO,6,B,Governo do Estado de São Paulo,35,SP,44035304,RREO-Anexo 01,NA,DESPESAS PAGAS ATÉ O BIMESTRE (j),Investimentos,INVESTIMENTOS,9418862119.14
+2015,RREO,6,B,Governo do Estado do Paraná,41,PR,11081692,RREO-Anexo 01,NA,DESPESAS PAGAS ATÉ O BIMESTRE (j),Investimentos,INVESTIMENTOS,640871026.26
+2015,RREO,6,B,Governo do Estado de Santa Catarina,42,SC,6727148,RREO-Anexo 01,NA,DESPESAS PAGAS ATÉ O BIMESTRE (j),Investimentos,INVESTIMENTOS,1655656260.72
+2015,RREO,6,B,Governo do Estado do Rio Grande do Sul,43,RS,11207274,RREO-Anexo 01,NA,DESPESAS PAGAS ATÉ O BIMESTRE (j),Investimentos,INVESTIMENTOS,317595559.19
+2015,RREO,6,B,Governo do Estado do Mato Grosso do Sul,50,MS,2619657,RREO-Anexo 01,NA,DESPESAS PAGAS ATÉ O BIMESTRE (j),Investimentos,INVESTIMENTOS,472027325.79
+2015,RREO,6,B,Governo do Estado do Mato Grosso,51,MT,3224357,RREO-Anexo 01,NA,DESPESAS PAGAS ATÉ O BIMESTRE (j),Investimentos,INVESTIMENTOS,571603519.43
+2015,RREO,6,B,Governo do Estado de Goiás,52,GO,6523222,RREO-Anexo 01,NA,DESPESAS PAGAS ATÉ O BIMESTRE (j),Investimentos,INVESTIMENTOS,832939493.79
+2015,RREO,6,B,Governo do Distrito Federal,53,DF,2852372,RREO-Anexo 01,NA,DESPESAS PAGAS ATÉ O BIMESTRE (j),Investimentos,INVESTIMENTOS,484453006.77
+2019,RREO,6,B,Governo do Estado de Rondônia,11,RO,1757589,RREO-Anexo 14,Padrão,Até o Bimestre,ResultadoPrevidenciarioRGPSDemonstrativoSimplificado,Resultado Previdenciário,415604811.4
+2019,RREO,6,B,Governo do Estado de Rondônia,11,RO,1757589,RREO-Anexo 14,Padrão,Até o Bimestre,ResultadoPrevidenciarioRPPSDemonstrativoSimplificado,Resultado Previdenciário,-216051610.66
+2019,RREO,6,B,Governo do Estado do Acre,12,AC,869265,RREO-Anexo 14,Padrão,Até o Bimestre,ResultadoPrevidenciarioRGPSDemonstrativoSimplificado,Resultado Previdenciário,-543360995.89
+2019,RREO,6,B,Governo do Estado do Amazonas,13,AM,4080611,RREO-Anexo 14,Padrão,Até o Bimestre,ResultadoPrevidenciarioRGPSDemonstrativoSimplificado,Resultado Previdenciário,594058103.47
+2019,RREO,6,B,Governo do Estado do Amazonas,13,AM,4080611,RREO-Anexo 14,Padrão,Até o Bimestre,ResultadoPrevidenciarioRPPSDemonstrativoSimplificado,Resultado Previdenciário,-1404174727.3
+2019,RREO,6,B,Governo do Estado de Roraima,14,RR,576568,RREO-Anexo 14,Padrão,Até o Bimestre,ResultadoPrevidenciarioRGPSDemonstrativoSimplificado,Resultado Previdenciário,715168639.52
+2019,RREO,6,B,Governo do Estado de Roraima,14,RR,576568,RREO-Anexo 14,Padrão,Até o Bimestre,ResultadoPrevidenciarioRPPSDemonstrativoSimplificado,Resultado Previdenciário,690596526.24
+2019,RREO,6,B,Governo do Estado do Pará,15,PA,8513497,RREO-Anexo 14,Padrão,Até o Bimestre,ResultadoPrevidenciarioRGPSDemonstrativoSimplificado,Resultado Previdenciário,695567163.58
+2019,RREO,6,B,Governo do Estado do Pará,15,PA,8513497,RREO-Anexo 14,Padrão,Até o Bimestre,ResultadoPrevidenciarioRPPSDemonstrativoSimplificado,Resultado Previdenciário,-1839861758.99
+2019,RREO,6,B,Governo do Estado do Amapá,16,AP,829494,RREO-Anexo 14,Padrão,Até o Bimestre,ResultadoPrevidenciarioRGPSDemonstrativoSimplificado,Resultado Previdenciário,256694834.13
+2019,RREO,6,B,Governo do Estado do Amapá,16,AP,829494,RREO-Anexo 14,Padrão,Até o Bimestre,ResultadoPrevidenciarioRPPSDemonstrativoSimplificado,Resultado Previdenciário,677159223.98
+2019,RREO,6,B,Governo do Estado do Tocantins,17,TO,1555229,RREO-Anexo 14,Padrão,Até o Bimestre,ResultadoPrevidenciarioRGPSDemonstrativoSimplificado,Resultado Previdenciário,277798182.86
+2019,RREO,6,B,Governo do Estado do Tocantins,17,TO,1555229,RREO-Anexo 14,Padrão,Até o Bimestre,ResultadoPrevidenciarioRPPSDemonstrativoSimplificado,Resultado Previdenciário,-478564584.09
+2019,RREO,6,B,Governo do Estado do Maranhão,21,MA,7035055,RREO-Anexo 14,Padrão,Até o Bimestre,ResultadoPrevidenciarioRGPSDemonstrativoSimplificado,Resultado Previdenciário,-377655482.32
+2019,RREO,6,B,Governo do Estado do Maranhão,21,MA,7035055,RREO-Anexo 14,Padrão,Até o Bimestre,ResultadoPrevidenciarioRPPSDemonstrativoSimplificado,Resultado Previdenciário,-628162947.93
+2019,RREO,6,B,Governo do Estado do Piauí,22,PI,3264531,RREO-Anexo 14,Padrão,Até o Bimestre,ResultadoPrevidenciarioRGPSDemonstrativoSimplificado,Resultado Previdenciário,97901902.2
+2019,RREO,6,B,Governo do Estado do Piauí,22,PI,3264531,RREO-Anexo 14,Padrão,Até o Bimestre,ResultadoPrevidenciarioRPPSDemonstrativoSimplificado,Resultado Previdenciário,-1628112286.95
+2019,RREO,6,B,Governo do Estado do Ceará,23,CE,9075649,RREO-Anexo 14,Padrão,Até o Bimestre,ResultadoPrevidenciarioRGPSDemonstrativoSimplificado,Resultado Previdenciário,292612219.15
+2019,RREO,6,B,Governo do Estado do Ceará,23,CE,9075649,RREO-Anexo 14,Padrão,Até o Bimestre,ResultadoPrevidenciarioRPPSDemonstrativoSimplificado,Resultado Previdenciário,-1554866196.26
+2019,RREO,6,B,Governo do Estado do Rio Grande do Norte,24,RN,3479010,RREO-Anexo 14,Padrão,Até o Bimestre,ResultadoPrevidenciarioRGPSDemonstrativoSimplificado,Resultado Previdenciário,-3540067746.78
+2019,RREO,6,B,Governo do Estado da Paraíba,25,PB,3996496,RREO-Anexo 14,Padrão,Até o Bimestre,ResultadoPrevidenciarioRGPSDemonstrativoSimplificado,Resultado Previdenciário,126197182.37
+2019,RREO,6,B,Governo do Estado da Paraíba,25,PB,3996496,RREO-Anexo 14,Padrão,Até o Bimestre,ResultadoPrevidenciarioRPPSDemonstrativoSimplificado,Resultado Previdenciário,-1474183230.55
+2019,RREO,6,B,Governo do Estado de Pernambuco,26,PE,9496294,RREO-Anexo 14,Padrão,Até o Bimestre,ResultadoPrevidenciarioRGPSDemonstrativoSimplificado,Resultado Previdenciário,-3039029996.35
+2019,RREO,6,B,Governo do Estado de Alagoas,27,AL,3322820,RREO-Anexo 14,Padrão,Até o Bimestre,ResultadoPrevidenciarioRGPSDemonstrativoSimplificado,Resultado Previdenciário,129506007.1
+2019,RREO,6,B,Governo do Estado de Alagoas,27,AL,3322820,RREO-Anexo 14,Padrão,Até o Bimestre,ResultadoPrevidenciarioRPPSDemonstrativoSimplificado,Resultado Previdenciário,-1104285993.88
+2019,RREO,6,B,Governo do Estado de Sergipe,28,SE,2278308,RREO-Anexo 14,Padrão,Até o Bimestre,ResultadoPrevidenciarioRPPSDemonstrativoSimplificado,Resultado Previdenciário,-1315795685.37
+2019,RREO,6,B,Governo do Estado da Bahia,29,BA,14812617,RREO-Anexo 14,Padrão,Até o Bimestre,ResultadoPrevidenciarioRGPSDemonstrativoSimplificado,Resultado Previdenciário,1365477.41
+2019,RREO,6,B,Governo do Estado da Bahia,29,BA,14812617,RREO-Anexo 14,Padrão,Até o Bimestre,ResultadoPrevidenciarioRPPSDemonstrativoSimplificado,Resultado Previdenciário,-3300624489.29
+2019,RREO,6,B,Governo do Estado de Minas Gerais,31,MG,21040662,RREO-Anexo 14,Padrão,Até o Bimestre,ResultadoPrevidenciarioRPPSDemonstrativoSimplificado,Resultado Previdenciário,-18620693583.73
+2019,RREO,6,B,Governo do Estado do Espírito Santo,32,ES,3972388,RREO-Anexo 14,Padrão,Até o Bimestre,ResultadoPrevidenciarioRGPSDemonstrativoSimplificado,Resultado Previdenciário,824707670.29
+2019,RREO,6,B,Governo do Estado do Espírito Santo,32,ES,3972388,RREO-Anexo 14,Padrão,Até o Bimestre,ResultadoPrevidenciarioRPPSDemonstrativoSimplificado,Resultado Previdenciário,-2348192447.73
+2019,RREO,6,B,Governo do Estado do Rio de Janeiro,33,RJ,17159960,RREO-Anexo 14,Padrão,Até o Bimestre,ResultadoPrevidenciarioRGPSDemonstrativoSimplificado,Resultado Previdenciário,468702903
+2019,RREO,6,B,Governo do Estado do Rio de Janeiro,33,RJ,17159960,RREO-Anexo 14,Padrão,Até o Bimestre,ResultadoPrevidenciarioRPPSDemonstrativoSimplificado,Resultado Previdenciário,-2447035109
+2019,RREO,6,B,Governo do Estado de São Paulo,35,SP,45538936,RREO-Anexo 14,Padrão,Até o Bimestre,ResultadoPrevidenciarioRPPSDemonstrativoSimplificado,Resultado Previdenciário,-22049254493.25
+2019,RREO,6,B,Governo do Estado do Paraná,41,PR,11348937,RREO-Anexo 14,Padrão,Até o Bimestre,ResultadoPrevidenciarioRGPSDemonstrativoSimplificado,Resultado Previdenciário,-428901364.92
+2019,RREO,6,B,Governo do Estado do Paraná,41,PR,11348937,RREO-Anexo 14,Padrão,Até o Bimestre,ResultadoPrevidenciarioRPPSDemonstrativoSimplificado,Resultado Previdenciário,-5611244227.13
+2019,RREO,6,B,Governo do Estado de Santa Catarina,42,SC,7075494,RREO-Anexo 14,Padrão,Até o Bimestre,ResultadoPrevidenciarioRGPSDemonstrativoSimplificado,Resultado Previdenciário,-4109245842.42
+2019,RREO,6,B,Governo do Estado do Rio Grande do Sul,43,RS,11329605,RREO-Anexo 14,Padrão,Até o Bimestre,ResultadoPrevidenciarioRGPSDemonstrativoSimplificado,Resultado Previdenciário,825523295.92
+2019,RREO,6,B,Governo do Estado do Rio Grande do Sul,43,RS,11329605,RREO-Anexo 14,Padrão,Até o Bimestre,ResultadoPrevidenciarioRPPSDemonstrativoSimplificado,Resultado Previdenciário,-12466753292.93
+2019,RREO,6,B,Governo do Estado do Mato Grosso do Sul,50,MS,2748023,RREO-Anexo 14,Padrão,Até o Bimestre,ResultadoPrevidenciarioRGPSDemonstrativoSimplificado,Resultado Previdenciário,-1214624754.82
+2019,RREO,6,B,Governo do Estado do Mato Grosso,51,MT,3441998,RREO-Anexo 14,Padrão,Até o Bimestre,ResultadoPrevidenciarioRGPSDemonstrativoSimplificado,Resultado Previdenciário,-299293151.59
+2019,RREO,6,B,Governo do Estado de Goiás,52,GO,6921161,RREO-Anexo 14,Padrão,Até o Bimestre,ResultadoPrevidenciarioRPPSDemonstrativoSimplificado,Resultado Previdenciário,-2913216157.13
+2019,RREO,6,B,Governo do Distrito Federal,53,DF,2974703,RREO-Anexo 14,Padrão,Até o Bimestre,ResultadoPrevidenciarioRGPSDemonstrativoSimplificado,Resultado Previdenciário,440193336.24
+2019,RREO,6,B,Governo do Distrito Federal,53,DF,2974703,RREO-Anexo 14,Padrão,Até o Bimestre,ResultadoPrevidenciarioRPPSDemonstrativoSimplificado,Resultado Previdenciário,-707177403.64
+2018,RREO,6,B,Governo do Estado de Rondônia,11,RO,1787279,RREO-Anexo 14,Padrão,Até o Bimestre,ResultadoPrevidenciarioRGPSDemonstrativoSimplificado,Resultado Previdenciário,131196993.64
+2018,RREO,6,B,Governo do Estado de Rondônia,11,RO,1787279,RREO-Anexo 14,Padrão,Até o Bimestre,ResultadoPrevidenciarioRPPSDemonstrativoSimplificado,Resultado Previdenciário,13711958.16
+2018,RREO,6,B,Governo do Estado do Acre,12,AC,816687,RREO-Anexo 14,Padrão,Até o Bimestre,ResultadoPrevidenciarioRGPSDemonstrativoSimplificado,Resultado Previdenciário,-2957576.58
+2018,RREO,6,B,Governo do Estado do Amazonas,13,AM,4001667,RREO-Anexo 14,Padrão,Até o Bimestre,ResultadoPrevidenciarioRGPSDemonstrativoSimplificado,Resultado Previdenciário,607437591.75
+2018,RREO,6,B,Governo do Estado do Amazonas,13,AM,4001667,RREO-Anexo 14,Padrão,Até o Bimestre,ResultadoPrevidenciarioRPPSDemonstrativoSimplificado,Resultado Previdenciário,-1139550938.73
+2018,RREO,6,B,Governo do Estado de Roraima,14,RR,514229,RREO-Anexo 14,Padrão,Até o Bimestre,ResultadoPrevidenciarioRGPSDemonstrativoSimplificado,Resultado Previdenciário,126879695.18
+2018,RREO,6,B,Governo do Estado de Roraima,14,RR,514229,RREO-Anexo 14,Padrão,Até o Bimestre,ResultadoPrevidenciarioRPPSDemonstrativoSimplificado,Resultado Previdenciário,163667610.68
+2018,RREO,6,B,Governo do Estado do Pará,15,PA,8272724,RREO-Anexo 14,Padrão,Até o Bimestre,ResultadoPrevidenciarioRGPSDemonstrativoSimplificado,Resultado Previdenciário,448882491.6
+2018,RREO,6,B,Governo do Estado do Pará,15,PA,8272724,RREO-Anexo 14,Padrão,Até o Bimestre,ResultadoPrevidenciarioRPPSDemonstrativoSimplificado,Resultado Previdenciário,-1439807071.19
+2018,RREO,6,B,Governo do Estado do Amapá,16,AP,782295,RREO-Anexo 14,Padrão,Até o Bimestre,ResultadoPrevidenciarioRPPSDemonstrativoSimplificado,Resultado Previdenciário,561909544.54
+2018,RREO,6,B,Governo do Estado do Tocantins,17,TO,1532902,RREO-Anexo 14,Padrão,Até o Bimestre,ResultadoPrevidenciarioRGPSDemonstrativoSimplificado,Resultado Previdenciário,106712059.71
+2018,RREO,6,B,Governo do Estado do Tocantins,17,TO,1532902,RREO-Anexo 14,Padrão,Até o Bimestre,ResultadoPrevidenciarioRPPSDemonstrativoSimplificado,Resultado Previdenciário,-534070806.7
+2018,RREO,6,B,Governo do Estado do Maranhão,21,MA,6954036,RREO-Anexo 14,Padrão,Até o Bimestre,ResultadoPrevidenciarioRGPSDemonstrativoSimplificado,Resultado Previdenciário,-583439083.72
+2018,RREO,6,B,Governo do Estado do Maranhão,21,MA,6954036,RREO-Anexo 14,Padrão,Até o Bimestre,ResultadoPrevidenciarioRPPSDemonstrativoSimplificado,Resultado Previdenciário,-561424152.17
+2018,RREO,6,B,Governo do Estado do Piauí,22,PI,3212180,RREO-Anexo 14,Padrão,Até o Bimestre,ResultadoPrevidenciarioRGPSDemonstrativoSimplificado,Resultado Previdenciário,132271093.71
+2018,RREO,6,B,Governo do Estado do Piauí,22,PI,3212180,RREO-Anexo 14,Padrão,Até o Bimestre,ResultadoPrevidenciarioRPPSDemonstrativoSimplificado,Resultado Previdenciário,-606943284.89
+2018,RREO,6,B,Governo do Estado do Ceará,23,CE,8963663,RREO-Anexo 14,Padrão,Até o Bimestre,ResultadoPrevidenciarioRGPSDemonstrativoSimplificado,Resultado Previdenciário,224208840.03
+2018,RREO,6,B,Governo do Estado do Ceará,23,CE,8963663,RREO-Anexo 14,Padrão,Até o Bimestre,ResultadoPrevidenciarioRPPSDemonstrativoSimplificado,Resultado Previdenciário,-1545690001.73
+2018,RREO,6,B,Governo do Estado da Paraíba,25,PB,3999415,RREO-Anexo 14,Padrão,Até o Bimestre,ResultadoPrevidenciarioRGPSDemonstrativoSimplificado,Resultado Previdenciário,92613236.64
+2018,RREO,6,B,Governo do Estado da Paraíba,25,PB,3999415,RREO-Anexo 14,Padrão,Até o Bimestre,ResultadoPrevidenciarioRPPSDemonstrativoSimplificado,Resultado Previdenciário,-1395433879.85
+2018,RREO,6,B,Governo do Estado de Pernambuco,26,PE,9410336,RREO-Anexo 14,Padrão,Até o Bimestre,ResultadoPrevidenciarioRGPSDemonstrativoSimplificado,Resultado Previdenciário,-2602445952.19
+2018,RREO,6,B,Governo do Estado de Alagoas,27,AL,3358963,RREO-Anexo 14,Padrão,Até o Bimestre,ResultadoPrevidenciarioRGPSDemonstrativoSimplificado,Resultado Previdenciário,76929630.97
+2018,RREO,6,B,Governo do Estado de Alagoas,27,AL,3358963,RREO-Anexo 14,Padrão,Até o Bimestre,ResultadoPrevidenciarioRPPSDemonstrativoSimplificado,Resultado Previdenciário,-1273217866.13
+2018,RREO,6,B,Governo do Estado de Sergipe,28,SE,2265779,RREO-Anexo 14,Padrão,Até o Bimestre,ResultadoPrevidenciarioRPPSDemonstrativoSimplificado,Resultado Previdenciário,-842635908.84
+2018,RREO,6,B,Governo do Estado da Bahia,29,BA,15276566,RREO-Anexo 14,Padrão,Até o Bimestre,ResultadoPrevidenciarioRGPSDemonstrativoSimplificado,Resultado Previdenciário,920747.28
+2018,RREO,6,B,Governo do Estado da Bahia,29,BA,15276566,RREO-Anexo 14,Padrão,Até o Bimestre,ResultadoPrevidenciarioRPPSDemonstrativoSimplificado,Resultado Previdenciário,-3255299048.05
+2018,RREO,6,B,Governo do Estado de Minas Gerais,31,MG,20997560,RREO-Anexo 14,Padrão,Até o Bimestre,ResultadoPrevidenciarioRPPSDemonstrativoSimplificado,Resultado Previdenciário,-17282986644.28
+2018,RREO,6,B,Governo do Estado do Espírito Santo,32,ES,3973697,RREO-Anexo 14,Padrão,Até o Bimestre,ResultadoPrevidenciarioRGPSDemonstrativoSimplificado,Resultado Previdenciário,553680887.43
+2018,RREO,6,B,Governo do Estado do Espírito Santo,32,ES,3973697,RREO-Anexo 14,Padrão,Até o Bimestre,ResultadoPrevidenciarioRPPSDemonstrativoSimplificado,Resultado Previdenciário,-2129996065.41
+2018,RREO,6,B,Governo do Estado do Rio de Janeiro,33,RJ,16635996,RREO-Anexo 14,Padrão,Até o Bimestre,ResultadoPrevidenciarioRGPSDemonstrativoSimplificado,Resultado Previdenciário,-2212324275
+2018,RREO,6,B,Governo do Estado do Rio de Janeiro,33,RJ,16635996,RREO-Anexo 14,Padrão,Até o Bimestre,ResultadoPrevidenciarioRPPSDemonstrativoSimplificado,Resultado Previdenciário,441253643
+2018,RREO,6,B,Governo do Estado de São Paulo,35,SP,44749699,RREO-Anexo 14,Padrão,Até o Bimestre,ResultadoPrevidenciarioRPPSDemonstrativoSimplificado,Resultado Previdenciário,-19755406639.68
+2018,RREO,6,B,Governo do Estado do Paraná,41,PR,11242720,RREO-Anexo 14,Padrão,Até o Bimestre,ResultadoPrevidenciarioRGPSDemonstrativoSimplificado,Resultado Previdenciário,-464273923.02
+2018,RREO,6,B,Governo do Estado do Paraná,41,PR,11242720,RREO-Anexo 14,Padrão,Até o Bimestre,ResultadoPrevidenciarioRPPSDemonstrativoSimplificado,Resultado Previdenciário,-4541992695.86
+2018,RREO,6,B,Governo do Estado do Rio Grande do Sul,43,RS,11286500,RREO-Anexo 14,Padrão,Até o Bimestre,ResultadoPrevidenciarioRGPSDemonstrativoSimplificado,Resultado Previdenciário,514939382.59
+2018,RREO,6,B,Governo do Estado do Rio Grande do Sul,43,RS,11286500,RREO-Anexo 14,Padrão,Até o Bimestre,ResultadoPrevidenciarioRPPSDemonstrativoSimplificado,Resultado Previdenciário,-11609045828.28
+2018,RREO,6,B,Governo do Estado do Mato Grosso do Sul,50,MS,2682386,RREO-Anexo 14,Padrão,Até o Bimestre,ResultadoPrevidenciarioRGPSDemonstrativoSimplificado,Resultado Previdenciário,-883920819.67
+2018,RREO,6,B,Governo do Estado do Mato Grosso,51,MT,3305531,RREO-Anexo 14,Padrão,Até o Bimestre,ResultadoPrevidenciarioRGPSDemonstrativoSimplificado,Resultado Previdenciário,-1019477908.94
+2018,RREO,6,B,Governo do Estado de Goiás,52,GO,6695855,RREO-Anexo 14,Padrão,Até o Bimestre,ResultadoPrevidenciarioRPPSDemonstrativoSimplificado,Resultado Previdenciário,-2404910913.33
+2018,RREO,6,B,Governo do Distrito Federal,53,DF,2977216,RREO-Anexo 14,Padrão,Até o Bimestre,ResultadoPrevidenciarioRGPSDemonstrativoSimplificado,Resultado Previdenciário,452432193.63
+2018,RREO,6,B,Governo do Distrito Federal,53,DF,2977216,RREO-Anexo 14,Padrão,Até o Bimestre,ResultadoPrevidenciarioRPPSDemonstrativoSimplificado,Resultado Previdenciário,-631105484.96
+2017,RREO,6,B,Governo do Estado de Rondônia,11,RO,1787279,RREO-Anexo 14,NA,Até o Bimestre,ResultadoPrevidenciarioRPPSDemonstrativoSimplificado,Resultado Previdenciário (VI) = (IV - V),208937600.16
+2017,RREO,6,B,Governo do Estado do Acre,12,AC,816687,RREO-Anexo 14,NA,Até o Bimestre,ResultadoPrevidenciarioRPPSDemonstrativoSimplificado,Resultado Previdenciário (VI) = (IV - V),-5078192.38
+2017,RREO,6,B,Governo do Estado do Amazonas,13,AM,4001667,RREO-Anexo 14,NA,Até o Bimestre,ResultadoPrevidenciarioRPPSDemonstrativoSimplificado,Resultado Previdenciário (VI) = (IV - V),-653087269.59
+2017,RREO,6,B,Governo do Estado de Roraima,14,RR,514229,RREO-Anexo 14,NA,Até o Bimestre,ResultadoPrevidenciarioRPPSDemonstrativoSimplificado,Resultado Previdenciário (VI) = (IV - V),380620845.61
+2017,RREO,6,B,Governo do Estado do Pará,15,PA,8272724,RREO-Anexo 14,NA,Até o Bimestre,ResultadoPrevidenciarioRPPSDemonstrativoSimplificado,Resultado Previdenciário (VI) = (IV - V),-869459440.96
+2017,RREO,6,B,Governo do Estado do Amapá,16,AP,782295,RREO-Anexo 14,NA,Até o Bimestre,ResultadoPrevidenciarioRPPSDemonstrativoSimplificado,Resultado Previdenciário (VI) = (IV - V),458863753.26
+2017,RREO,6,B,Governo do Estado do Tocantins,17,TO,1532902,RREO-Anexo 14,NA,Até o Bimestre,ResultadoPrevidenciarioRPPSDemonstrativoSimplificado,Resultado Previdenciário (VI) = (IV - V),313173193.85
+2017,RREO,6,B,Governo do Estado do Maranhão,21,MA,6954036,RREO-Anexo 14,NA,Até o Bimestre,ResultadoPrevidenciarioRPPSDemonstrativoSimplificado,Resultado Previdenciário (VI) = (IV - V),-520708906.33
+2017,RREO,6,B,Governo do Estado do Piauí,22,PI,3212180,RREO-Anexo 14,NA,Até o Bimestre,ResultadoPrevidenciarioRPPSDemonstrativoSimplificado,Resultado Previdenciário (VI) = (IV - V),-305371749.86
+2017,RREO,6,B,Governo do Estado do Ceará,23,CE,8963663,RREO-Anexo 14,NA,Até o Bimestre,ResultadoPrevidenciarioRPPSDemonstrativoSimplificado,Resultado Previdenciário (VI) = (IV - V),-1372853479.06
+2017,RREO,6,B,Governo do Estado do Rio Grande do Norte,24,RN,3474998,RREO-Anexo 14,NA,Até o Bimestre,ResultadoPrevidenciarioRGPSDemonstrativoSimplificado,Resultado Previdenciário (III) = (I - II),-1980494895.05
+2017,RREO,6,B,Governo do Estado da Paraíba,25,PB,3999415,RREO-Anexo 14,NA,Até o Bimestre,ResultadoPrevidenciarioRPPSDemonstrativoSimplificado,Resultado Previdenciário (VI) = (IV - V),-1211741213.16
+2017,RREO,6,B,Governo do Estado de Pernambuco,26,PE,9410336,RREO-Anexo 14,NA,Até o Bimestre,ResultadoPrevidenciarioRPPSDemonstrativoSimplificado,Resultado Previdenciário (VI) = (IV - V),-2492510585.71
+2017,RREO,6,B,Governo do Estado de Alagoas,27,AL,3358963,RREO-Anexo 14,NA,Até o Bimestre,ResultadoPrevidenciarioRPPSDemonstrativoSimplificado,Resultado Previdenciário (VI) = (IV - V),-971703738.45
+2017,RREO,6,B,Governo do Estado de Sergipe,28,SE,2265779,RREO-Anexo 14,NA,Até o Bimestre,ResultadoPrevidenciarioRGPSDemonstrativoSimplificado,Resultado Previdenciário (III) = (I - II),-1052851376.7
+2017,RREO,6,B,Governo do Estado da Bahia,29,BA,15276566,RREO-Anexo 14,NA,Até o Bimestre,ResultadoPrevidenciarioRPPSDemonstrativoSimplificado,Resultado Previdenciário (VI) = (IV - V),-2596454148.28
+2017,RREO,6,B,Governo do Estado de Minas Gerais,31,MG,20997560,RREO-Anexo 14,NA,Até o Bimestre,ResultadoPrevidenciarioRPPSDemonstrativoSimplificado,Resultado Previdenciário (VI) = (IV - V),-16477518074.52
+2017,RREO,6,B,Governo do Estado do Espírito Santo,32,ES,3973697,RREO-Anexo 14,NA,Até o Bimestre,ResultadoPrevidenciarioRPPSDemonstrativoSimplificado,Resultado Previdenciário (VI) = (IV - V),-1312189327.05
+2017,RREO,6,B,Governo do Estado do Rio de Janeiro,33,RJ,16635996,RREO-Anexo 14,NA,Até o Bimestre,ResultadoPrevidenciarioRGPSDemonstrativoSimplificado,Resultado Previdenciário (III) = (I - II),288233882
+2017,RREO,6,B,Governo do Estado do Rio de Janeiro,33,RJ,16635996,RREO-Anexo 14,NA,Até o Bimestre,ResultadoPrevidenciarioRPPSDemonstrativoSimplificado,Resultado Previdenciário (VI) = (IV - V),-11007653184
+2017,RREO,6,B,Governo do Estado de São Paulo,35,SP,44749699,RREO-Anexo 14,NA,Até o Bimestre,ResultadoPrevidenciarioRPPSDemonstrativoSimplificado,Resultado Previdenciário (VI) = (IV - V),-17979627041.83
+2017,RREO,6,B,Governo do Estado do Paraná,41,PR,11242720,RREO-Anexo 14,NA,Até o Bimestre,ResultadoPrevidenciarioRPPSDemonstrativoSimplificado,Resultado Previdenciário (VI) = (IV - V),-544416591.77
+2017,RREO,6,B,Governo do Estado de Santa Catarina,42,SC,6910553,RREO-Anexo 14,NA,Até o Bimestre,ResultadoPrevidenciarioRPPSDemonstrativoSimplificado,Resultado Previdenciário (VI) = (IV - V),-3651438688.48
+2017,RREO,6,B,Governo do Estado do Rio Grande do Sul,43,RS,11286500,RREO-Anexo 14,NA,Até o Bimestre,ResultadoPrevidenciarioRPPSDemonstrativoSimplificado,Resultado Previdenciário (VI) = (IV - V),-10562383272.09
+2017,RREO,6,B,Governo do Estado do Mato Grosso do Sul,50,MS,2682386,RREO-Anexo 14,NA,Até o Bimestre,ResultadoPrevidenciarioRPPSDemonstrativoSimplificado,Resultado Previdenciário (VI) = (IV - V),-404341493.28
+2017,RREO,6,B,Governo do Estado do Mato Grosso,51,MT,3305531,RREO-Anexo 14,NA,Até o Bimestre,ResultadoPrevidenciarioRPPSDemonstrativoSimplificado,Resultado Previdenciário (VI) = (IV - V),-1236748613.82
+2017,RREO,6,B,Governo do Estado de Goiás,52,GO,6695855,RREO-Anexo 14,NA,Até o Bimestre,ResultadoPrevidenciarioRPPSDemonstrativoSimplificado,Resultado Previdenciário (VI) = (IV - V),-2235890220.33
+2017,RREO,6,B,Governo do Distrito Federal,53,DF,2977216,RREO-Anexo 14,NA,Até o Bimestre,ResultadoPrevidenciarioRPPSDemonstrativoSimplificado,Resultado Previdenciário (VI) = (IV - V),4727167921.59
+2016,RREO,6,B,Governo do Estado de Rondônia,11,RO,1768204,RREO-Anexo 14,NA,Até o Bimestre,ResultadoPrevidenciarioRPPSDemonstrativoSimplificado,Resultado Previdenciário (VI) = (IV - V),331504031.59
+2016,RREO,6,B,Governo do Estado do Acre,12,AC,803513,RREO-Anexo 14,NA,Até o Bimestre,ResultadoPrevidenciarioRPPSDemonstrativoSimplificado,Resultado Previdenciário (VI) = (IV - V),-83763748.01
+2016,RREO,6,B,Governo do Estado do Amazonas,13,AM,3938336,RREO-Anexo 14,NA,Até o Bimestre,ResultadoPrevidenciarioRPPSDemonstrativoSimplificado,Resultado Previdenciário (VI) = (IV - V),-384712600.54
+2016,RREO,6,B,Governo do Estado de Roraima,14,RR,505665,RREO-Anexo 14,NA,Até o Bimestre,ResultadoPrevidenciarioRPPSDemonstrativoSimplificado,Resultado Previdenciário (VI) = (IV - V),381285916.81
+2016,RREO,6,B,Governo do Estado do Pará,15,PA,8175113,RREO-Anexo 14,NA,Até o Bimestre,ResultadoPrevidenciarioRPPSDemonstrativoSimplificado,Resultado Previdenciário (VI) = (IV - V),-956224947.98
+2016,RREO,6,B,Governo do Estado do Amapá,16,AP,766679,RREO-Anexo 14,NA,Até o Bimestre,ResultadoPrevidenciarioRPPSDemonstrativoSimplificado,Resultado Previdenciário (VI) = (IV - V),680631441.96
+2016,RREO,6,B,Governo do Estado do Tocantins,17,TO,1515126,RREO-Anexo 14,NA,Até o Bimestre,ResultadoPrevidenciarioRPPSDemonstrativoSimplificado,Resultado Previdenciário (VI) = (IV - V),690676839.77
+2016,RREO,6,B,Governo do Estado do Maranhão,21,MA,6904241,RREO-Anexo 14,NA,Até o Bimestre,ResultadoPrevidenciarioRPPSDemonstrativoSimplificado,Resultado Previdenciário (VI) = (IV - V),-159116833.64
+2016,RREO,6,B,Governo do Estado do Piauí,22,PI,3204028,RREO-Anexo 14,NA,Até o Bimestre,ResultadoPrevidenciarioRPPSDemonstrativoSimplificado,Resultado Previdenciário (VI) = (IV - V),-347631401.5
+2016,RREO,6,B,Governo do Estado do Ceará,23,CE,8904459,RREO-Anexo 14,NA,Até o Bimestre,ResultadoPrevidenciarioRPPSDemonstrativoSimplificado,Resultado Previdenciário (VI) = (IV - V),-1253436582.04
+2016,RREO,6,B,Governo do Estado do Rio Grande do Norte,24,RN,3442175,RREO-Anexo 14,NA,Até o Bimestre,ResultadoPrevidenciarioRPPSDemonstrativoSimplificado,Resultado Previdenciário (VI) = (IV - V),-1470214480.36
+2016,RREO,6,B,Governo do Estado da Paraíba,25,PB,3972202,RREO-Anexo 14,NA,Até o Bimestre,ResultadoPrevidenciarioRPPSDemonstrativoSimplificado,Resultado Previdenciário (VI) = (IV - V),-1056530742.8
+2016,RREO,6,B,Governo do Estado de Pernambuco,26,PE,9345173,RREO-Anexo 14,NA,Até o Bimestre,ResultadoPrevidenciarioRPPSDemonstrativoSimplificado,Resultado Previdenciário (VI) = (IV - V),-99946314.62
+2016,RREO,6,B,Governo do Estado de Alagoas,27,AL,3340932,RREO-Anexo 14,NA,Até o Bimestre,ResultadoPrevidenciarioRPPSDemonstrativoSimplificado,Resultado Previdenciário (VI) = (IV - V),-694224484.07
+2016,RREO,6,B,Governo do Estado de Sergipe,28,SE,2242937,RREO-Anexo 14,NA,Até o Bimestre,ResultadoPrevidenciarioRGPSDemonstrativoSimplificado,Resultado Previdenciário (III) = (I - II),-671016888.39
+2016,RREO,6,B,Governo do Estado da Bahia,29,BA,15203934,RREO-Anexo 14,NA,Até o Bimestre,ResultadoPrevidenciarioRPPSDemonstrativoSimplificado,Resultado Previdenciário (VI) = (IV - V),-1716330109.98
+2016,RREO,6,B,Governo do Estado de Minas Gerais,31,MG,20869101,RREO-Anexo 14,NA,Até o Bimestre,ResultadoPrevidenciarioRPPSDemonstrativoSimplificado,Resultado Previdenciário (VI) = (IV - V),-14860680008.61
+2016,RREO,6,B,Governo do Estado do Espírito Santo,32,ES,3929911,RREO-Anexo 14,NA,Até o Bimestre,ResultadoPrevidenciarioRPPSDemonstrativoSimplificado,Resultado Previdenciário (VI) = (IV - V),-1036037958.93
+2016,RREO,6,B,Governo do Estado do Rio de Janeiro,33,RJ,16550024,RREO-Anexo 14,NA,Até o Bimestre,ResultadoPrevidenciarioRPPSDemonstrativoSimplificado,Resultado Previdenciário (VI) = (IV - V),-11347073814
+2016,RREO,6,B,Governo do Estado de São Paulo,35,SP,44396484,RREO-Anexo 14,NA,Até o Bimestre,ResultadoPrevidenciarioRPPSDemonstrativoSimplificado,Resultado Previdenciário (VI) = (IV - V),2761951.81
+2016,RREO,6,B,Governo do Estado do Paraná,41,PR,11163018,RREO-Anexo 14,NA,Até o Bimestre,ResultadoPrevidenciarioRPPSDemonstrativoSimplificado,Resultado Previdenciário (VI) = (IV - V),-342001260.68
+2016,RREO,6,B,Governo do Estado de Santa Catarina,42,SC,6819190,RREO-Anexo 14,NA,Até o Bimestre,ResultadoPrevidenciarioRPPSDemonstrativoSimplificado,Resultado Previdenciário (VI) = (IV - V),-3511470765.3
+2016,RREO,6,B,Governo do Estado do Rio Grande do Sul,43,RS,11247972,RREO-Anexo 14,NA,Até o Bimestre,ResultadoPrevidenciarioRPPSDemonstrativoSimplificado,Resultado Previdenciário (VI) = (IV - V),-8941570125.38
+2016,RREO,6,B,Governo do Estado do Mato Grosso do Sul,50,MS,2651235,RREO-Anexo 14,NA,Até o Bimestre,ResultadoPrevidenciarioRPPSDemonstrativoSimplificado,Resultado Previdenciário (VI) = (IV - V),-1170041445.54
+2016,RREO,6,B,Governo do Estado do Mato Grosso,51,MT,3265486,RREO-Anexo 14,NA,Até o Bimestre,ResultadoPrevidenciarioRPPSDemonstrativoSimplificado,Resultado Previdenciário (VI) = (IV - V),-827925484.59
+2016,RREO,6,B,Governo do Estado de Goiás,52,GO,6610681,RREO-Anexo 14,NA,Até o Bimestre,ResultadoPrevidenciarioRPPSDemonstrativoSimplificado,Resultado Previdenciário (VI) = (IV - V),-1735402111.43
+2016,RREO,6,B,Governo do Distrito Federal,53,DF,2914830,RREO-Anexo 14,NA,Até o Bimestre,ResultadoPrevidenciarioRPPSDemonstrativoSimplificado,Resultado Previdenciário (VI) = (IV - V),-1824949194.54
+2015,RREO,6,B,Governo do Estado de Rondônia,11,RO,1748531,RREO-Anexo 14,NA,Até o Bimestre,ResultadoPrevidenciarioRPPSDemonstrativoSimplificado,Resultado Previdenciário (VI) = (IV - V),310648898.77
+2015,RREO,6,B,Governo do Estado do Acre,12,AC,790101,RREO-Anexo 14,NA,Até o Bimestre,ResultadoPrevidenciarioRPPSDemonstrativoSimplificado,Resultado Previdenciário (VI) = (IV - V),-118422777.34
+2015,RREO,6,B,Governo do Estado do Amazonas,13,AM,3873743,RREO-Anexo 14,NA,Até o Bimestre,ResultadoPrevidenciarioRPPSDemonstrativoSimplificado,Resultado Previdenciário (VI) = (IV - V),-415221045.12
+2015,RREO,6,B,Governo do Estado de Roraima,14,RR,496936,RREO-Anexo 14,NA,Até o Bimestre,ResultadoPrevidenciarioRPPSDemonstrativoSimplificado,Resultado Previdenciário (VI) = (IV - V),367775860.21
+2015,RREO,6,B,Governo do Estado do Pará,15,PA,8104880,RREO-Anexo 14,NA,Até o Bimestre,ResultadoPrevidenciarioRPPSDemonstrativoSimplificado,Resultado Previdenciário (VI) = (IV - V),-1290173944.04
+2015,RREO,6,B,Governo do Estado do Amapá,16,AP,750912,RREO-Anexo 14,NA,Até o Bimestre,ResultadoPrevidenciarioRPPSDemonstrativoSimplificado,Resultado Previdenciário (VI) = (IV - V),425187729.59
+2015,RREO,6,B,Governo do Estado do Tocantins,17,TO,1496880,RREO-Anexo 14,NA,Até o Bimestre,ResultadoPrevidenciarioRPPSDemonstrativoSimplificado,Resultado Previdenciário (VI) = (IV - V),532673178.02
+2015,RREO,6,B,Governo do Estado do Maranhão,21,MA,6850884,RREO-Anexo 14,NA,Até o Bimestre,ResultadoPrevidenciarioRPPSDemonstrativoSimplificado,Resultado Previdenciário (VI) = (IV - V),-98283634.2
+2015,RREO,6,B,Governo do Estado do Piauí,22,PI,3194718,RREO-Anexo 14,NA,Até o Bimestre,ResultadoPrevidenciarioRPPSDemonstrativoSimplificado,Resultado Previdenciário (VI) = (IV - V),-565363298.1
+2015,RREO,6,B,Governo do Estado do Ceará,23,CE,8842791,RREO-Anexo 14,NA,Até o Bimestre,ResultadoPrevidenciarioRPPSDemonstrativoSimplificado,Resultado Previdenciário (VI) = (IV - V),-1153290562
+2015,RREO,6,B,Governo do Estado do Rio Grande do Norte,24,RN,3408510,RREO-Anexo 14,NA,Até o Bimestre,ResultadoPrevidenciarioRPPSDemonstrativoSimplificado,Resultado Previdenciário (VI) = (IV - V),-1095036146.23
+2015,RREO,6,B,Governo do Estado da Paraíba,25,PB,3943885,RREO-Anexo 14,NA,Até o Bimestre,ResultadoPrevidenciarioRPPSDemonstrativoSimplificado,Resultado Previdenciário (VI) = (IV - V),-962885899.74
+2015,RREO,6,B,Governo do Estado de Pernambuco,26,PE,9277727,RREO-Anexo 14,NA,Até o Bimestre,ResultadoPrevidenciarioRPPSDemonstrativoSimplificado,Resultado Previdenciário (VI) = (IV - V),-841413480.61
+2015,RREO,6,B,Governo do Estado de Alagoas,27,AL,3321730,RREO-Anexo 14,NA,Até o Bimestre,ResultadoPrevidenciarioRPPSDemonstrativoSimplificado,Resultado Previdenciário (VI) = (IV - V),-535118772.57
+2015,RREO,6,B,Governo do Estado de Sergipe,28,SE,2219574,RREO-Anexo 14,NA,Até o Bimestre,ResultadoPrevidenciarioRPPSDemonstrativoSimplificado,Resultado Previdenciário (VI) = (IV - V),-789984649.71
+2015,RREO,6,B,Governo do Estado da Bahia,29,BA,15126371,RREO-Anexo 14,NA,Até o Bimestre,ResultadoPrevidenciarioRPPSDemonstrativoSimplificado,Resultado Previdenciário (VI) = (IV - V),-1423151220.69
+2015,RREO,6,B,Governo do Estado de Minas Gerais,31,MG,20734097,RREO-Anexo 14,NA,Até o Bimestre,ResultadoPrevidenciarioRPPSDemonstrativoSimplificado,Resultado Previdenciário (VI) = (IV - V),-8842991979.01
+2015,RREO,6,B,Governo do Estado do Espírito Santo,32,ES,3885049,RREO-Anexo 14,NA,Até o Bimestre,ResultadoPrevidenciarioRPPSDemonstrativoSimplificado,Resultado Previdenciário (VI) = (IV - V),-1020911872.82
+2015,RREO,6,B,Governo do Estado do Rio de Janeiro,33,RJ,16461173,RREO-Anexo 14,NA,Até o Bimestre,ResultadoPrevidenciarioRPPSDemonstrativoSimplificado,Resultado Previdenciário (VI) = (IV - V),-878058129.93
+2015,RREO,6,B,Governo do Estado de São Paulo,35,SP,44035304,RREO-Anexo 14,NA,Até o Bimestre,ResultadoPrevidenciarioRPPSDemonstrativoSimplificado,Resultado Previdenciário (VI) = (IV - V),15818520.72
+2015,RREO,6,B,Governo do Estado do Paraná,41,PR,11081692,RREO-Anexo 14,NA,Até o Bimestre,ResultadoPrevidenciarioRPPSDemonstrativoSimplificado,Resultado Previdenciário (VI) = (IV - V),-420366888.98
+2015,RREO,6,B,Governo do Estado de Santa Catarina,42,SC,6727148,RREO-Anexo 14,NA,Até o Bimestre,ResultadoPrevidenciarioRPPSDemonstrativoSimplificado,Resultado Previdenciário (VI) = (IV - V),-3128913475.68
+2015,RREO,6,B,Governo do Estado do Rio Grande do Sul,43,RS,11207274,RREO-Anexo 14,NA,Até o Bimestre,ResultadoPrevidenciarioRPPSDemonstrativoSimplificado,Resultado Previdenciário (VI) = (IV - V),-8473041221.44
+2015,RREO,6,B,Governo do Estado do Mato Grosso do Sul,50,MS,2619657,RREO-Anexo 14,NA,Até o Bimestre,ResultadoPrevidenciarioRPPSDemonstrativoSimplificado,Resultado Previdenciário (VI) = (IV - V),-1000843270.29
+2015,RREO,6,B,Governo do Estado do Mato Grosso,51,MT,3224357,RREO-Anexo 14,NA,Até o Bimestre,ResultadoPrevidenciarioRPPSDemonstrativoSimplificado,Resultado Previdenciário (VI) = (IV - V),-716726657.42
+2015,RREO,6,B,Governo do Estado de Goiás,52,GO,6523222,RREO-Anexo 14,NA,Até o Bimestre,ResultadoPrevidenciarioRPPSDemonstrativoSimplificado,Resultado Previdenciário (VI) = (IV - V),-1471199383.08
+2015,RREO,6,B,Governo do Distrito Federal,53,DF,2852372,RREO-Anexo 14,NA,Até o Bimestre,ResultadoPrevidenciarioRPPSDemonstrativoSimplificado,Resultado Previdenciário (VI) = (IV - V),1170905705.68
+2019,RREO,6,B,Governo do Estado de Rondônia,11,RO,1757589,RREO-Anexo 14,Padrão,35º Exercício,ResultadoPrevidenciarioProjecaoAtuarialRGPSDemonstrativoSimplificado,Resultado Previdenciário,1429741599.8
+2019,RREO,6,B,Governo do Estado de Rondônia,11,RO,1757589,RREO-Anexo 14,Padrão,35º Exercício,ResultadoPrevidenciarioProjecaoAtuarialRPPSDemonstrativoSimplificado,Resultado Previdenciário,-1067443114.46
+2019,RREO,6,B,Governo do Estado do Amazonas,13,AM,4080611,RREO-Anexo 14,Padrão,35º Exercício,ResultadoPrevidenciarioProjecaoAtuarialRGPSDemonstrativoSimplificado,Resultado Previdenciário,-685435054.8
+2019,RREO,6,B,Governo do Estado do Amazonas,13,AM,4080611,RREO-Anexo 14,Padrão,35º Exercício,ResultadoPrevidenciarioProjecaoAtuarialRPPSDemonstrativoSimplificado,Resultado Previdenciário,-1377552340.57
+2019,RREO,6,B,Governo do Estado do Pará,15,PA,8513497,RREO-Anexo 14,Padrão,35º Exercício,ResultadoPrevidenciarioProjecaoAtuarialRGPSDemonstrativoSimplificado,Resultado Previdenciário,400061953.79
+2019,RREO,6,B,Governo do Estado do Pará,15,PA,8513497,RREO-Anexo 14,Padrão,35º Exercício,ResultadoPrevidenciarioProjecaoAtuarialRPPSDemonstrativoSimplificado,Resultado Previdenciário,-3076325279.32
+2019,RREO,6,B,Governo do Estado do Amapá,16,AP,829494,RREO-Anexo 14,Padrão,35º Exercício,ResultadoPrevidenciarioProjecaoAtuarialRGPSDemonstrativoSimplificado,Resultado Previdenciário,-1279793860.77
+2019,RREO,6,B,Governo do Estado do Amapá,16,AP,829494,RREO-Anexo 14,Padrão,35º Exercício,ResultadoPrevidenciarioProjecaoAtuarialRPPSDemonstrativoSimplificado,Resultado Previdenciário,-3365383.13
+2019,RREO,6,B,Governo do Estado do Tocantins,17,TO,1555229,RREO-Anexo 14,Padrão,35º Exercício,ResultadoPrevidenciarioProjecaoAtuarialRGPSDemonstrativoSimplificado,Resultado Previdenciário,-312880618.63
+2019,RREO,6,B,Governo do Estado do Maranhão,21,MA,7035055,RREO-Anexo 14,Padrão,35º Exercício,ResultadoPrevidenciarioProjecaoAtuarialRGPSDemonstrativoSimplificado,Resultado Previdenciário,-1480624055.24
+2019,RREO,6,B,Governo do Estado do Maranhão,21,MA,7035055,RREO-Anexo 14,Padrão,35º Exercício,ResultadoPrevidenciarioProjecaoAtuarialRPPSDemonstrativoSimplificado,Resultado Previdenciário,-22146462.6
+2019,RREO,6,B,Governo do Estado do Piauí,22,PI,3264531,RREO-Anexo 14,Padrão,35º Exercício,ResultadoPrevidenciarioProjecaoAtuarialRGPSDemonstrativoSimplificado,Resultado Previdenciário,5047268484.93
+2019,RREO,6,B,Governo do Estado do Ceará,23,CE,9075649,RREO-Anexo 14,Padrão,35º Exercício,ResultadoPrevidenciarioProjecaoAtuarialRGPSDemonstrativoSimplificado,Resultado Previdenciário,1967745030.09
+2019,RREO,6,B,Governo do Estado do Ceará,23,CE,9075649,RREO-Anexo 14,Padrão,35º Exercício,ResultadoPrevidenciarioProjecaoAtuarialRPPSDemonstrativoSimplificado,Resultado Previdenciário,-3289699403.72
+2019,RREO,6,B,Governo do Estado do Rio Grande do Norte,24,RN,3479010,RREO-Anexo 14,Padrão,35º Exercício,ResultadoPrevidenciarioProjecaoAtuarialRGPSDemonstrativoSimplificado,Resultado Previdenciário,-2700344491.66
+2019,RREO,6,B,Governo do Estado da Paraíba,25,PB,3996496,RREO-Anexo 14,Padrão,35º Exercício,ResultadoPrevidenciarioProjecaoAtuarialRGPSDemonstrativoSimplificado,Resultado Previdenciário,1206170565.88
+2019,RREO,6,B,Governo do Estado da Paraíba,25,PB,3996496,RREO-Anexo 14,Padrão,35º Exercício,ResultadoPrevidenciarioProjecaoAtuarialRPPSDemonstrativoSimplificado,Resultado Previdenciário,-1486573728.01
+2019,RREO,6,B,Governo do Estado de Pernambuco,26,PE,9496294,RREO-Anexo 14,Padrão,35º Exercício,ResultadoPrevidenciarioProjecaoAtuarialRGPSDemonstrativoSimplificado,Resultado Previdenciário,-4965350365.56
+2019,RREO,6,B,Governo do Estado de Alagoas,27,AL,3322820,RREO-Anexo 14,Padrão,35º Exercício,ResultadoPrevidenciarioProjecaoAtuarialRGPSDemonstrativoSimplificado,Resultado Previdenciário,1315845369.51
+2019,RREO,6,B,Governo do Estado de Sergipe,28,SE,2278308,RREO-Anexo 14,Padrão,35º Exercício,ResultadoPrevidenciarioProjecaoAtuarialRPPSDemonstrativoSimplificado,Resultado Previdenciário,-0.01
+2019,RREO,6,B,Governo do Estado da Bahia,29,BA,14812617,RREO-Anexo 14,Padrão,35º Exercício,ResultadoPrevidenciarioProjecaoAtuarialRGPSDemonstrativoSimplificado,Resultado Previdenciário,-473410087.68
+2019,RREO,6,B,Governo do Estado de Minas Gerais,31,MG,21040662,RREO-Anexo 14,Padrão,35º Exercício,ResultadoPrevidenciarioProjecaoAtuarialRPPSDemonstrativoSimplificado,Resultado Previdenciário,-23283646694.5
+2019,RREO,6,B,Governo do Estado do Espírito Santo,32,ES,3972388,RREO-Anexo 14,Padrão,35º Exercício,ResultadoPrevidenciarioProjecaoAtuarialRGPSDemonstrativoSimplificado,Resultado Previdenciário,694796627.1
+2019,RREO,6,B,Governo do Estado do Espírito Santo,32,ES,3972388,RREO-Anexo 14,Padrão,35º Exercício,ResultadoPrevidenciarioProjecaoAtuarialRPPSDemonstrativoSimplificado,Resultado Previdenciário,-1648813806.81
+2019,RREO,6,B,Governo do Estado de Santa Catarina,42,SC,7075494,RREO-Anexo 14,Padrão,35º Exercício,ResultadoPrevidenciarioProjecaoAtuarialRGPSDemonstrativoSimplificado,Resultado Previdenciário,-9309292445.72
+2019,RREO,6,B,Governo do Estado do Rio Grande do Sul,43,RS,11329605,RREO-Anexo 14,Padrão,35º Exercício,ResultadoPrevidenciarioProjecaoAtuarialRGPSDemonstrativoSimplificado,Resultado Previdenciário,4068331984.58
+2019,RREO,6,B,Governo do Estado do Rio Grande do Sul,43,RS,11329605,RREO-Anexo 14,Padrão,35º Exercício,ResultadoPrevidenciarioProjecaoAtuarialRPPSDemonstrativoSimplificado,Resultado Previdenciário,-5090240861.45
+2019,RREO,6,B,Governo do Estado do Mato Grosso do Sul,50,MS,2748023,RREO-Anexo 14,Padrão,35º Exercício,ResultadoPrevidenciarioProjecaoAtuarialRGPSDemonstrativoSimplificado,Resultado Previdenciário,-194997762.58
+2019,RREO,6,B,Governo do Estado do Mato Grosso,51,MT,3441998,RREO-Anexo 14,Padrão,35º Exercício,ResultadoPrevidenciarioProjecaoAtuarialRGPSDemonstrativoSimplificado,Resultado Previdenciário,-9738774092.73
+2019,RREO,6,B,Governo do Estado de Goiás,52,GO,6921161,RREO-Anexo 14,Padrão,35º Exercício,ResultadoPrevidenciarioProjecaoAtuarialRPPSDemonstrativoSimplificado,Resultado Previdenciário,-5926552363.34
+2018,RREO,6,B,Governo do Estado de Rondônia,11,RO,1787279,RREO-Anexo 14,Padrão,35º Exercício,ResultadoPrevidenciarioProjecaoAtuarialRGPSDemonstrativoSimplificado,Resultado Previdenciário,1514625032.38
+2018,RREO,6,B,Governo do Estado de Rondônia,11,RO,1787279,RREO-Anexo 14,Padrão,35º Exercício,ResultadoPrevidenciarioProjecaoAtuarialRPPSDemonstrativoSimplificado,Resultado Previdenciário,-1053258357.76
+2018,RREO,6,B,Governo do Estado do Amazonas,13,AM,4001667,RREO-Anexo 14,Padrão,35º Exercício,ResultadoPrevidenciarioProjecaoAtuarialRGPSDemonstrativoSimplificado,Resultado Previdenciário,-506421426.06
+2018,RREO,6,B,Governo do Estado do Amazonas,13,AM,4001667,RREO-Anexo 14,Padrão,35º Exercício,ResultadoPrevidenciarioProjecaoAtuarialRPPSDemonstrativoSimplificado,Resultado Previdenciário,-1324985329.08
+2018,RREO,6,B,Governo do Estado de Roraima,14,RR,514229,RREO-Anexo 14,Padrão,35º Exercício,ResultadoPrevidenciarioProjecaoAtuarialRGPSDemonstrativoSimplificado,Resultado Previdenciário,489847245.26
+2018,RREO,6,B,Governo do Estado de Roraima,14,RR,514229,RREO-Anexo 14,Padrão,35º Exercício,ResultadoPrevidenciarioProjecaoAtuarialRPPSDemonstrativoSimplificado,Resultado Previdenciário,-157918821.24
+2018,RREO,6,B,Governo do Estado do Pará,15,PA,8272724,RREO-Anexo 14,Padrão,35º Exercício,ResultadoPrevidenciarioProjecaoAtuarialRGPSDemonstrativoSimplificado,Resultado Previdenciário,1109822930.48
+2018,RREO,6,B,Governo do Estado do Pará,15,PA,8272724,RREO-Anexo 14,Padrão,35º Exercício,ResultadoPrevidenciarioProjecaoAtuarialRPPSDemonstrativoSimplificado,Resultado Previdenciário,-3561117523.58
+2018,RREO,6,B,Governo do Estado do Amapá,16,AP,782295,RREO-Anexo 14,Padrão,35º Exercício,ResultadoPrevidenciarioProjecaoAtuarialRGPSDemonstrativoSimplificado,Resultado Previdenciário,-381138015.56
+2018,RREO,6,B,Governo do Estado do Tocantins,17,TO,1532902,RREO-Anexo 14,Padrão,35º Exercício,ResultadoPrevidenciarioProjecaoAtuarialRGPSDemonstrativoSimplificado,Resultado Previdenciário,-310773764.89
+2018,RREO,6,B,Governo do Estado do Maranhão,21,MA,6954036,RREO-Anexo 14,Padrão,35º Exercício,ResultadoPrevidenciarioProjecaoAtuarialRGPSDemonstrativoSimplificado,Resultado Previdenciário,-1368555572.74
+2018,RREO,6,B,Governo do Estado do Maranhão,21,MA,6954036,RREO-Anexo 14,Padrão,35º Exercício,ResultadoPrevidenciarioProjecaoAtuarialRPPSDemonstrativoSimplificado,Resultado Previdenciário,-24879823.01
+2018,RREO,6,B,Governo do Estado do Piauí,22,PI,3212180,RREO-Anexo 14,Padrão,35º Exercício,ResultadoPrevidenciarioProjecaoAtuarialRGPSDemonstrativoSimplificado,Resultado Previdenciário,5047268484.93
+2018,RREO,6,B,Governo do Estado do Ceará,23,CE,8963663,RREO-Anexo 14,Padrão,35º Exercício,ResultadoPrevidenciarioProjecaoAtuarialRGPSDemonstrativoSimplificado,Resultado Previdenciário,-2573460668.4
+2018,RREO,6,B,Governo do Estado do Rio Grande do Norte,24,RN,3474998,RREO-Anexo 14,Padrão,35º Exercício,ResultadoPrevidenciarioProjecaoAtuarialRPPSDemonstrativoSimplificado,Resultado Previdenciário,-1953525441.03
+2018,RREO,6,B,Governo do Estado da Paraíba,25,PB,3999415,RREO-Anexo 14,Padrão,35º Exercício,ResultadoPrevidenciarioProjecaoAtuarialRGPSDemonstrativoSimplificado,Resultado Previdenciário,1248532892.45
+2018,RREO,6,B,Governo do Estado da Paraíba,25,PB,3999415,RREO-Anexo 14,Padrão,35º Exercício,ResultadoPrevidenciarioProjecaoAtuarialRPPSDemonstrativoSimplificado,Resultado Previdenciário,-1812120996.76
+2018,RREO,6,B,Governo do Estado de Pernambuco,26,PE,9410336,RREO-Anexo 14,Padrão,35º Exercício,ResultadoPrevidenciarioProjecaoAtuarialRGPSDemonstrativoSimplificado,Resultado Previdenciário,-4246618905.72
+2018,RREO,6,B,Governo do Estado de Alagoas,27,AL,3358963,RREO-Anexo 14,Padrão,35º Exercício,ResultadoPrevidenciarioProjecaoAtuarialRGPSDemonstrativoSimplificado,Resultado Previdenciário,-49048042.05
+2018,RREO,6,B,Governo do Estado de Alagoas,27,AL,3358963,RREO-Anexo 14,Padrão,35º Exercício,ResultadoPrevidenciarioProjecaoAtuarialRPPSDemonstrativoSimplificado,Resultado Previdenciário,-662653995.92
+2018,RREO,6,B,Governo do Estado de Sergipe,28,SE,2265779,RREO-Anexo 14,Padrão,35º Exercício,ResultadoPrevidenciarioProjecaoAtuarialRPPSDemonstrativoSimplificado,Resultado Previdenciário,-1161056314.74
+2018,RREO,6,B,Governo do Estado da Bahia,29,BA,15276566,RREO-Anexo 14,Padrão,35º Exercício,ResultadoPrevidenciarioProjecaoAtuarialRGPSDemonstrativoSimplificado,Resultado Previdenciário,-387899744.93
+2018,RREO,6,B,Governo do Estado de Minas Gerais,31,MG,20997560,RREO-Anexo 14,Padrão,35º Exercício,ResultadoPrevidenciarioProjecaoAtuarialRPPSDemonstrativoSimplificado,Resultado Previdenciário,-8461282295.92
+2018,RREO,6,B,Governo do Estado do Espírito Santo,32,ES,3973697,RREO-Anexo 14,Padrão,35º Exercício,ResultadoPrevidenciarioProjecaoAtuarialRGPSDemonstrativoSimplificado,Resultado Previdenciário,662905599.28
+2018,RREO,6,B,Governo do Estado do Espírito Santo,32,ES,3973697,RREO-Anexo 14,Padrão,35º Exercício,ResultadoPrevidenciarioProjecaoAtuarialRPPSDemonstrativoSimplificado,Resultado Previdenciário,-1903372866.85
+2018,RREO,6,B,Governo do Estado do Rio de Janeiro,33,RJ,16635996,RREO-Anexo 14,Padrão,35º Exercício,ResultadoPrevidenciarioProjecaoAtuarialRGPSDemonstrativoSimplificado,Resultado Previdenciário,5926534418.42
+2018,RREO,6,B,Governo do Estado do Rio de Janeiro,33,RJ,16635996,RREO-Anexo 14,Padrão,35º Exercício,ResultadoPrevidenciarioProjecaoAtuarialRPPSDemonstrativoSimplificado,Resultado Previdenciário,-10374274670.68
+2018,RREO,6,B,Governo do Estado do Paraná,41,PR,11242720,RREO-Anexo 14,Padrão,35º Exercício,ResultadoPrevidenciarioProjecaoAtuarialRGPSDemonstrativoSimplificado,Resultado Previdenciário,-2758679611.04
+2018,RREO,6,B,Governo do Estado do Paraná,41,PR,11242720,RREO-Anexo 14,Padrão,35º Exercício,ResultadoPrevidenciarioProjecaoAtuarialRPPSDemonstrativoSimplificado,Resultado Previdenciário,-4690703382.32
+2018,RREO,6,B,Governo do Estado do Rio Grande do Sul,43,RS,11286500,RREO-Anexo 14,Padrão,35º Exercício,ResultadoPrevidenciarioProjecaoAtuarialRGPSDemonstrativoSimplificado,Resultado Previdenciário,2775929993.5
+2018,RREO,6,B,Governo do Estado do Rio Grande do Sul,43,RS,11286500,RREO-Anexo 14,Padrão,35º Exercício,ResultadoPrevidenciarioProjecaoAtuarialRPPSDemonstrativoSimplificado,Resultado Previdenciário,-4592077557.25
+2018,RREO,6,B,Governo do Estado do Mato Grosso do Sul,50,MS,2682386,RREO-Anexo 14,Padrão,35º Exercício,ResultadoPrevidenciarioProjecaoAtuarialRGPSDemonstrativoSimplificado,Resultado Previdenciário,-653540508.78
+2018,RREO,6,B,Governo do Estado do Mato Grosso,51,MT,3305531,RREO-Anexo 14,Padrão,35º Exercício,ResultadoPrevidenciarioProjecaoAtuarialRGPSDemonstrativoSimplificado,Resultado Previdenciário,-9738774092.73
+2018,RREO,6,B,Governo do Estado de Goiás,52,GO,6695855,RREO-Anexo 14,Padrão,35º Exercício,ResultadoPrevidenciarioProjecaoAtuarialRPPSDemonstrativoSimplificado,Resultado Previdenciário,-4071549126.33
+2017,RREO,6,B,Governo do Estado de Rondônia,11,RO,1787279,RREO-Anexo 14,NA,35º Exercício,ResultadoPrevidenciarioProjecaoAtuarialRPPSDemonstrativoSimplificado,Resultado Previdenciário (VI) = (IV - V),472044218.54
+2017,RREO,6,B,Governo do Estado do Amazonas,13,AM,4001667,RREO-Anexo 14,NA,35º Exercício,ResultadoPrevidenciarioProjecaoAtuarialRPPSDemonstrativoSimplificado,Resultado Previdenciário (VI) = (IV - V),-535962168.38
+2017,RREO,6,B,Governo do Estado de Roraima,14,RR,514229,RREO-Anexo 14,NA,35º Exercício,ResultadoPrevidenciarioProjecaoAtuarialRPPSDemonstrativoSimplificado,Resultado Previdenciário (VI) = (IV - V),68906361.43
+2017,RREO,6,B,Governo do Estado do Pará,15,PA,8272724,RREO-Anexo 14,NA,35º Exercício,ResultadoPrevidenciarioProjecaoAtuarialRPPSDemonstrativoSimplificado,Resultado Previdenciário (VI) = (IV - V),-2965343.65
+2017,RREO,6,B,Governo do Estado do Amapá,16,AP,782295,RREO-Anexo 14,NA,35º Exercício,ResultadoPrevidenciarioProjecaoAtuarialRPPSDemonstrativoSimplificado,Resultado Previdenciário (VI) = (IV - V),-354080115.71
+2017,RREO,6,B,Governo do Estado do Tocantins,17,TO,1532902,RREO-Anexo 14,NA,35º Exercício,ResultadoPrevidenciarioProjecaoAtuarialRPPSDemonstrativoSimplificado,Resultado Previdenciário (VI) = (IV - V),-361413480.8
+2017,RREO,6,B,Governo do Estado do Maranhão,21,MA,6954036,RREO-Anexo 14,NA,35º Exercício,ResultadoPrevidenciarioProjecaoAtuarialRPPSDemonstrativoSimplificado,Resultado Previdenciário (VI) = (IV - V),-1231458596.7
+2017,RREO,6,B,Governo do Estado do Piauí,22,PI,3212180,RREO-Anexo 14,NA,35º Exercício,ResultadoPrevidenciarioProjecaoAtuarialRPPSDemonstrativoSimplificado,Resultado Previdenciário (VI) = (IV - V),2125113382.52
+2017,RREO,6,B,Governo do Estado do Ceará,23,CE,8963663,RREO-Anexo 14,NA,35º Exercício,ResultadoPrevidenciarioProjecaoAtuarialRPPSDemonstrativoSimplificado,Resultado Previdenciário (VI) = (IV - V),-392683231.2
+2017,RREO,6,B,Governo do Estado do Rio Grande do Norte,24,RN,3474998,RREO-Anexo 14,NA,35º Exercício,ResultadoPrevidenciarioProjecaoAtuarialRPPSDemonstrativoSimplificado,Resultado Previdenciário (VI) = (IV - V),-2064303847.22
+2017,RREO,6,B,Governo do Estado da Paraíba,25,PB,3999415,RREO-Anexo 14,NA,35º Exercício,ResultadoPrevidenciarioProjecaoAtuarialRPPSDemonstrativoSimplificado,Resultado Previdenciário (VI) = (IV - V),-1649152613.59
+2017,RREO,6,B,Governo do Estado de Pernambuco,26,PE,9410336,RREO-Anexo 14,NA,35º Exercício,ResultadoPrevidenciarioProjecaoAtuarialRPPSDemonstrativoSimplificado,Resultado Previdenciário (VI) = (IV - V),-3622422796.39
+2017,RREO,6,B,Governo do Estado de Alagoas,27,AL,3358963,RREO-Anexo 14,NA,35º Exercício,ResultadoPrevidenciarioProjecaoAtuarialRPPSDemonstrativoSimplificado,Resultado Previdenciário (VI) = (IV - V),-815464473.93
+2017,RREO,6,B,Governo do Estado de Sergipe,28,SE,2265779,RREO-Anexo 14,NA,35º Exercício,ResultadoPrevidenciarioProjecaoAtuarialRGPSDemonstrativoSimplificado,Resultado Previdenciário (III) = (I - II),2542714889.97
+2017,RREO,6,B,Governo do Estado de Minas Gerais,31,MG,20997560,RREO-Anexo 14,NA,35º Exercício,ResultadoPrevidenciarioProjecaoAtuarialRPPSDemonstrativoSimplificado,Resultado Previdenciário (VI) = (IV - V),-9589446944.26
+2017,RREO,6,B,Governo do Estado do Espírito Santo,32,ES,3973697,RREO-Anexo 14,NA,35º Exercício,ResultadoPrevidenciarioProjecaoAtuarialRPPSDemonstrativoSimplificado,Resultado Previdenciário (VI) = (IV - V),-1249456088
+2017,RREO,6,B,Governo do Estado do Paraná,41,PR,11242720,RREO-Anexo 14,NA,35º Exercício,ResultadoPrevidenciarioProjecaoAtuarialRPPSDemonstrativoSimplificado,Resultado Previdenciário (VI) = (IV - V),-4521235139.66
+2017,RREO,6,B,Governo do Estado de Santa Catarina,42,SC,6910553,RREO-Anexo 14,NA,35º Exercício,ResultadoPrevidenciarioProjecaoAtuarialRPPSDemonstrativoSimplificado,Resultado Previdenciário (VI) = (IV - V),-6259472483.07
+2017,RREO,6,B,Governo do Estado do Rio Grande do Sul,43,RS,11286500,RREO-Anexo 14,NA,35º Exercício,ResultadoPrevidenciarioProjecaoAtuarialRPPSDemonstrativoSimplificado,Resultado Previdenciário (VI) = (IV - V),-4330226450.34
+2017,RREO,6,B,Governo do Estado do Mato Grosso do Sul,50,MS,2682386,RREO-Anexo 14,NA,35º Exercício,ResultadoPrevidenciarioProjecaoAtuarialRPPSDemonstrativoSimplificado,Resultado Previdenciário (VI) = (IV - V),-901916424.9
+2017,RREO,6,B,Governo do Estado do Mato Grosso,51,MT,3305531,RREO-Anexo 14,NA,35º Exercício,ResultadoPrevidenciarioProjecaoAtuarialRPPSDemonstrativoSimplificado,Resultado Previdenciário (VI) = (IV - V),-1822293017.51
+2017,RREO,6,B,Governo do Estado de Goiás,52,GO,6695855,RREO-Anexo 14,NA,35º Exercício,ResultadoPrevidenciarioProjecaoAtuarialRPPSDemonstrativoSimplificado,Resultado Previdenciário (VI) = (IV - V),-3229894492.5
+2016,RREO,6,B,Governo do Estado do Amazonas,13,AM,3938336,RREO-Anexo 14,NA,35º Exercício,ResultadoPrevidenciarioProjecaoAtuarialRPPSDemonstrativoSimplificado,Resultado Previdenciário (VI) = (IV - V),317458212.91
+2016,RREO,6,B,Governo do Estado de Roraima,14,RR,505665,RREO-Anexo 14,NA,35º Exercício,ResultadoPrevidenciarioProjecaoAtuarialRPPSDemonstrativoSimplificado,Resultado Previdenciário (VI) = (IV - V),-372603551.91
+2016,RREO,6,B,Governo do Estado do Pará,15,PA,8175113,RREO-Anexo 14,NA,35º Exercício,ResultadoPrevidenciarioProjecaoAtuarialRPPSDemonstrativoSimplificado,Resultado Previdenciário (VI) = (IV - V),-3180597808.28
+2016,RREO,6,B,Governo do Estado do Maranhão,21,MA,6904241,RREO-Anexo 14,NA,35º Exercício,ResultadoPrevidenciarioProjecaoAtuarialRPPSDemonstrativoSimplificado,Resultado Previdenciário (VI) = (IV - V),-949874117.35
+2016,RREO,6,B,Governo do Estado do Piauí,22,PI,3204028,RREO-Anexo 14,NA,35º Exercício,ResultadoPrevidenciarioProjecaoAtuarialRPPSDemonstrativoSimplificado,Resultado Previdenciário (VI) = (IV - V),904961647.44
+2016,RREO,6,B,Governo do Estado do Ceará,23,CE,8904459,RREO-Anexo 14,NA,35º Exercício,ResultadoPrevidenciarioProjecaoAtuarialRPPSDemonstrativoSimplificado,Resultado Previdenciário (VI) = (IV - V),-1053026542.46
+2016,RREO,6,B,Governo do Estado do Rio Grande do Norte,24,RN,3442175,RREO-Anexo 14,NA,35º Exercício,ResultadoPrevidenciarioProjecaoAtuarialRPPSDemonstrativoSimplificado,Resultado Previdenciário (VI) = (IV - V),-1252253207.63
+2016,RREO,6,B,Governo do Estado da Paraíba,25,PB,3972202,RREO-Anexo 14,NA,35º Exercício,ResultadoPrevidenciarioProjecaoAtuarialRPPSDemonstrativoSimplificado,Resultado Previdenciário (VI) = (IV - V),-121262000
+2016,RREO,6,B,Governo do Estado de Pernambuco,26,PE,9345173,RREO-Anexo 14,NA,35º Exercício,ResultadoPrevidenciarioProjecaoAtuarialRPPSDemonstrativoSimplificado,Resultado Previdenciário (VI) = (IV - V),-3519139572.87
+2016,RREO,6,B,Governo do Estado de Alagoas,27,AL,3340932,RREO-Anexo 14,NA,35º Exercício,ResultadoPrevidenciarioProjecaoAtuarialRPPSDemonstrativoSimplificado,Resultado Previdenciário (VI) = (IV - V),-879286415.67
+2016,RREO,6,B,Governo do Estado de Sergipe,28,SE,2242937,RREO-Anexo 14,NA,35º Exercício,ResultadoPrevidenciarioProjecaoAtuarialRPPSDemonstrativoSimplificado,Resultado Previdenciário (VI) = (IV - V),2542714889.97
+2016,RREO,6,B,Governo do Estado da Bahia,29,BA,15203934,RREO-Anexo 14,NA,35º Exercício,ResultadoPrevidenciarioProjecaoAtuarialRPPSDemonstrativoSimplificado,Resultado Previdenciário (VI) = (IV - V),-538415865.45
+2016,RREO,6,B,Governo do Estado de Minas Gerais,31,MG,20869101,RREO-Anexo 14,NA,35º Exercício,ResultadoPrevidenciarioProjecaoAtuarialRPPSDemonstrativoSimplificado,Resultado Previdenciário (VI) = (IV - V),-8216268146.43
+2016,RREO,6,B,Governo do Estado do Espírito Santo,32,ES,3929911,RREO-Anexo 14,NA,35º Exercício,ResultadoPrevidenciarioProjecaoAtuarialRPPSDemonstrativoSimplificado,Resultado Previdenciário (VI) = (IV - V),-679836033.56
+2016,RREO,6,B,Governo do Estado do Paraná,41,PR,11163018,RREO-Anexo 14,NA,35º Exercício,ResultadoPrevidenciarioProjecaoAtuarialRPPSDemonstrativoSimplificado,Resultado Previdenciário (VI) = (IV - V),-4954453799.25
+2016,RREO,6,B,Governo do Estado de Santa Catarina,42,SC,6819190,RREO-Anexo 14,NA,35º Exercício,ResultadoPrevidenciarioProjecaoAtuarialRPPSDemonstrativoSimplificado,Resultado Previdenciário (VI) = (IV - V),-8153204517.85
+2016,RREO,6,B,Governo do Estado do Rio Grande do Sul,43,RS,11247972,RREO-Anexo 14,NA,35º Exercício,ResultadoPrevidenciarioProjecaoAtuarialRPPSDemonstrativoSimplificado,Resultado Previdenciário (VI) = (IV - V),-4615664167.52
+2016,RREO,6,B,Governo do Estado do Mato Grosso do Sul,50,MS,2651235,RREO-Anexo 14,NA,35º Exercício,ResultadoPrevidenciarioProjecaoAtuarialRPPSDemonstrativoSimplificado,Resultado Previdenciário (VI) = (IV - V),-1335874043.5
+2016,RREO,6,B,Governo do Estado do Mato Grosso,51,MT,3265486,RREO-Anexo 14,NA,35º Exercício,ResultadoPrevidenciarioProjecaoAtuarialRPPSDemonstrativoSimplificado,Resultado Previdenciário (VI) = (IV - V),-1136339081.9
+2016,RREO,6,B,Governo do Estado de Goiás,52,GO,6610681,RREO-Anexo 14,NA,35º Exercício,ResultadoPrevidenciarioProjecaoAtuarialRPPSDemonstrativoSimplificado,Resultado Previdenciário (VI) = (IV - V),-3567013262.86
+2016,RREO,6,B,Governo do Distrito Federal,53,DF,2914830,RREO-Anexo 14,NA,35º Exercício,ResultadoPrevidenciarioProjecaoAtuarialRPPSDemonstrativoSimplificado,Resultado Previdenciário (VI) = (IV - V),289238875.11
+2015,RREO,6,B,Governo do Estado do Pará,15,PA,8104880,RREO-Anexo 14,NA,35º Exercício,ResultadoPrevidenciarioProjecaoAtuarialRPPSDemonstrativoSimplificado,Resultado Previdenciário (VI) = (IV - V),-3066566236.69
+2015,RREO,6,B,Governo do Estado do Amapá,16,AP,750912,RREO-Anexo 14,NA,35º Exercício,ResultadoPrevidenciarioProjecaoAtuarialRPPSDemonstrativoSimplificado,Resultado Previdenciário (VI) = (IV - V),-303705883.8
+2015,RREO,6,B,Governo do Estado do Tocantins,17,TO,1496880,RREO-Anexo 14,NA,35º Exercício,ResultadoPrevidenciarioProjecaoAtuarialRPPSDemonstrativoSimplificado,Resultado Previdenciário (VI) = (IV - V),-120067428.04
+2015,RREO,6,B,Governo do Estado do Maranhão,21,MA,6850884,RREO-Anexo 14,NA,35º Exercício,ResultadoPrevidenciarioProjecaoAtuarialRPPSDemonstrativoSimplificado,Resultado Previdenciário (VI) = (IV - V),-1117827988.63
+2015,RREO,6,B,Governo do Estado do Piauí,22,PI,3194718,RREO-Anexo 14,NA,35º Exercício,ResultadoPrevidenciarioProjecaoAtuarialRPPSDemonstrativoSimplificado,Resultado Previdenciário (VI) = (IV - V),-1078425642.59
+2015,RREO,6,B,Governo do Estado do Ceará,23,CE,8842791,RREO-Anexo 14,NA,35º Exercício,ResultadoPrevidenciarioProjecaoAtuarialRPPSDemonstrativoSimplificado,Resultado Previdenciário (VI) = (IV - V),-1229161356.85
+2015,RREO,6,B,Governo do Estado da Paraíba,25,PB,3943885,RREO-Anexo 14,NA,35º Exercício,ResultadoPrevidenciarioProjecaoAtuarialRPPSDemonstrativoSimplificado,Resultado Previdenciário (VI) = (IV - V),-94362279000
+2015,RREO,6,B,Governo do Estado de Pernambuco,26,PE,9277727,RREO-Anexo 14,NA,35º Exercício,ResultadoPrevidenciarioProjecaoAtuarialRPPSDemonstrativoSimplificado,Resultado Previdenciário (VI) = (IV - V),-3382007396.56
+2015,RREO,6,B,Governo do Estado de Alagoas,27,AL,3321730,RREO-Anexo 14,NA,35º Exercício,ResultadoPrevidenciarioProjecaoAtuarialRGPSDemonstrativoSimplificado,Resultado Previdenciário (III) = (I - II),0
+2015,RREO,6,B,Governo do Estado de Alagoas,27,AL,3321730,RREO-Anexo 14,NA,35º Exercício,ResultadoPrevidenciarioProjecaoAtuarialRPPSDemonstrativoSimplificado,Resultado Previdenciário (VI) = (IV - V),-630518339.49
+2015,RREO,6,B,Governo do Estado de Sergipe,28,SE,2219574,RREO-Anexo 14,NA,35º Exercício,ResultadoPrevidenciarioProjecaoAtuarialRPPSDemonstrativoSimplificado,Resultado Previdenciário (VI) = (IV - V),2542714889.97
+2015,RREO,6,B,Governo do Estado da Bahia,29,BA,15126371,RREO-Anexo 14,NA,35º Exercício,ResultadoPrevidenciarioProjecaoAtuarialRPPSDemonstrativoSimplificado,Resultado Previdenciário (VI) = (IV - V),-611988456.68
+2015,RREO,6,B,Governo do Estado de Minas Gerais,31,MG,20734097,RREO-Anexo 14,NA,35º Exercício,ResultadoPrevidenciarioProjecaoAtuarialRPPSDemonstrativoSimplificado,Resultado Previdenciário (VI) = (IV - V),-8573435794.97
+2015,RREO,6,B,Governo do Estado do Espírito Santo,32,ES,3885049,RREO-Anexo 14,NA,35º Exercício,ResultadoPrevidenciarioProjecaoAtuarialRPPSDemonstrativoSimplificado,Resultado Previdenciário (VI) = (IV - V),201832300.08
+2015,RREO,6,B,Governo do Estado do Paraná,41,PR,11081692,RREO-Anexo 14,NA,35º Exercício,ResultadoPrevidenciarioProjecaoAtuarialRPPSDemonstrativoSimplificado,Resultado Previdenciário (VI) = (IV - V),-5367689915.27
+2015,RREO,6,B,Governo do Estado de Santa Catarina,42,SC,6727148,RREO-Anexo 14,NA,35º Exercício,ResultadoPrevidenciarioProjecaoAtuarialRPPSDemonstrativoSimplificado,Resultado Previdenciário (VI) = (IV - V),-2613834086.89
+2015,RREO,6,B,Governo do Estado do Rio Grande do Sul,43,RS,11207274,RREO-Anexo 14,NA,35º Exercício,ResultadoPrevidenciarioProjecaoAtuarialRPPSDemonstrativoSimplificado,Resultado Previdenciário (VI) = (IV - V),-4241669959.34
+2015,RREO,6,B,Governo do Estado do Mato Grosso do Sul,50,MS,2619657,RREO-Anexo 14,NA,35º Exercício,ResultadoPrevidenciarioProjecaoAtuarialRPPSDemonstrativoSimplificado,Resultado Previdenciário (VI) = (IV - V),-1154770639.67
+2015,RREO,6,B,Governo do Estado do Mato Grosso,51,MT,3224357,RREO-Anexo 14,NA,35º Exercício,ResultadoPrevidenciarioProjecaoAtuarialRGPSDemonstrativoSimplificado,Resultado Previdenciário (III) = (I - II),0
+2015,RREO,6,B,Governo do Estado do Mato Grosso,51,MT,3224357,RREO-Anexo 14,NA,35º Exercício,ResultadoPrevidenciarioProjecaoAtuarialRPPSDemonstrativoSimplificado,Resultado Previdenciário (VI) = (IV - V),-1057541703.09
+2015,RREO,6,B,Governo do Estado de Goiás,52,GO,6523222,RREO-Anexo 14,NA,35º Exercício,ResultadoPrevidenciarioProjecaoAtuarialRPPSDemonstrativoSimplificado,Resultado Previdenciário (VI) = (IV - V),-3391864506.08

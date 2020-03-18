@@ -1,0 +1,267 @@
+exercicio,periodo,periodicidade,instituicao,cod_ibge,uf,co_poder,populacao,anexo,rotulo,coluna,cod_conta,conta,valor
+2019,3,Q,Governo do Estado do Acre,12,AC,E,869265,RGF-Anexo 06,Padrão,% SOBRE A RCL AJUSTADA,DespesaTotalComPessoalDemonstrativoSimplificado,Despesa Total com Pessoal - DTP,53.74
+2019,3,Q,Governo do Estado do Amazonas,13,AM,E,4080611,RGF-Anexo 06,Padrão,% SOBRE A RCL AJUSTADA,DespesaTotalComPessoalDemonstrativoSimplificado,Despesa Total com Pessoal - DTP,49.65
+2019,3,Q,Governo do Estado de Roraima,14,RR,E,576568,RGF-Anexo 06,Padrão,% SOBRE A RCL AJUSTADA,DespesaTotalComPessoalDemonstrativoSimplificado,Despesa Total com Pessoal - DTP,45.78
+2019,3,Q,Governo do Estado do Pará,15,PA,E,8513497,RGF-Anexo 06,Padrão,% SOBRE A RCL AJUSTADA,DespesaTotalComPessoalDemonstrativoSimplificado,Despesa Total com Pessoal - DTP,43.52
+2019,3,Q,Governo do Estado do Amapá,16,AP,E,829494,RGF-Anexo 06,Padrão,% SOBRE A RCL AJUSTADA,DespesaTotalComPessoalDemonstrativoSimplificado,Despesa Total com Pessoal - DTP,43.29
+2019,3,Q,Governo do Estado do Tocantins,17,TO,E,1555229,RGF-Anexo 06,Padrão,% SOBRE A RCL AJUSTADA,DespesaTotalComPessoalDemonstrativoSimplificado,Despesa Total com Pessoal - DTP,46.92
+2019,3,Q,Governo do Estado do Maranhão,21,MA,E,7035055,RGF-Anexo 06,Padrão,% SOBRE A RCL AJUSTADA,DespesaTotalComPessoalDemonstrativoSimplificado,Despesa Total com Pessoal - DTP,45.58
+2019,3,Q,Governo do Estado do Ceará,23,CE,E,9075649,RGF-Anexo 06,Padrão,% SOBRE A RCL AJUSTADA,DespesaTotalComPessoalDemonstrativoSimplificado,Despesa Total com Pessoal - DTP,41.64
+2019,3,Q,Governo do Estado do Rio Grande do Norte,24,RN,E,3479010,RGF-Anexo 06,Padrão,% SOBRE A RCL AJUSTADA,DespesaTotalComPessoalDemonstrativoSimplificado,Despesa Total com Pessoal - DTP,60.59
+2019,3,Q,Governo do Estado da Paraíba,25,PB,E,3996496,RGF-Anexo 06,Padrão,% SOBRE A RCL AJUSTADA,DespesaTotalComPessoalDemonstrativoSimplificado,Despesa Total com Pessoal - DTP,48.86
+2019,3,Q,Governo do Estado de Pernambuco,26,PE,E,9496294,RGF-Anexo 06,Padrão,% SOBRE A RCL AJUSTADA,DespesaTotalComPessoalDemonstrativoSimplificado,Despesa Total com Pessoal - DTP,46.91
+2019,3,Q,Governo do Estado de Alagoas,27,AL,E,3322820,RGF-Anexo 06,Padrão,% SOBRE A RCL AJUSTADA,DespesaTotalComPessoalDemonstrativoSimplificado,Despesa Total com Pessoal - DTP,44.71
+2019,3,Q,Governo do Estado de Sergipe,28,SE,E,2278308,RGF-Anexo 06,Padrão,% SOBRE A RCL AJUSTADA,DespesaTotalComPessoalDemonstrativoSimplificado,Despesa Total com Pessoal - DTP,46.84
+2019,3,Q,Governo do Estado da Bahia,29,BA,E,14812617,RGF-Anexo 06,Padrão,% SOBRE A RCL AJUSTADA,DespesaTotalComPessoalDemonstrativoSimplificado,Despesa Total com Pessoal - DTP,43.85
+2019,3,Q,Governo do Estado de Minas Gerais,31,MG,E,21040662,RGF-Anexo 06,Padrão,% SOBRE A RCL AJUSTADA,DespesaTotalComPessoalDemonstrativoSimplificado,Despesa Total com Pessoal - DTP,58.42
+2019,3,Q,Governo do Estado do Espírito Santo,32,ES,E,3972388,RGF-Anexo 06,Padrão,% SOBRE A RCL AJUSTADA,DespesaTotalComPessoalDemonstrativoSimplificado,Despesa Total com Pessoal - DTP,38.57
+2019,3,Q,Governo do Estado do Rio de Janeiro,33,RJ,E,17159960,RGF-Anexo 06,Padrão,% SOBRE A RCL AJUSTADA,DespesaTotalComPessoalDemonstrativoSimplificado,Despesa Total com Pessoal - DTP,39.31
+2019,3,Q,Governo do Estado de São Paulo,35,SP,E,45538936,RGF-Anexo 06,Padrão,% SOBRE A RCL AJUSTADA,DespesaTotalComPessoalDemonstrativoSimplificado,Despesa Total com Pessoal - DTP,44.4
+2019,3,Q,Governo do Estado do Paraná,41,PR,E,11348937,RGF-Anexo 06,Padrão,% SOBRE A RCL AJUSTADA,DespesaTotalComPessoalDemonstrativoSimplificado,Despesa Total com Pessoal - DTP,45.18
+2019,3,Q,Governo do Estado de Santa Catarina,42,SC,E,7075494,RGF-Anexo 06,Padrão,% SOBRE A RCL AJUSTADA,DespesaTotalComPessoalDemonstrativoSimplificado,Despesa Total com Pessoal - DTP,45.75
+2019,3,Q,Governo do Estado do Rio Grande do Sul,43,RS,E,11329605,RGF-Anexo 06,Padrão,% SOBRE A RCL AJUSTADA,DespesaTotalComPessoalDemonstrativoSimplificado,Despesa Total com Pessoal - DTP,45.6
+2019,3,Q,Governo do Estado do Mato Grosso do Sul,50,MS,E,2748023,RGF-Anexo 06,Padrão,% SOBRE A RCL AJUSTADA,DespesaTotalComPessoalDemonstrativoSimplificado,Despesa Total com Pessoal - DTP,47.08
+2019,3,Q,Governo do Estado do Mato Grosso,51,MT,E,3441998,RGF-Anexo 06,Padrão,% SOBRE A RCL AJUSTADA,DespesaTotalComPessoalDemonstrativoSimplificado,Despesa Total com Pessoal - DTP,56.56
+2019,3,Q,Governo do Estado de Goiás,52,GO,E,6921161,RGF-Anexo 06,Padrão,% SOBRE A RCL AJUSTADA,DespesaTotalComPessoalDemonstrativoSimplificado,Despesa Total com Pessoal - DTP,49.38
+2019,3,Q,Governo do Distrito Federal,53,DF,E,2974703,RGF-Anexo 06,Padrão,% SOBRE A RCL AJUSTADA,DespesaTotalComPessoalDemonstrativoSimplificado,Despesa Total com Pessoal - DTP,43.54
+2018,3,Q,Governo do Estado de Rondônia,11,RO,E,1787279,RGF-Anexo 06,Padrão,% SOBRE A RCL AJUSTADA,DespesaTotalComPessoalDemonstrativoSimplificado,Despesa Total com Pessoal - DTP,41.92
+2018,3,Q,Governo do Estado do Acre,12,AC,E,816687,RGF-Anexo 06,Padrão,% SOBRE A RCL AJUSTADA,DespesaTotalComPessoalDemonstrativoSimplificado,Despesa Total com Pessoal - DTP,48.01
+2018,3,Q,Governo do Estado do Amazonas,13,AM,E,4001667,RGF-Anexo 06,Padrão,% SOBRE A RCL AJUSTADA,DespesaTotalComPessoalDemonstrativoSimplificado,Despesa Total com Pessoal - DTP,48.33
+2018,3,Q,Governo do Estado de Roraima,14,RR,E,514229,RGF-Anexo 06,Padrão,% SOBRE A RCL AJUSTADA,DespesaTotalComPessoalDemonstrativoSimplificado,Despesa Total com Pessoal - DTP,45.44
+2018,3,Q,Governo do Estado do Pará,15,PA,E,8272724,RGF-Anexo 06,Padrão,% SOBRE A RCL AJUSTADA,DespesaTotalComPessoalDemonstrativoSimplificado,Despesa Total com Pessoal - DTP,47.16
+2018,3,Q,Governo do Estado do Amapá,16,AP,E,782295,RGF-Anexo 06,Padrão,% SOBRE A RCL AJUSTADA,DespesaTotalComPessoalDemonstrativoSimplificado,Despesa Total com Pessoal - DTP,40.07
+2018,3,Q,Governo do Estado do Tocantins,17,TO,E,1532902,RGF-Anexo 06,Padrão,% SOBRE A RCL AJUSTADA,DespesaTotalComPessoalDemonstrativoSimplificado,Despesa Total com Pessoal - DTP,57.89
+2018,3,Q,Governo do Estado do Maranhão,21,MA,E,6954036,RGF-Anexo 06,Padrão,% SOBRE A RCL AJUSTADA,DespesaTotalComPessoalDemonstrativoSimplificado,Despesa Total com Pessoal - DTP,46.83
+2018,3,Q,Governo do Estado do Piauí,22,PI,E,3212180,RGF-Anexo 06,Padrão,% SOBRE A RCL AJUSTADA,DespesaTotalComPessoalDemonstrativoSimplificado,Despesa Total com Pessoal - DTP,48.52
+2018,3,Q,Governo do Estado do Ceará,23,CE,E,8963663,RGF-Anexo 06,Padrão,% SOBRE A RCL AJUSTADA,DespesaTotalComPessoalDemonstrativoSimplificado,Despesa Total com Pessoal - DTP,42.3
+2018,3,Q,Governo do Estado do Rio Grande do Norte,24,RN,E,3474998,RGF-Anexo 06,Padrão,% SOBRE A RCL AJUSTADA,DespesaTotalComPessoalDemonstrativoSimplificado,Despesa Total com Pessoal - DTP,63.49
+2018,3,Q,Governo do Estado da Paraíba,25,PB,E,3999415,RGF-Anexo 06,Padrão,% SOBRE A RCL AJUSTADA,DespesaTotalComPessoalDemonstrativoSimplificado,Despesa Total com Pessoal - DTP,50.61
+2018,3,Q,Governo do Estado de Pernambuco,26,PE,E,9410336,RGF-Anexo 06,Padrão,% SOBRE A RCL AJUSTADA,DespesaTotalComPessoalDemonstrativoSimplificado,Despesa Total com Pessoal - DTP,47.94
+2018,3,Q,Governo do Estado de Alagoas,27,AL,E,3358963,RGF-Anexo 06,Padrão,% SOBRE A RCL AJUSTADA,DespesaTotalComPessoalDemonstrativoSimplificado,Despesa Total com Pessoal - DTP,48.69
+2018,3,Q,Governo do Estado de Sergipe,28,SE,E,2265779,RGF-Anexo 06,Padrão,% SOBRE A RCL AJUSTADA,DespesaTotalComPessoalDemonstrativoSimplificado,Despesa Total com Pessoal - DTP,47.52
+2018,3,Q,Governo do Estado da Bahia,29,BA,E,15276566,RGF-Anexo 06,Padrão,% SOBRE A RCL AJUSTADA,DespesaTotalComPessoalDemonstrativoSimplificado,Despesa Total com Pessoal - DTP,46.13
+2018,3,Q,Governo do Estado de Minas Gerais,31,MG,E,20997560,RGF-Anexo 06,Padrão,% SOBRE A RCL AJUSTADA,DespesaTotalComPessoalDemonstrativoSimplificado,Despesa Total com Pessoal - DTP,66.65
+2018,3,Q,Governo do Estado do Espírito Santo,32,ES,E,3973697,RGF-Anexo 06,Padrão,% SOBRE A RCL AJUSTADA,DespesaTotalComPessoalDemonstrativoSimplificado,Despesa Total com Pessoal - DTP,41.69
+2018,3,Q,Governo do Estado do Rio de Janeiro,33,RJ,E,16635996,RGF-Anexo 06,Padrão,% SOBRE A RCL AJUSTADA,DespesaTotalComPessoalDemonstrativoSimplificado,Despesa Total com Pessoal - DTP,37.36
+2018,3,Q,Governo do Estado de São Paulo,35,SP,E,44749699,RGF-Anexo 06,Padrão,% SOBRE A RCL AJUSTADA,DespesaTotalComPessoalDemonstrativoSimplificado,Despesa Total com Pessoal - DTP,43.36
+2018,3,Q,Governo do Estado do Paraná,41,PR,E,11242720,RGF-Anexo 06,Padrão,% SOBRE A RCL AJUSTADA,DespesaTotalComPessoalDemonstrativoSimplificado,Despesa Total com Pessoal - DTP,44.57
+2018,3,Q,Governo do Estado de Santa Catarina,42,SC,E,6910553,RGF-Anexo 06,Padrão,% SOBRE A RCL AJUSTADA,DespesaTotalComPessoalDemonstrativoSimplificado,Despesa Total com Pessoal - DTP,48.76
+2018,3,Q,Governo do Estado do Rio Grande do Sul,43,RS,E,11286500,RGF-Anexo 06,Padrão,% SOBRE A RCL AJUSTADA,DespesaTotalComPessoalDemonstrativoSimplificado,Despesa Total com Pessoal - DTP,46.59
+2018,3,Q,Governo do Estado do Mato Grosso do Sul,50,MS,E,2682386,RGF-Anexo 06,Padrão,% SOBRE A RCL AJUSTADA,DespesaTotalComPessoalDemonstrativoSimplificado,Despesa Total com Pessoal - DTP,47.22
+2018,3,Q,Governo do Estado do Mato Grosso,51,MT,E,3305531,RGF-Anexo 06,Padrão,% SOBRE A RCL AJUSTADA,DespesaTotalComPessoalDemonstrativoSimplificado,Despesa Total com Pessoal - DTP,57.89
+2018,3,Q,Governo do Estado de Goiás,52,GO,E,6695855,RGF-Anexo 06,Padrão,% SOBRE A RCL AJUSTADA,DespesaTotalComPessoalDemonstrativoSimplificado,Despesa Total com Pessoal - DTP,44.34
+2018,3,Q,Governo do Distrito Federal,53,DF,E,2977216,RGF-Anexo 06,Padrão,% SOBRE A RCL AJUSTADA,DespesaTotalComPessoalDemonstrativoSimplificado,Despesa Total com Pessoal - DTP,43.46
+2017,3,Q,Governo do Estado de Rondônia,11,RO,E,1787279,RGF-Anexo 06,NA,% SOBRE A RCL AJUSTADA,DespesaTotalComPessoalDemonstrativoSimplificado,Despesa Total com Pessoal - DTP,43.32
+2017,3,Q,Governo do Estado do Acre,12,AC,E,816687,RGF-Anexo 06,Padrão,% SOBRE A RCL AJUSTADA,DespesaTotalComPessoalDemonstrativoSimplificado,Despesa Total com Pessoal - DTP,53.86
+2017,3,Q,Governo do Estado do Amazonas,13,AM,E,4001667,RGF-Anexo 06,Padrão,% SOBRE A RCL AJUSTADA,DespesaTotalComPessoalDemonstrativoSimplificado,Despesa Total com Pessoal - DTP,47.78
+2017,3,Q,Governo do Estado de Roraima,14,RR,E,514229,RGF-Anexo 06,Padrão,% SOBRE A RCL AJUSTADA,DespesaTotalComPessoalDemonstrativoSimplificado,Despesa Total com Pessoal - DTP,48.99
+2017,3,Q,Governo do Estado do Pará,15,PA,E,8272724,RGF-Anexo 06,NA,% SOBRE A RCL AJUSTADA,DespesaTotalComPessoalDemonstrativoSimplificado,Despesa Total com Pessoal - DTP,45.08
+2017,3,Q,Governo do Estado do Amapá,16,AP,E,782295,RGF-Anexo 06,Padrão,% SOBRE A RCL AJUSTADA,DespesaTotalComPessoalDemonstrativoSimplificado,Despesa Total com Pessoal - DTP,42.73
+2017,3,Q,Governo do Estado do Tocantins,17,TO,E,1532902,RGF-Anexo 06,Padrão,% SOBRE A RCL AJUSTADA,DespesaTotalComPessoalDemonstrativoSimplificado,Despesa Total com Pessoal - DTP,54.99
+2017,3,Q,Governo do Estado do Maranhão,21,MA,E,6954036,RGF-Anexo 06,Padrão,% SOBRE A RCL AJUSTADA,DespesaTotalComPessoalDemonstrativoSimplificado,Despesa Total com Pessoal - DTP,41.38
+2017,3,Q,Governo do Estado do Piauí,22,PI,E,3212180,RGF-Anexo 06,Padrão,% SOBRE A RCL AJUSTADA,DespesaTotalComPessoalDemonstrativoSimplificado,Despesa Total com Pessoal - DTP,47.74
+2017,3,Q,Governo do Estado do Ceará,23,CE,E,8963663,RGF-Anexo 06,Padrão,% SOBRE A RCL AJUSTADA,DespesaTotalComPessoalDemonstrativoSimplificado,Despesa Total com Pessoal - DTP,42.45
+2017,3,Q,Governo do Estado do Rio Grande do Norte,24,RN,E,3474998,RGF-Anexo 06,Padrão,% SOBRE A RCL AJUSTADA,DespesaTotalComPessoalDemonstrativoSimplificado,Despesa Total com Pessoal - DTP,41.23
+2017,3,Q,Governo do Estado da Paraíba,25,PB,E,3999415,RGF-Anexo 06,NA,% SOBRE A RCL AJUSTADA,DespesaTotalComPessoalDemonstrativoSimplificado,Despesa Total com Pessoal - DTP,47.41
+2017,3,Q,Governo do Estado de Pernambuco,26,PE,E,9410336,RGF-Anexo 06,Padrão,% SOBRE A RCL AJUSTADA,DespesaTotalComPessoalDemonstrativoSimplificado,Despesa Total com Pessoal - DTP,48.97
+2017,3,Q,Governo do Estado de Alagoas,27,AL,E,3358963,RGF-Anexo 06,NA,% SOBRE A RCL AJUSTADA,DespesaTotalComPessoalDemonstrativoSimplificado,Despesa Total com Pessoal - DTP,48.63
+2017,3,Q,Governo do Estado de Sergipe,28,SE,E,2265779,RGF-Anexo 06,NA,% SOBRE A RCL AJUSTADA,DespesaTotalComPessoalDemonstrativoSimplificado,Despesa Total com Pessoal - DTP,47.65
+2017,3,Q,Governo do Estado da Bahia,29,BA,E,15276566,RGF-Anexo 06,Padrão,% SOBRE A RCL AJUSTADA,DespesaTotalComPessoalDemonstrativoSimplificado,Despesa Total com Pessoal - DTP,43.06
+2017,3,Q,Governo do Estado de Minas Gerais,31,MG,E,20997560,RGF-Anexo 06,Padrão,% SOBRE A RCL AJUSTADA,DespesaTotalComPessoalDemonstrativoSimplificado,Despesa Total com Pessoal - DTP,49.99
+2017,3,Q,Governo do Estado do Espírito Santo,32,ES,E,3973697,RGF-Anexo 06,Padrão,% SOBRE A RCL AJUSTADA,DespesaTotalComPessoalDemonstrativoSimplificado,Despesa Total com Pessoal - DTP,43.3
+2017,3,Q,Governo do Estado do Rio de Janeiro,33,RJ,E,16635996,RGF-Anexo 06,Padrão,% SOBRE A RCL AJUSTADA,DespesaTotalComPessoalDemonstrativoSimplificado,Despesa Total com Pessoal - DTP,57.27
+2017,3,Q,Governo do Estado de São Paulo,35,SP,E,44749699,RGF-Anexo 06,Padrão,% SOBRE A RCL AJUSTADA,DespesaTotalComPessoalDemonstrativoSimplificado,Despesa Total com Pessoal - DTP,43.43
+2017,3,Q,Governo do Estado do Paraná,41,PR,E,11242720,RGF-Anexo 06,Padrão,% SOBRE A RCL AJUSTADA,DespesaTotalComPessoalDemonstrativoSimplificado,Despesa Total com Pessoal - DTP,45.13
+2017,3,Q,Governo do Estado de Santa Catarina,42,SC,E,6910553,RGF-Anexo 06,Padrão,% SOBRE A RCL AJUSTADA,DespesaTotalComPessoalDemonstrativoSimplificado,Despesa Total com Pessoal - DTP,49.73
+2017,3,Q,Governo do Estado do Rio Grande do Sul,43,RS,E,11286500,RGF-Anexo 06,NA,% SOBRE A RCL AJUSTADA,DespesaTotalComPessoalDemonstrativoSimplificado,Despesa Total com Pessoal - DTP,46.54
+2017,3,Q,Governo do Estado do Mato Grosso do Sul,50,MS,E,2682386,RGF-Anexo 06,Padrão,% SOBRE A RCL AJUSTADA,DespesaTotalComPessoalDemonstrativoSimplificado,Despesa Total com Pessoal - DTP,48.99
+2017,3,Q,Governo do Estado do Mato Grosso,51,MT,E,3305531,RGF-Anexo 06,Padrão,% SOBRE A RCL AJUSTADA,DespesaTotalComPessoalDemonstrativoSimplificado,Despesa Total com Pessoal - DTP,47.69
+2017,3,Q,Governo do Estado de Goiás,52,GO,E,6695855,RGF-Anexo 06,Padrão,% SOBRE A RCL AJUSTADA,DespesaTotalComPessoalDemonstrativoSimplificado,Despesa Total com Pessoal - DTP,39.3
+2017,3,Q,Governo do Distrito Federal,53,DF,E,2977216,RGF-Anexo 06,NA,% SOBRE A RCL AJUSTADA,DespesaTotalComPessoalDemonstrativoSimplificado,Despesa Total com Pessoal - DTP,46.07
+2016,3,Q,Governo do Estado de Rondônia,11,RO,E,1768204,RGF-Anexo 06,NA,% SOBRE A RCL,DespesaTotalComPessoalDemonstrativoSimplificado,Despesa Total com Pessoal - DTP,41.68
+2016,3,Q,Governo do Estado do Acre,12,AC,E,803513,RGF-Anexo 06,NA,% SOBRE A RCL,DespesaTotalComPessoalDemonstrativoSimplificado,Despesa Total com Pessoal - DTP,45.21
+2016,3,Q,Governo do Estado do Amazonas,13,AM,E,3938336,RGF-Anexo 06,NA,% SOBRE A RCL,DespesaTotalComPessoalDemonstrativoSimplificado,Despesa Total com Pessoal - DTP,47.21
+2016,3,Q,Governo do Estado de Roraima,14,RR,E,505665,RGF-Anexo 06,NA,% SOBRE A RCL,DespesaTotalComPessoalDemonstrativoSimplificado,Despesa Total com Pessoal - DTP,42.68
+2016,3,Q,Governo do Estado do Pará,15,PA,E,8175113,RGF-Anexo 06,NA,% SOBRE A RCL,DespesaTotalComPessoalDemonstrativoSimplificado,Despesa Total com Pessoal - DTP,44.62
+2016,3,Q,Governo do Estado do Amapá,16,AP,E,766679,RGF-Anexo 06,NA,% SOBRE A RCL,DespesaTotalComPessoalDemonstrativoSimplificado,Despesa Total com Pessoal - DTP,38.97
+2016,3,Q,Governo do Estado do Tocantins,17,TO,E,1515126,RGF-Anexo 06,NA,% SOBRE A RCL,DespesaTotalComPessoalDemonstrativoSimplificado,Despesa Total com Pessoal - DTP,48.34
+2016,3,Q,Governo do Estado do Maranhão,21,MA,E,6904241,RGF-Anexo 06,NA,% SOBRE A RCL,DespesaTotalComPessoalDemonstrativoSimplificado,Despesa Total com Pessoal - DTP,38.98
+2016,3,Q,Governo do Estado do Piauí,22,PI,E,3204028,RGF-Anexo 06,NA,% SOBRE A RCL,DespesaTotalComPessoalDemonstrativoSimplificado,Despesa Total com Pessoal - DTP,41.6
+2016,3,Q,Governo do Estado do Ceará,23,CE,E,8904459,RGF-Anexo 06,NA,% SOBRE A RCL,DespesaTotalComPessoalDemonstrativoSimplificado,Despesa Total com Pessoal - DTP,40.68
+2016,3,Q,Governo do Estado do Rio Grande do Norte,24,RN,E,3442175,RGF-Anexo 06,NA,% SOBRE A RCL,DespesaTotalComPessoalDemonstrativoSimplificado,Despesa Total com Pessoal - DTP,53.97
+2016,3,Q,Governo do Estado da Paraíba,25,PB,E,3972202,RGF-Anexo 06,NA,% SOBRE A RCL,DespesaTotalComPessoalDemonstrativoSimplificado,Despesa Total com Pessoal - DTP,48.55
+2016,3,Q,Governo do Estado de Pernambuco,26,PE,E,9345173,RGF-Anexo 06,NA,% SOBRE A RCL,DespesaTotalComPessoalDemonstrativoSimplificado,Despesa Total com Pessoal - DTP,45.77
+2016,3,Q,Governo do Estado de Alagoas,27,AL,E,3340932,RGF-Anexo 06,NA,% SOBRE A RCL,DespesaTotalComPessoalDemonstrativoSimplificado,Despesa Total com Pessoal - DTP,45.97
+2016,3,Q,Governo do Estado de Sergipe,28,SE,E,2242937,RGF-Anexo 06,NA,% SOBRE A RCL,DespesaTotalComPessoalDemonstrativoSimplificado,Despesa Total com Pessoal - DTP,47.21
+2016,3,Q,Governo do Estado da Bahia,29,BA,E,15203934,RGF-Anexo 06,NA,% SOBRE A RCL,DespesaTotalComPessoalDemonstrativoSimplificado,Despesa Total com Pessoal - DTP,46.32
+2016,3,Q,Governo do Estado de Minas Gerais,31,MG,E,20869101,RGF-Anexo 06,NA,% SOBRE A RCL,DespesaTotalComPessoalDemonstrativoSimplificado,Despesa Total com Pessoal - DTP,49.29
+2016,3,Q,Governo do Estado do Espírito Santo,32,ES,E,3929911,RGF-Anexo 06,NA,% SOBRE A RCL,DespesaTotalComPessoalDemonstrativoSimplificado,Despesa Total com Pessoal - DTP,43.33
+2016,3,Q,Governo do Estado do Rio de Janeiro,33,RJ,E,16550024,RGF-Anexo 06,NA,% SOBRE A RCL,DespesaTotalComPessoalDemonstrativoSimplificado,Despesa Total com Pessoal - DTP,61.73
+2016,3,Q,Governo do Estado de São Paulo,35,SP,E,44396484,RGF-Anexo 06,NA,% SOBRE A RCL,DespesaTotalComPessoalDemonstrativoSimplificado,Despesa Total com Pessoal - DTP,46.4
+2016,3,Q,Governo do Estado do Paraná,41,PR,E,11163018,RGF-Anexo 06,NA,% SOBRE A RCL,DespesaTotalComPessoalDemonstrativoSimplificado,Despesa Total com Pessoal - DTP,45.39
+2016,3,Q,Governo do Estado de Santa Catarina,42,SC,E,6819190,RGF-Anexo 06,NA,% SOBRE A RCL,DespesaTotalComPessoalDemonstrativoSimplificado,Despesa Total com Pessoal - DTP,47.72
+2016,3,Q,Governo do Estado do Rio Grande do Sul,43,RS,E,11247972,RGF-Anexo 06,NA,% SOBRE A RCL,DespesaTotalComPessoalDemonstrativoSimplificado,Despesa Total com Pessoal - DTP,44.1
+2016,3,Q,Governo do Estado do Mato Grosso do Sul,50,MS,E,2651235,RGF-Anexo 06,NA,% SOBRE A RCL,DespesaTotalComPessoalDemonstrativoSimplificado,Despesa Total com Pessoal - DTP,43.15
+2016,3,Q,Governo do Estado do Mato Grosso,51,MT,E,3265486,RGF-Anexo 06,NA,% SOBRE A RCL,DespesaTotalComPessoalDemonstrativoSimplificado,Despesa Total com Pessoal - DTP,45.33
+2016,3,Q,Governo do Estado de Goiás,52,GO,E,6610681,RGF-Anexo 06,NA,% SOBRE A RCL,DespesaTotalComPessoalDemonstrativoSimplificado,Despesa Total com Pessoal - DTP,46.74
+2016,3,Q,Governo do Distrito Federal,53,DF,E,2914830,RGF-Anexo 06,NA,% SOBRE A RCL,DespesaTotalComPessoalDemonstrativoSimplificado,Despesa Total com Pessoal - DTP,46.82
+2015,3,Q,Governo do Estado de Rondônia,11,RO,E,1748531,RGF-Anexo 06,NA,% SOBRE A RCL,DespesaTotalComPessoalDemonstrativoSimplificado,Despesa Total com Pessoal - DTP,44.39
+2015,3,Q,Governo do Estado do Acre,12,AC,E,790101,RGF-Anexo 06,NA,% SOBRE A RCL,DespesaTotalComPessoalDemonstrativoSimplificado,Despesa Total com Pessoal - DTP,48.8
+2015,3,Q,Governo do Estado do Amazonas,13,AM,E,3873743,RGF-Anexo 06,NA,% SOBRE A RCL,DespesaTotalComPessoalDemonstrativoSimplificado,Despesa Total com Pessoal - DTP,47.98
+2015,3,Q,Governo do Estado de Roraima,14,RR,E,496936,RGF-Anexo 06,NA,% SOBRE A RCL,DespesaTotalComPessoalDemonstrativoSimplificado,Despesa Total com Pessoal - DTP,47.31
+2015,3,Q,Governo do Estado do Pará,15,PA,E,8104880,RGF-Anexo 06,NA,% SOBRE A RCL,DespesaTotalComPessoalDemonstrativoSimplificado,Despesa Total com Pessoal - DTP,47.33
+2015,3,Q,Governo do Estado do Tocantins,17,TO,E,1496880,RGF-Anexo 06,NA,% SOBRE A RCL,DespesaTotalComPessoalDemonstrativoSimplificado,Despesa Total com Pessoal - DTP,52.28
+2015,3,Q,Governo do Estado do Maranhão,21,MA,E,6850884,RGF-Anexo 06,NA,% SOBRE A RCL,DespesaTotalComPessoalDemonstrativoSimplificado,Despesa Total com Pessoal - DTP,42.87
+2015,3,Q,Governo do Estado do Piauí,22,PI,E,3194718,RGF-Anexo 06,NA,% SOBRE A RCL,DespesaTotalComPessoalDemonstrativoSimplificado,Despesa Total com Pessoal - DTP,42.7
+2015,3,Q,Governo do Estado do Ceará,23,CE,E,8842791,RGF-Anexo 06,NA,% SOBRE A RCL,DespesaTotalComPessoalDemonstrativoSimplificado,Despesa Total com Pessoal - DTP,45.93
+2015,3,Q,Governo do Estado do Rio Grande do Norte,24,RN,E,3408510,RGF-Anexo 06,NA,% SOBRE A RCL,DespesaTotalComPessoalDemonstrativoSimplificado,Despesa Total com Pessoal - DTP,52.53
+2015,3,Q,Governo do Estado da Paraíba,25,PB,E,3943885,RGF-Anexo 06,NA,% SOBRE A RCL,DespesaTotalComPessoalDemonstrativoSimplificado,Despesa Total com Pessoal - DTP,51.51
+2015,3,Q,Governo do Estado de Pernambuco,26,PE,E,9277727,RGF-Anexo 06,NA,% SOBRE A RCL,DespesaTotalComPessoalDemonstrativoSimplificado,Despesa Total com Pessoal - DTP,46.19
+2015,3,Q,Governo do Estado de Alagoas,27,AL,E,3321730,RGF-Anexo 06,NA,% SOBRE A RCL,DespesaTotalComPessoalDemonstrativoSimplificado,Despesa Total com Pessoal - DTP,48.35
+2015,3,Q,Governo do Estado de Sergipe,28,SE,E,2219574,RGF-Anexo 06,NA,% SOBRE A RCL,DespesaTotalComPessoalDemonstrativoSimplificado,Despesa Total com Pessoal - DTP,47.82
+2015,3,Q,Governo do Estado da Bahia,29,BA,E,15126371,RGF-Anexo 06,NA,% SOBRE A RCL,DespesaTotalComPessoalDemonstrativoSimplificado,Despesa Total com Pessoal - DTP,47.6
+2015,3,Q,Governo do Estado de Minas Gerais,31,MG,E,20734097,RGF-Anexo 06,NA,% SOBRE A RCL,DespesaTotalComPessoalDemonstrativoSimplificado,Despesa Total com Pessoal - DTP,47.91
+2015,3,Q,Governo do Estado do Espírito Santo,32,ES,E,3885049,RGF-Anexo 06,NA,% SOBRE A RCL,DespesaTotalComPessoalDemonstrativoSimplificado,Despesa Total com Pessoal - DTP,43.39
+2015,3,Q,Governo do Estado do Rio de Janeiro,33,RJ,E,16461173,RGF-Anexo 06,NA,% SOBRE A RCL,DespesaTotalComPessoalDemonstrativoSimplificado,Despesa Total com Pessoal - DTP,33.48
+2015,3,Q,Governo do Estado de São Paulo,35,SP,E,44035304,RGF-Anexo 06,NA,% SOBRE A RCL,DespesaTotalComPessoalDemonstrativoSimplificado,Despesa Total com Pessoal - DTP,46.28
+2015,3,Q,Governo do Estado do Paraná,41,PR,E,11081692,RGF-Anexo 06,NA,% SOBRE A RCL,DespesaTotalComPessoalDemonstrativoSimplificado,Despesa Total com Pessoal - DTP,46.23
+2015,3,Q,Governo do Estado de Santa Catarina,42,SC,E,6727148,RGF-Anexo 06,NA,% SOBRE A RCL,DespesaTotalComPessoalDemonstrativoSimplificado,Despesa Total com Pessoal - DTP,48.35
+2015,3,Q,Governo do Estado do Rio Grande do Sul,43,RS,E,11207274,RGF-Anexo 06,NA,% SOBRE A RCL,DespesaTotalComPessoalDemonstrativoSimplificado,Despesa Total com Pessoal - DTP,49.18
+2015,3,Q,Governo do Estado do Mato Grosso do Sul,50,MS,E,2619657,RGF-Anexo 06,NA,% SOBRE A RCL,DespesaTotalComPessoalDemonstrativoSimplificado,Despesa Total com Pessoal - DTP,45.83
+2015,3,Q,Governo do Estado do Mato Grosso,51,MT,E,3224357,RGF-Anexo 06,NA,% SOBRE A RCL,DespesaTotalComPessoalDemonstrativoSimplificado,Despesa Total com Pessoal - DTP,49.74
+2015,3,Q,Governo do Estado de Goiás,52,GO,E,6523222,RGF-Anexo 06,NA,% SOBRE A RCL,DespesaTotalComPessoalDemonstrativoSimplificado,Despesa Total com Pessoal - DTP,48.44
+2015,3,Q,Governo do Distrito Federal,53,DF,E,2852372,RGF-Anexo 06,NA,% SOBRE A RCL,DespesaTotalComPessoalDemonstrativoSimplificado,Despesa Total com Pessoal - DTP,46.78
+2019,3,Q,Governo do Estado de Rondônia,11,RO,E,1757589,RGF-Anexo 02,Padrão,Até o 3º Quadrimestre,PercentualDaDCLSobreARCL,% da DCL sobre a RCL (III/RCL),27.92
+2019,3,Q,Governo do Estado do Acre,12,AC,E,869265,RGF-Anexo 02,Padrão,Até o 3º Quadrimestre,PercentualDaDCLSobreARCL,% da DCL sobre a RCL (III/RCL),58.18
+2019,3,Q,Governo do Estado do Amazonas,13,AM,E,4080611,RGF-Anexo 02,Padrão,Até o 3º Quadrimestre,PercentualDaDCLSobreARCL,% da DCL sobre a RCL (III/RCL),28.69
+2019,3,Q,Governo do Estado de Roraima,14,RR,E,576568,RGF-Anexo 02,Padrão,Até o 3º Quadrimestre,PercentualDaDCLSobreARCL,% da DCL sobre a RCL (III/RCL),46.02
+2019,3,Q,Governo do Estado do Pará,15,PA,E,8513497,RGF-Anexo 02,Padrão,Até o 3º Quadrimestre,PercentualDaDCLSobreARCL,% da DCL sobre a RCL (III/RCL),7.51
+2019,3,Q,Governo do Estado do Amapá,16,AP,E,829494,RGF-Anexo 02,Padrão,Até o 3º Quadrimestre,PercentualDaDCLSobreARCL,% da DCL sobre a RCL (III/RCL),-7.67
+2019,3,Q,Governo do Estado do Tocantins,17,TO,E,1555229,RGF-Anexo 02,Padrão,Até o 3º Quadrimestre,PercentualDaDCLSobreARCL,% da DCL sobre a RCL (III/RCL),56.95
+2019,3,Q,Governo do Estado do Maranhão,21,MA,E,7035055,RGF-Anexo 02,Padrão,Até o 3º Quadrimestre,PercentualDaDCLSobreARCL,% da DCL sobre a RCL (III/RCL),42.66
+2019,3,Q,Governo do Estado do Piauí,22,PI,E,3264531,RGF-Anexo 02,Padrão,Até o 3º Quadrimestre,PercentualDaDCLSobreARCL,% da DCL sobre a RCL (III/RCL),54.71
+2019,3,Q,Governo do Estado do Ceará,23,CE,E,9075649,RGF-Anexo 02,Padrão,Até o 3º Quadrimestre,PercentualDaDCLSobreARCL,% da DCL sobre a RCL (III/RCL),52.65
+2019,3,Q,Governo do Estado do Rio Grande do Norte,24,RN,E,3479010,RGF-Anexo 02,Padrão,Até o 3º Quadrimestre,PercentualDaDCLSobreARCL,% da DCL sobre a RCL (III/RCL),31.98
+2019,3,Q,Governo do Estado da Paraíba,25,PB,E,3996496,RGF-Anexo 02,Padrão,Até o 3º Quadrimestre,PercentualDaDCLSobreARCL,% da DCL sobre a RCL (III/RCL),23.25
+2019,3,Q,Governo do Estado de Pernambuco,26,PE,E,9496294,RGF-Anexo 02,Padrão,Até o 3º Quadrimestre,PercentualDaDCLSobreARCL,% da DCL sobre a RCL (III/RCL),52.32
+2019,3,Q,Governo do Estado de Alagoas,27,AL,E,3322820,RGF-Anexo 02,Padrão,Até o 3º Quadrimestre,PercentualDaDCLSobreARCL,% da DCL sobre a RCL (III/RCL),74.82
+2019,3,Q,Governo do Estado de Sergipe,28,SE,E,2278308,RGF-Anexo 02,Padrão,Até o 3º Quadrimestre,PercentualDaDCLSobreARCL,% da DCL sobre a RCL (III/RCL),45.88
+2019,3,Q,Governo do Estado da Bahia,29,BA,E,14812617,RGF-Anexo 02,Padrão,Até o 3º Quadrimestre,PercentualDaDCLSobreARCL,% da DCL sobre a RCL (III/RCL),62.35
+2019,3,Q,Governo do Estado de Minas Gerais,31,MG,E,21040662,RGF-Anexo 02,Padrão,Até o 3º Quadrimestre,PercentualDaDCLSobreARCL,% da DCL sobre a RCL (III/RCL),191.5
+2019,3,Q,Governo do Estado do Espírito Santo,32,ES,E,3972388,RGF-Anexo 02,Padrão,Até o 3º Quadrimestre,PercentualDaDCLSobreARCL,% da DCL sobre a RCL (III/RCL),14.9
+2019,3,Q,Governo do Estado do Rio de Janeiro,33,RJ,E,17159960,RGF-Anexo 02,Padrão,Até o 3º Quadrimestre,PercentualDaDCLSobreARCL,% da DCL sobre a RCL (III/RCL),282.08
+2019,3,Q,Governo do Estado de São Paulo,35,SP,E,45538936,RGF-Anexo 02,Padrão,Até o 3º Quadrimestre,PercentualDaDCLSobreARCL,% da DCL sobre a RCL (III/RCL),170.99
+2019,3,Q,Governo do Estado do Paraná,41,PR,E,11348937,RGF-Anexo 02,Padrão,Até o 3º Quadrimestre,PercentualDaDCLSobreARCL,% da DCL sobre a RCL (III/RCL),43.68
+2019,3,Q,Governo do Estado de Santa Catarina,42,SC,E,7075494,RGF-Anexo 02,Padrão,Até o 3º Quadrimestre,PercentualDaDCLSobreARCL,% da DCL sobre a RCL (III/RCL),80.29
+2019,3,Q,Governo do Estado do Rio Grande do Sul,43,RS,E,11329605,RGF-Anexo 02,Padrão,Até o 3º Quadrimestre,PercentualDaDCLSobreARCL,% da DCL sobre a RCL (III/RCL),224.38
+2019,3,Q,Governo do Estado do Mato Grosso do Sul,50,MS,E,2748023,RGF-Anexo 02,Padrão,Até o 3º Quadrimestre,PercentualDaDCLSobreARCL,% da DCL sobre a RCL (III/RCL),61.07
+2019,3,Q,Governo do Estado do Mato Grosso,51,MT,E,3441998,RGF-Anexo 02,Padrão,Até o 3º Quadrimestre,PercentualDaDCLSobreARCL,% da DCL sobre a RCL (III/RCL),20.76
+2019,3,Q,Governo do Estado de Goiás,52,GO,E,6921161,RGF-Anexo 02,Padrão,Até o 3º Quadrimestre,PercentualDaDCLSobreARCL,% da DCL sobre a RCL (III/RCL),78.31
+2019,3,Q,Governo do Distrito Federal,53,DF,E,2974703,RGF-Anexo 02,Padrão,Até o 3º Quadrimestre,PercentualDaDCLSobreARCL,% da DCL sobre a RCL (III/RCL),36.07
+2018,3,Q,Governo do Estado de Rondônia,11,RO,E,1787279,RGF-Anexo 02,Padrão,Até o 3º Quadrimestre,PercentualDaDCLSobreARCL,% da DCL sobre a RCL (III/RCL),46.97
+2018,3,Q,Governo do Estado do Acre,12,AC,E,816687,RGF-Anexo 02,Padrão,Até o 3º Quadrimestre,PercentualDaDCLSobreARCL,% da DCL sobre a RCL (III/RCL),73.57
+2018,3,Q,Governo do Estado do Amazonas,13,AM,E,4001667,RGF-Anexo 02,Padrão,Até o 3º Quadrimestre,PercentualDaDCLSobreARCL,% da DCL sobre a RCL (III/RCL),34.73
+2018,3,Q,Governo do Estado de Roraima,14,RR,E,514229,RGF-Anexo 02,Padrão,Até o 3º Quadrimestre,PercentualDaDCLSobreARCL,% da DCL sobre a RCL (III/RCL),32.92
+2018,3,Q,Governo do Estado do Pará,15,PA,E,8272724,RGF-Anexo 02,Padrão,Até o 3º Quadrimestre,PercentualDaDCLSobreARCL,% da DCL sobre a RCL (III/RCL),13.31
+2018,3,Q,Governo do Estado do Amapá,16,AP,E,782295,RGF-Anexo 02,Padrão,Até o 3º Quadrimestre,PercentualDaDCLSobreARCL,% da DCL sobre a RCL (III/RCL),1.25
+2018,3,Q,Governo do Estado do Tocantins,17,TO,E,1532902,RGF-Anexo 02,Padrão,Até o 3º Quadrimestre,PercentualDaDCLSobreARCL,% da DCL sobre a RCL (III/RCL),63.56
+2018,3,Q,Governo do Estado do Maranhão,21,MA,E,6954036,RGF-Anexo 02,Padrão,Até o 3º Quadrimestre,PercentualDaDCLSobreARCL,% da DCL sobre a RCL (III/RCL),53.74
+2018,3,Q,Governo do Estado do Piauí,22,PI,E,3212180,RGF-Anexo 02,Padrão,Até o 3º Quadrimestre,PercentualDaDCLSobreARCL,% da DCL sobre a RCL (III/RCL),50.46
+2018,3,Q,Governo do Estado do Ceará,23,CE,E,8963663,RGF-Anexo 02,Padrão,Até o 3º Quadrimestre,PercentualDaDCLSobreARCL,% da DCL sobre a RCL (III/RCL),57.14
+2018,3,Q,Governo do Estado do Rio Grande do Norte,24,RN,E,3474998,RGF-Anexo 02,Padrão,Até o 3º Quadrimestre,PercentualDaDCLSobreARCL,% da DCL sobre a RCL (III/RCL),46.25
+2018,3,Q,Governo do Estado da Paraíba,25,PB,E,3999415,RGF-Anexo 02,Padrão,Até o 3º Quadrimestre,PercentualDaDCLSobreARCL,% da DCL sobre a RCL (III/RCL),32.47
+2018,3,Q,Governo do Estado de Pernambuco,26,PE,E,9410336,RGF-Anexo 02,Padrão,Até o 3º Quadrimestre,PercentualDaDCLSobreARCL,% da DCL sobre a RCL (III/RCL),61.1
+2018,3,Q,Governo do Estado de Alagoas,27,AL,E,3358963,RGF-Anexo 02,Padrão,Até o 3º Quadrimestre,PercentualDaDCLSobreARCL,% da DCL sobre a RCL (III/RCL),85.6
+2018,3,Q,Governo do Estado de Sergipe,28,SE,E,2265779,RGF-Anexo 02,Padrão,Até o 3º Quadrimestre,PercentualDaDCLSobreARCL,% da DCL sobre a RCL (III/RCL),46.12
+2018,3,Q,Governo do Estado da Bahia,29,BA,E,15276566,RGF-Anexo 02,Padrão,Até o 3º Quadrimestre,PercentualDaDCLSobreARCL,% da DCL sobre a RCL (III/RCL),64.08
+2018,3,Q,Governo do Estado de Minas Gerais,31,MG,E,20997560,RGF-Anexo 02,Padrão,Até o 3º Quadrimestre,PercentualDaDCLSobreARCL,% da DCL sobre a RCL (III/RCL),189.03
+2018,3,Q,Governo do Estado do Espírito Santo,32,ES,E,3973697,RGF-Anexo 02,Padrão,Até o 3º Quadrimestre,PercentualDaDCLSobreARCL,% da DCL sobre a RCL (III/RCL),18.95
+2018,3,Q,Governo do Estado do Rio de Janeiro,33,RJ,E,16635996,RGF-Anexo 02,Padrão,Até o 3º Quadrimestre,PercentualDaDCLSobreARCL,% da DCL sobre a RCL (III/RCL),262.92
+2018,3,Q,Governo do Estado de São Paulo,35,SP,E,44749699,RGF-Anexo 02,Padrão,Até o 3º Quadrimestre,PercentualDaDCLSobreARCL,% da DCL sobre a RCL (III/RCL),175.66
+2018,3,Q,Governo do Estado do Paraná,41,PR,E,11242720,RGF-Anexo 02,Padrão,Até o 3º Quadrimestre,PercentualDaDCLSobreARCL,% da DCL sobre a RCL (III/RCL),38.56
+2018,3,Q,Governo do Estado de Santa Catarina,42,SC,E,6910553,RGF-Anexo 02,Padrão,Até o 3º Quadrimestre,PercentualDaDCLSobreARCL,% da DCL sobre a RCL (III/RCL),92.94
+2018,3,Q,Governo do Estado do Rio Grande do Sul,43,RS,E,11286500,RGF-Anexo 02,Padrão,Até o 3º Quadrimestre,PercentualDaDCLSobreARCL,% da DCL sobre a RCL (III/RCL),222.9
+2018,3,Q,Governo do Estado do Mato Grosso do Sul,50,MS,E,2682386,RGF-Anexo 02,Padrão,Até o 3º Quadrimestre,PercentualDaDCLSobreARCL,% da DCL sobre a RCL (III/RCL),72.4
+2018,3,Q,Governo do Estado do Mato Grosso,51,MT,E,3305531,RGF-Anexo 02,Padrão,Até o 3º Quadrimestre,PercentualDaDCLSobreARCL,% da DCL sobre a RCL (III/RCL),42.99
+2018,3,Q,Governo do Estado de Goiás,52,GO,E,6695855,RGF-Anexo 02,Padrão,Até o 3º Quadrimestre,PercentualDaDCLSobreARCL,% da DCL sobre a RCL (III/RCL),92.19
+2018,3,Q,Governo do Distrito Federal,53,DF,E,2977216,RGF-Anexo 02,Padrão,Até o 3º Quadrimestre,PercentualDaDCLSobreARCL,% da DCL sobre a RCL (III/RCL),35.17
+2017,3,Q,Governo do Estado de Rondônia,11,RO,E,1787279,RGF-Anexo 02,NA,Até o 3º Quadrimestre,PercentualDaDCLSobreARCL,% da DCL sobre a RCL (III/RCL),48.48
+2017,3,Q,Governo do Estado do Acre,12,AC,E,816687,RGF-Anexo 02,Padrão,Até o 3º Quadrimestre,PercentualDaDCLSobreARCL,% da DCL sobre a RCL (III/RCL),71.83
+2017,3,Q,Governo do Estado do Amazonas,13,AM,E,4001667,RGF-Anexo 02,Padrão,Até o 3º Quadrimestre,PercentualDaDCLSobreARCL,% da DCL sobre a RCL (III/RCL),35.86
+2017,3,Q,Governo do Estado de Roraima,14,RR,E,514229,RGF-Anexo 02,Padrão,Até o 3º Quadrimestre,PercentualDaDCLSobreARCL,% da DCL sobre a RCL (III/RCL),41.74
+2017,3,Q,Governo do Estado do Pará,15,PA,E,8272724,RGF-Anexo 02,NA,Até o 3º Quadrimestre,PercentualDaDCLSobreARCL,% da DCL sobre a RCL (III/RCL),6.4
+2017,3,Q,Governo do Estado do Tocantins,17,TO,E,1532902,RGF-Anexo 02,Padrão,Até o 3º Quadrimestre,PercentualDaDCLSobreARCL,% da DCL sobre a RCL (III/RCL),38.01
+2017,3,Q,Governo do Estado do Maranhão,21,MA,E,6954036,RGF-Anexo 02,Padrão,Até o 3º Quadrimestre,PercentualDaDCLSobreARCL,% da DCL sobre a RCL (III/RCL),43.77
+2017,3,Q,Governo do Estado do Piauí,22,PI,E,3212180,RGF-Anexo 02,Padrão,Até o 3º Quadrimestre,PercentualDaDCLSobreARCL,% da DCL sobre a RCL (III/RCL),41.07
+2017,3,Q,Governo do Estado do Ceará,23,CE,E,8963663,RGF-Anexo 02,Padrão,Até o 3º Quadrimestre,PercentualDaDCLSobreARCL,% da DCL sobre a RCL (III/RCL),45.82
+2017,3,Q,Governo do Estado do Rio Grande do Norte,24,RN,E,3474998,RGF-Anexo 02,Padrão,Até o 3º Quadrimestre,PercentualDaDCLSobreARCL,% da DCL sobre a RCL (III/RCL),13.22
+2017,3,Q,Governo do Estado da Paraíba,25,PB,E,3999415,RGF-Anexo 02,NA,Até o 3º Quadrimestre,PercentualDaDCLSobreARCL,% da DCL sobre a RCL (III/RCL),28.93
+2017,3,Q,Governo do Estado de Pernambuco,26,PE,E,9410336,RGF-Anexo 02,Padrão,Até o 3º Quadrimestre,PercentualDaDCLSobreARCL,% da DCL sobre a RCL (III/RCL),61.25
+2017,3,Q,Governo do Estado de Alagoas,27,AL,E,3358963,RGF-Anexo 02,NA,Até o 3º Quadrimestre,PercentualDaDCLSobreARCL,% da DCL sobre a RCL (III/RCL),95.26
+2017,3,Q,Governo do Estado de Sergipe,28,SE,E,2265779,RGF-Anexo 02,NA,Até o 3º Quadrimestre,PercentualDaDCLSobreARCL,% da DCL sobre a RCL (III/RCL),57.99
+2017,3,Q,Governo do Estado da Bahia,29,BA,E,15276566,RGF-Anexo 02,Padrão,Até o 3º Quadrimestre,PercentualDaDCLSobreARCL,% da DCL sobre a RCL (III/RCL),57.52
+2017,3,Q,Governo do Estado de Minas Gerais,31,MG,E,20997560,RGF-Anexo 02,Padrão,Até o 3º Quadrimestre,PercentualDaDCLSobreARCL,% da DCL sobre a RCL (III/RCL),186.35
+2017,3,Q,Governo do Estado do Espírito Santo,32,ES,E,3973697,RGF-Anexo 02,Padrão,Até o 3º Quadrimestre,PercentualDaDCLSobreARCL,% da DCL sobre a RCL (III/RCL),17.34
+2017,3,Q,Governo do Estado do Rio de Janeiro,33,RJ,E,16635996,RGF-Anexo 02,Padrão,Até o 3º Quadrimestre,PercentualDaDCLSobreARCL,% da DCL sobre a RCL (III/RCL),269.74
+2017,3,Q,Governo do Estado de São Paulo,35,SP,E,44749699,RGF-Anexo 02,Padrão,Até o 3º Quadrimestre,PercentualDaDCLSobreARCL,% da DCL sobre a RCL (III/RCL),170.96
+2017,3,Q,Governo do Estado do Paraná,41,PR,E,11242720,RGF-Anexo 02,Padrão,Até o 3º Quadrimestre,PercentualDaDCLSobreARCL,% da DCL sobre a RCL (III/RCL),29.34
+2017,3,Q,Governo do Estado de Santa Catarina,42,SC,E,6910553,RGF-Anexo 02,Padrão,Até o 3º Quadrimestre,PercentualDaDCLSobreARCL,% da DCL sobre a RCL (III/RCL),51.1
+2017,3,Q,Governo do Estado do Rio Grande do Sul,43,RS,E,11286500,RGF-Anexo 02,NA,Até o 3º Quadrimestre,PercentualDaDCLSobreARCL,% da DCL sobre a RCL (III/RCL),218.86
+2017,3,Q,Governo do Estado do Mato Grosso do Sul,50,MS,E,2682386,RGF-Anexo 02,Padrão,Até o 3º Quadrimestre,PercentualDaDCLSobreARCL,% da DCL sobre a RCL (III/RCL),76.13
+2017,3,Q,Governo do Estado do Mato Grosso,51,MT,E,3305531,RGF-Anexo 02,Padrão,Até o 3º Quadrimestre,PercentualDaDCLSobreARCL,% da DCL sobre a RCL (III/RCL),44.11
+2017,3,Q,Governo do Estado de Goiás,52,GO,E,6695855,RGF-Anexo 02,Padrão,Até o 3º Quadrimestre,PercentualDaDCLSobreARCL,% da DCL sobre a RCL (III/RCL),92.03
+2017,3,Q,Governo do Distrito Federal,53,DF,E,2977216,RGF-Anexo 02,NA,Até o 3º Quadrimestre,PercentualDaDCLSobreARCL,% da DCL sobre a RCL (III/RCL),33.78
+2016,3,Q,Governo do Estado de Rondônia,11,RO,E,1768204,RGF-Anexo 02,NA,Até o 3º Quadrimestre,PercentualDaDCLSobreARCL,% da DCL sobre a RCL (III/RCL),50.06
+2016,3,Q,Governo do Estado do Acre,12,AC,E,803513,RGF-Anexo 02,NA,Até o 3º Quadrimestre,PercentualDaDCLSobreARCL,% da DCL sobre a RCL (III/RCL),72.67
+2016,3,Q,Governo do Estado do Amazonas,13,AM,E,3938336,RGF-Anexo 02,NA,Até o 3º Quadrimestre,PercentualDaDCLSobreARCL,% da DCL sobre a RCL (III/RCL),40.55
+2016,3,Q,Governo do Estado de Roraima,14,RR,E,505665,RGF-Anexo 02,NA,Até o 3º Quadrimestre,PercentualDaDCLSobreARCL,% da DCL sobre a RCL (III/RCL),37.31
+2016,3,Q,Governo do Estado do Pará,15,PA,E,8175113,RGF-Anexo 02,NA,Até o 3º Quadrimestre,PercentualDaDCLSobreARCL,% da DCL sobre a RCL (III/RCL),9.29
+2016,3,Q,Governo do Estado do Amapá,16,AP,E,766679,RGF-Anexo 02,NA,Até o 3º Quadrimestre,PercentualDaDCLSobreARCL,% da DCL sobre a RCL (III/RCL),14.36
+2016,3,Q,Governo do Estado do Tocantins,17,TO,E,1515126,RGF-Anexo 02,NA,Até o 3º Quadrimestre,PercentualDaDCLSobreARCL,% da DCL sobre a RCL (III/RCL),33.05
+2016,3,Q,Governo do Estado do Maranhão,21,MA,E,6904241,RGF-Anexo 02,NA,Até o 3º Quadrimestre,PercentualDaDCLSobreARCL,% da DCL sobre a RCL (III/RCL),43.7
+2016,3,Q,Governo do Estado do Piauí,22,PI,E,3204028,RGF-Anexo 02,NA,Até o 3º Quadrimestre,PercentualDaDCLSobreARCL,% da DCL sobre a RCL (III/RCL),45.17
+2016,3,Q,Governo do Estado do Ceará,23,CE,E,8904459,RGF-Anexo 02,NA,Até o 3º Quadrimestre,PercentualDaDCLSobreARCL,% da DCL sobre a RCL (III/RCL),43.6
+2016,3,Q,Governo do Estado do Rio Grande do Norte,24,RN,E,3442175,RGF-Anexo 02,NA,Até o 3º Quadrimestre,PercentualDaDCLSobreARCL,% da DCL sobre a RCL (III/RCL),12.41
+2016,3,Q,Governo do Estado da Paraíba,25,PB,E,3972202,RGF-Anexo 02,NA,Até o 3º Quadrimestre,PercentualDaDCLSobreARCL,% da DCL sobre a RCL (III/RCL),30.25
+2016,3,Q,Governo do Estado de Pernambuco,26,PE,E,9345173,RGF-Anexo 02,NA,Até o 3º Quadrimestre,PercentualDaDCLSobreARCL,% da DCL sobre a RCL (III/RCL),60.68
+2016,3,Q,Governo do Estado de Alagoas,27,AL,E,3340932,RGF-Anexo 02,NA,Até o 3º Quadrimestre,PercentualDaDCLSobreARCL,% da DCL sobre a RCL (III/RCL),102.84
+2016,3,Q,Governo do Estado de Sergipe,28,SE,E,2242937,RGF-Anexo 02,NA,Até o 3º Quadrimestre,PercentualDaDCLSobreARCL,% da DCL sobre a RCL (III/RCL),60.43
+2016,3,Q,Governo do Estado da Bahia,29,BA,E,15203934,RGF-Anexo 02,NA,Até o 3º Quadrimestre,PercentualDaDCLSobreARCL,% da DCL sobre a RCL (III/RCL),55.78
+2016,3,Q,Governo do Estado de Minas Gerais,31,MG,E,20869101,RGF-Anexo 02,NA,Até o 3º Quadrimestre,PercentualDaDCLSobreARCL,% da DCL sobre a RCL (III/RCL),203.09
+2016,3,Q,Governo do Estado do Espírito Santo,32,ES,E,3929911,RGF-Anexo 02,NA,Até o 3º Quadrimestre,PercentualDaDCLSobreARCL,% da DCL sobre a RCL (III/RCL),26.41
+2016,3,Q,Governo do Estado do Rio de Janeiro,33,RJ,E,16550024,RGF-Anexo 02,NA,Até o 3º Quadrimestre,PercentualDaDCLSobreARCL,% da DCL sobre a RCL (III/RCL),233.84
+2016,3,Q,Governo do Estado de São Paulo,35,SP,E,44396484,RGF-Anexo 02,NA,Até o 3º Quadrimestre,PercentualDaDCLSobreARCL,% da DCL sobre a RCL (III/RCL),175.47
+2016,3,Q,Governo do Estado do Paraná,41,PR,E,11163018,RGF-Anexo 02,NA,Até o 3º Quadrimestre,PercentualDaDCLSobreARCL,% da DCL sobre a RCL (III/RCL),38.82
+2016,3,Q,Governo do Estado de Santa Catarina,42,SC,E,6819190,RGF-Anexo 02,NA,Até o 3º Quadrimestre,PercentualDaDCLSobreARCL,% da DCL sobre a RCL (III/RCL),50.21
+2016,3,Q,Governo do Estado do Rio Grande do Sul,43,RS,E,11247972,RGF-Anexo 02,NA,Até o 3º Quadrimestre,PercentualDaDCLSobreARCL,% da DCL sobre a RCL (III/RCL),212.95
+2016,3,Q,Governo do Estado do Mato Grosso do Sul,50,MS,E,2651235,RGF-Anexo 02,NA,Até o 3º Quadrimestre,PercentualDaDCLSobreARCL,% da DCL sobre a RCL (III/RCL),78.17
+2016,3,Q,Governo do Estado do Mato Grosso,51,MT,E,3265486,RGF-Anexo 02,NA,Até o 3º Quadrimestre,PercentualDaDCLSobreARCL,% da DCL sobre a RCL (III/RCL),43.98
+2016,3,Q,Governo do Estado de Goiás,52,GO,E,6610681,RGF-Anexo 02,NA,Até o 3º Quadrimestre,PercentualDaDCLSobreARCL,% da DCL sobre a RCL (III/RCL),95.11
+2016,3,Q,Governo do Distrito Federal,53,DF,E,2914830,RGF-Anexo 02,NA,Até o 3º Quadrimestre,PercentualDaDCLSobreARCL,% da DCL sobre a RCL (III/RCL),29.89
+2015,3,Q,Governo do Estado de Rondônia,11,RO,E,1748531,RGF-Anexo 02,NA,Até o 3º Quadrimestre,PercentualDaDCLSobreARCL,% da DCL sobre a RCL (III/RCL),63.91
+2015,3,Q,Governo do Estado do Acre,12,AC,E,790101,RGF-Anexo 02,NA,Até o 3º Quadrimestre,PercentualDaDCLSobreARCL,% da DCL sobre a RCL (III/RCL),96.81
+2015,3,Q,Governo do Estado do Amazonas,13,AM,E,3873743,RGF-Anexo 02,NA,Até o 3º Quadrimestre,PercentualDaDCLSobreARCL,% da DCL sobre a RCL (III/RCL),47.82
+2015,3,Q,Governo do Estado de Roraima,14,RR,E,496936,RGF-Anexo 02,NA,Até o 3º Quadrimestre,PercentualDaDCLSobreARCL,% da DCL sobre a RCL (III/RCL),11.77
+2015,3,Q,Governo do Estado do Pará,15,PA,E,8104880,RGF-Anexo 02,NA,Até o 3º Quadrimestre,PercentualDaDCLSobreARCL,% da DCL sobre a RCL (III/RCL),12.04
+2015,3,Q,Governo do Estado do Amapá,16,AP,E,750912,RGF-Anexo 02,NA,Até o 3º Quadrimestre,PercentualDaDCLSobreARCL,% da DCL sobre a RCL (III/RCL),27.45
+2015,3,Q,Governo do Estado do Tocantins,17,TO,E,1496880,RGF-Anexo 02,NA,Até o 3º Quadrimestre,PercentualDaDCLSobreARCL,% da DCL sobre a RCL (III/RCL),40.03
+2015,3,Q,Governo do Estado do Maranhão,21,MA,E,6850884,RGF-Anexo 02,NA,Até o 3º Quadrimestre,PercentualDaDCLSobreARCL,% da DCL sobre a RCL (III/RCL),60.15
+2015,3,Q,Governo do Estado do Piauí,22,PI,E,3194718,RGF-Anexo 02,NA,Até o 3º Quadrimestre,PercentualDaDCLSobreARCL,% da DCL sobre a RCL (III/RCL),57.01
+2015,3,Q,Governo do Estado do Ceará,23,CE,E,8842791,RGF-Anexo 02,NA,Até o 3º Quadrimestre,PercentualDaDCLSobreARCL,% da DCL sobre a RCL (III/RCL),61.74
+2015,3,Q,Governo do Estado do Rio Grande do Norte,24,RN,E,3408510,RGF-Anexo 02,NA,Até o 3º Quadrimestre,PercentualDaDCLSobreARCL,% da DCL sobre a RCL (III/RCL),9.04
+2015,3,Q,Governo do Estado da Paraíba,25,PB,E,3943885,RGF-Anexo 02,NA,Até o 3º Quadrimestre,PercentualDaDCLSobreARCL,% da DCL sobre a RCL (III/RCL),41.35
+2015,3,Q,Governo do Estado de Pernambuco,26,PE,E,9277727,RGF-Anexo 02,NA,Até o 3º Quadrimestre,PercentualDaDCLSobreARCL,% da DCL sobre a RCL (III/RCL),62.17
+2015,3,Q,Governo do Estado de Alagoas,27,AL,E,3321730,RGF-Anexo 02,NA,Até o 3º Quadrimestre,PercentualDaDCLSobreARCL,% da DCL sobre a RCL (III/RCL),166.79
+2015,3,Q,Governo do Estado de Sergipe,28,SE,E,2219574,RGF-Anexo 02,NA,Até o 3º Quadrimestre,PercentualDaDCLSobreARCL,% da DCL sobre a RCL (III/RCL),69.03
+2015,3,Q,Governo do Estado da Bahia,29,BA,E,15126371,RGF-Anexo 02,NA,Até o 3º Quadrimestre,PercentualDaDCLSobreARCL,% da DCL sobre a RCL (III/RCL),59.31
+2015,3,Q,Governo do Estado de Minas Gerais,31,MG,E,20734097,RGF-Anexo 02,NA,Até o 3º Quadrimestre,PercentualDaDCLSobreARCL,% da DCL sobre a RCL (III/RCL),198.66
+2015,3,Q,Governo do Estado do Espírito Santo,32,ES,E,3885049,RGF-Anexo 02,NA,Até o 3º Quadrimestre,PercentualDaDCLSobreARCL,% da DCL sobre a RCL (III/RCL),31.37
+2015,3,Q,Governo do Estado do Rio de Janeiro,33,RJ,E,16461173,RGF-Anexo 02,NA,Até o 3º Quadrimestre,PercentualDaDCLSobreARCL,% da DCL sobre a RCL (III/RCL),197.51
+2015,3,Q,Governo do Estado de São Paulo,35,SP,E,44035304,RGF-Anexo 02,NA,Até o 3º Quadrimestre,PercentualDaDCLSobreARCL,% da DCL sobre a RCL (III/RCL),167.84
+2015,3,Q,Governo do Estado do Paraná,41,PR,E,11081692,RGF-Anexo 02,NA,Até o 3º Quadrimestre,PercentualDaDCLSobreARCL,% da DCL sobre a RCL (III/RCL),50.38
+2015,3,Q,Governo do Estado de Santa Catarina,42,SC,E,6727148,RGF-Anexo 02,NA,Até o 3º Quadrimestre,PercentualDaDCLSobreARCL,% da DCL sobre a RCL (III/RCL),53.04
+2015,3,Q,Governo do Estado do Rio Grande do Sul,43,RS,E,11207274,RGF-Anexo 02,NA,Até o 3º Quadrimestre,PercentualDaDCLSobreARCL,% da DCL sobre a RCL (III/RCL),227.23
+2015,3,Q,Governo do Estado do Mato Grosso do Sul,50,MS,E,2619657,RGF-Anexo 02,NA,Até o 3º Quadrimestre,PercentualDaDCLSobreARCL,% da DCL sobre a RCL (III/RCL),89.18
+2015,3,Q,Governo do Estado do Mato Grosso,51,MT,E,3224357,RGF-Anexo 02,NA,Até o 3º Quadrimestre,PercentualDaDCLSobreARCL,% da DCL sobre a RCL (III/RCL),48.75
+2015,3,Q,Governo do Estado de Goiás,52,GO,E,6523222,RGF-Anexo 02,NA,Até o 3º Quadrimestre,PercentualDaDCLSobreARCL,% da DCL sobre a RCL (III/RCL),98.61
+2015,3,Q,Governo do Distrito Federal,53,DF,E,2852372,RGF-Anexo 02,NA,Até o 3º Quadrimestre,PercentualDaDCLSobreARCL,% da DCL sobre a RCL (III/RCL),25.23
