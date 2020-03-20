@@ -33,6 +33,24 @@ rgf <- read_csv("rgf_uf.csv")
 ```
 
 
+```{r}
+
+
+
+pessoal_df<- rgf %>% filter(startsWith(rgf$coluna, "%"), periodo > 1,conta =="Despesa Total com Pessoal - DTP", (startsWith (rgf$instituicao, "Governo do"))) %>% group_by(instituicao, uf, exercicio, coluna, conta, periodo, periodicidade)  %>% summarise(valor = valor)
+
+dcl_df<- rgf %>% filter(coluna == "Até o 3º Quadrimestre", conta == "% da DCL sobre a RCL (III/RCL)",(startsWith (rgf$instituicao, "Governo do"))) %>% group_by(instituicao, uf, exercicio, coluna, conta, periodo, periodicidade)   %>% summarise(valor = valor)
+
+invest_df<- rreo %>% filter%>% filter(startsWith (rreo$conta, "INVES"), startsWith (rreo$coluna,"DESPESAS PAGAS ATÉ"), !startsWith (rreo$cod_conta,"InvestimentosIntra")) %>% group_by(instituicao, uf, exercicio, coluna, conta, periodo, periodicidade)  %>% summarise(valor = sum(valor))
+
+prev_df<-rreo %>% filter%>% filter(startsWith (rreo$conta, "Resultado Previdenciário"), startsWith (rreo$coluna,"Até o Bimestre")) %>% group_by(instituicao, uf, exercicio, coluna, conta, periodo, periodicidade)  %>% summarise(valor = sum(valor))
+
+prev35_df<-rreo %>% filter%>% filter(startsWith (rreo$conta, "Resultado Previdenciário"), startsWith (rreo$coluna,"35º Exercício")) %>% group_by(instituicao, uf, exercicio, coluna, conta, periodo, periodicidade)  %>% summarise(valor = sum(valor))
+
+
+```
+
+
 Row
 -----------------------------------------------------------------------
 
@@ -41,13 +59,13 @@ Row
 ### Despesa Pessoal
 
 ```{r, chart 1}
-rgf <- read_csv("rgf_uf.csv")
-desp_pesssoal<- rgf %>% filter(startsWith(rgf$coluna, "%"), periodo > 1,conta =="Despesa Total com Pessoal - DTP", (startsWith (rgf$instituicao, "Governo do"))) %>% group_by(instituicao, exercicio, conta, periodo, periodicidade)  %>% summarise(limite = valor)
 
+pessoal_uf_df<- pessoal_df %>% filter (uf == "SC")
 
-
-desp_pessoal_plot <- ggplot(desp_pesssoal,aes(x=exercicio, y=limite, colour=limite)) +
-  geom_jitter(aes(text=paste("instituicao: ", instituicao)), width=0.25, alpha=0.5, ) +
+desp_pessoal_plot <- ggplot(pessoal_df, aes(x=exercicio, y=valor, color="red")) +
+  geom_jitter( aes(text=paste("UF: ", uf)), width=0.25, alpha=0.5 ) +
+  geom_line(data = pessoal_uf_df, aes(x=exercicio, y=valor, color="black", text=paste("UF: ", uf)), width=0.25, alpha=0.5)+
+  geom_point(data = pessoal_uf_df, aes(x=exercicio, y=valor, color="black", text=paste("UF: ", uf)), width=0.25, alpha=0.5)+
   geom_hline(yintercept=49) +
   geom_smooth(method = "lm")+
   theme(axis.text.x = element_text( hjust = 0.1)) +
@@ -55,9 +73,7 @@ desp_pessoal_plot <- ggplot(desp_pesssoal,aes(x=exercicio, y=limite, colour=limi
        x = "Ano",
        y = "%")+ theme_classic()
 
-(desp_pessoal_plot <- ggplotly(desp_pessoal_plot)%>% add_trace(y = ~limite, name = 'trace 0',mode = 'lines'))
-
-
+(desp_pessoal_plot <- ggplotly(desp_pessoal_plot))
 
 
 ```
@@ -69,6 +85,7 @@ desp_pessoal_plot <- ggplot(desp_pesssoal,aes(x=exercicio, y=limite, colour=limi
 ```{r, DCL}
 dcl<- rgf %>% filter(coluna == "Até o 3º Quadrimestre", conta == "% da DCL sobre a RCL (III/RCL)",(startsWith (rgf$instituicao, "Governo do"))) %>% group_by(instituicao, exercicio, conta, periodo, periodicidade)  %>% summarise(limite = valor)
 
+dcl_df<- rgf %>% filter(coluna == "Até o 3º Quadrimestre", conta == "% da DCL sobre a RCL (III/RCL)",(startsWith (rgf$instituicao, "Governo do"))) %>% group_by(instituicao, exercicio, conta, periodo, periodicidade)  %>% summarise(valor = valor)
 
 dcl_plot <- ggplot(dcl,aes(x=exercicio, y=limite, colour=limite)) +
   geom_jitter(aes(text=paste("instituicao: ", instituicao)), width=0.25, alpha=0.5, ) +
@@ -84,6 +101,10 @@ dcl_plot <- ggplot(dcl,aes(x=exercicio, y=limite, colour=limite)) +
 dcl_plot
 ```
 
+```{r}
+rgf_df<- rbind(pessoal_df,dcl_df)
+write_csv(rgf_df,"rgf_df.csv")
+```
 
 
 ### Investimento
@@ -91,7 +112,7 @@ dcl_plot
 ```{r, investimento}
 invest<- rreo %>% filter%>% filter(startsWith (rreo$conta, "INVES"), startsWith (rreo$coluna,"DESPESAS PAGAS ATÉ"), !startsWith (rreo$cod_conta,"InvestimentosIntra")) 
 
-
+invest_df<- rreo %>% filter%>% filter(startsWith (rreo$conta, "INVES"), startsWith (rreo$coluna,"DESPESAS PAGAS ATÉ"), !startsWith (rreo$cod_conta,"InvestimentosIntra")) %>% group_by(instituicao, exercicio, conta, periodo, periodicidade) %>% summarise(valor = sum(valor))
 
 p <- ggplot(invest,aes(x=exercicio, y=valor, colour=valor)) +
   geom_jitter(aes(text=paste("instituicao: ", instituicao)), width=0.25, alpha=0.5, ) +
@@ -116,6 +137,7 @@ Row
 ```{r}
 prev<- rreo %>% filter%>% filter(startsWith (rreo$conta, "Resultado Previdenciário"), startsWith (rreo$coluna,"Até o Bimestre")) %>% group_by(instituicao, exercicio) %>% summarise(valor = sum(valor))
 
+prev_df<-rreo %>% filter%>% filter(startsWith (rreo$conta, "Resultado Previdenciário"), startsWith (rreo$coluna,"Até o Bimestre")) %>% group_by(instituicao, exercicio, conta, periodo, periodicidade) %>% summarise(valor = sum(valor))
 
 
 p <- ggplot(prev,aes(x=exercicio, y=valor, colour=valor)) +
@@ -139,6 +161,11 @@ fig
 ### Chart 5
 
 ```{r eval=FALSE, include=FALSE}
+
+prev35_df<-rreo %>% filter%>% filter(startsWith (rreo$conta, "Resultado Previdenciário"), startsWith (rreo$coluna,"35º Exercício")) %>% group_by(instituicao, exercicio, conta, periodo, periodicidade) %>% summarise(valor = sum(valor))
+
+%>% 
+
 p <- ggplot(limites,aes(x=exercicio, y=limite, colour=limite)) +
   geom_jitter(aes(text=paste("instituicao: ", instituicao)), width=0.25, alpha=0.5, ) +
   geom_hline(yintercept=55) +
@@ -153,6 +180,18 @@ fig <- ggplotly(p)%>% add_trace(y = ~limite, name = 'trace 0',mode = 'lines')
 
 fig
 ```
+
+
+```{r}
+rreo_df<- rbind(invest_df, prev_df, prev35_df)
+
+write_csv(rreo_df,"rreo_df.csv")
+
+data_lrf<- rbind (rreo_df, rgf_df)
+
+write_csv(data_lrf,"data_lrf.csv")
+```
+
 
 ### Chart 6
 
