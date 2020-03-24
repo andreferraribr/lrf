@@ -1,0 +1,224 @@
+---
+title: "Limites"
+output: 
+  flexdashboard::flex_dashboard:
+    orientation: rows
+    source_code: https://github.com/andreferraribr/lrf
+    social: [ "twitter", "facebook", "menu" ]
+
+---
+
+```{r setup, include=FALSE}
+library(flexdashboard)
+library(shiny)
+#library(httr)
+library(tidyverse)
+library(readxl)
+library(DT)
+library(plotly)
+#library(leaflet)
+#library(brazilmaps)
+#library(shinyWidgets)
+#library(shiny)
+#library(sf)
+library(vroom)
+#library(spdplyr)
+#library(htmltools)
+```
+
+```{r}
+# verificar data set para trazer anexo 14 de 2018 de RN e SC e agregar valor resultado previdenciario RJ de 2017
+
+rreo <- read_csv("rreo_uf_lrf_invest.csv")
+
+rgf <- read_csv("rgf_uf.csv") 
+
+#investigar motivo da ausencia anexo 14 de RN e SC
+
+anexo_14<-read_csv("anexo_14.csv")
+
+rn_14<-read_csv("rn_14.csv")
+
+rreo<-rbind(rreo,anexo_14, rn_14)
+
+
+```
+
+
+```{r}
+
+
+# criar rotina para extrair dados necessarios para os graficos
+# mutate para definir cor azul/bom vermelho/ruim
+# explicar diferenca entre RCL e RCL ajustada
+pessoal_df<- rgf %>% filter(startsWith(rgf$coluna, "%"), periodo > 1,conta =="Despesa Total com Pessoal - DTP", (startsWith (rgf$instituicao, "Governo do"))) %>% group_by(instituicao, uf, exercicio, coluna, conta, periodo, periodicidade)  %>% summarise(valor = valor) %>% mutate (cores = if_else(valor < 49, "blue","red"))
+
+dcl_df<- rgf %>% filter(coluna == "Até o 3º Quadrimestre", conta == "% da DCL sobre a RCL (III/RCL)",(startsWith (rgf$instituicao, "Governo do"))) %>% group_by(instituicao, uf, exercicio, coluna, conta, periodo, periodicidade)   %>% summarise(valor = valor)%>% mutate (cores = if_else(valor < 200, "blue","red"))
+
+invest_df<- rreo %>% filter%>% filter(startsWith (rreo$conta, "INVES"), startsWith (rreo$coluna,"DESPESAS PAGAS ATÉ"), !startsWith (rreo$cod_conta,"InvestimentosIntra"), (startsWith (rreo$instituicao, "Governo do"))) %>% group_by(instituicao, uf, exercicio, coluna, conta, periodo, periodicidade)  %>% summarise(invest = sum(valor)) 
+
+# verificar sum para agrupar resultado plano previdenciario e plano financeiro
+prev_df<-rreo %>% filter%>% filter(startsWith (rreo$conta, "Resultado Previdenciário"), startsWith (rreo$coluna,"Até o Bimestre"), (startsWith (rreo$instituicao, "Governo do"))) %>% group_by(instituicao, uf, exercicio, coluna, periodo, periodicidade)  %>% summarise(resultado = sum(valor))
+
+
+prev_df_rj<-rreo %>% filter%>% filter(exercicio == 2017, uf == "RJ",startsWith (rreo$conta, "Resultado Previdenciário"), startsWith (rreo$coluna,"Até o Bimestre"), (startsWith (rreo$instituicao, "Governo do"))) %>% group_by(instituicao, uf, exercicio, periodo, periodicidade)  %>% summarise(valor = sum(valor))
+
+
+prev_df_rn<-rreo %>% filter%>% filter(exercicio == 2018,startsWith (rreo$conta, "Resultado Previdenciário"), startsWith (rreo$coluna,"Exercício"), (startsWith (rreo$uf, "RN"))) %>% group_by(instituicao, uf, exercicio, coluna, periodo, periodicidade)  %>% summarise(resultado = sum(valor))
+
+prev_df<-rbind(prev_df,prev_df_rn)
+
+prev35_df<-rreo %>% filter%>% filter(startsWith (rreo$conta, "Resultado Previdenciário"), startsWith (rreo$coluna,"35º Exercício"), (startsWith (rreo$instituicao, "Governo do"))) %>% group_by(instituicao, uf, exercicio, coluna, conta, periodo, periodicidade)  %>% summarise(valor = sum(valor))
+
+rcl_df<- rreo %>% filter(anexo == "RREO-Anexo 14", conta == "Receita Corrente Líquida",(startsWith (rreo$instituicao, "Governo do"))) %>% group_by(instituicao, uf, exercicio, coluna, conta, periodo, periodicidade)   %>% summarise(rcl = max(valor))
+
+
+prev_df_2<-rreo %>% filter%>% filter(startsWith (rreo$conta, "Resultado Previdenciário"), (startsWith (rreo$instituicao, "Governo do"))) %>% group_by(instituicao, uf, exercicio, coluna, conta, periodo, periodicidade)  %>% summarise(valor = sum(valor))
+```
+
+
+```{r}
+
+# inserir a RCL nas DFs de invetimento e resultado previdenciario
+invest_df<- cbind(invest_df,rcl_df) %>% mutate (valor = (invest/rcl)*100) %>% mutate (cores = if_else(valor > 5 , "blue","red"))
+
+prev_df<- cbind(prev_df,rcl_df) %>% mutate (valor = (resultado/rcl)*100) %>% mutate (cores = if_else(valor > 0 , "blue","red"))
+
+
+
+
+teste<-prev_df %>% group_by(uf) %>% summarise(q=n())
+```
+
+
+Row
+-----------------------------------------------------------------------
+
+
+
+### Despesa Pessoal
+
+```{r, chart 1}
+
+# selecionar UF para geom_line e geom_point
+pessoal_uf_df<- pessoal_df %>% filter (uf == "RJ")
+# df para plotar geom_line com UF selecionada
+pessoal_uf_df_line<- pessoal_df %>% filter (uf == "RJ") %>% select(-cores)
+# excluir UF da DF do geom_jitter 
+pessoal_todos <-pessoal_df %>% filter (uf != "RJ")
+
+desp_pessoal_plot <- ggplot(pessoal_todos, aes(x=exercicio, y=valor, color = cores)) +
+  geom_jitter( aes(text=paste("UF: ", uf)), width=0.25, alpha=0.5) +
+ 
+  geom_point(data = pessoal_uf_df, aes(x=exercicio, y=valor,text=paste("UF: ", uf), size = 10))+
+  # inherit.aes =FALSE para nao herdar aes do geoms anteriores
+  geom_line(data = pessoal_uf_df_line,  inherit.aes =FALSE, aes(x=exercicio, y=valor,text=paste("UF: ", uf)), width=0.25, alpha=0.5)+
+  geom_hline(yintercept=49, colour = "red", width=0.1, linetype = "dashed") +
+  #geom_hline(yintercept=44.5, colour = "orange", width=0.1) +
+  geom_smooth(method = "auto", inherit.aes =FALSE,aes(x=exercicio, y=valor) )+
+  theme(axis.text.x = element_text( hjust = 0.1)) +
+  labs(title = "Despesa de Pessoal como % da RCL",
+       x = "Ano",
+       y = "%")+ theme_classic()+ 
+  # alterar mutate cores para pessoal(descumprir limite legal, descumprir limite prudencial, cumprir limite), dcl (cumprir e descumprir), invest (acima de 10%, abaixo de 10%), prev (superavitario, deficitario)
+  scale_color_manual(breaks = c("red", "blue"),
+                        values=c("red", "blue"))
+
+(desp_pessoal_plot <- ggplotly(desp_pessoal_plot))
+
+
+```
+
+### DCL
+```{r}
+
+dcl_uf_df<- dcl_df %>% filter (uf == "RJ")
+dcl_uf_df_line<- dcl_df %>% filter (uf == "RJ") %>% select(-cores)
+dcl_todos <-dcl_df %>% filter (uf != "RJ")
+
+dcl_plot <- ggplot(dcl_todos, aes(x=exercicio, y=valor, color = cores)) +
+  geom_jitter( aes(text=paste("UF: ", uf)), width=0.25, alpha=0.5) +
+ 
+  geom_point(data = dcl_uf_df, aes(x=exercicio, y=valor,text=paste("UF: ", uf), size = 10))+
+  
+  geom_line(data = dcl_uf_df_line,  inherit.aes =FALSE, aes(x=exercicio, y=valor,text=paste("UF: ", uf)), width=0.25, alpha=0.5)+
+  geom_hline(yintercept=200, colour = "red", width=0.1, type = "dashed") +
+  #geom_hline(yintercept=44.5, colour = "orange", width=0.1) +
+  geom_smooth(method = "auto", inherit.aes =FALSE,aes(x=exercicio, y=valor) )+
+  theme(axis.text.x = element_text( hjust = 0.1)) +
+  labs(title = "Divida consolidada Liquida como % da RCL",
+       x = "Ano",
+       y = "%")+ theme_classic()+ 
+  scale_color_manual(breaks = c("red", "blue"),
+                        values=c("red", "blue"))
+
+(dcl_plot <- ggplotly(dcl_plot))
+```
+
+
+
+
+Row
+-----------------------------------------------------------------------
+
+
+
+
+### Previdencia
+
+
+```{r}
+prev_uf_df<- prev_df %>% filter (uf == "ES")
+prev_uf_df_line<- prev_df %>% filter (uf == "ES") %>% select(-cores)
+prev_todos <-prev_df %>% filter (uf != "ES")
+
+prev_plot <- ggplot(prev_todos, aes(x=exercicio, y=valor, color = cores)) +
+  geom_jitter( aes(text=paste("UF: ", uf)), width=0.25, alpha=0.5) +
+ 
+  geom_point(data = prev_uf_df, aes(x=exercicio, y=valor,text=paste("UF: ", uf), size = 10))+
+  
+  geom_line(data = prev_uf_df_line,  inherit.aes =FALSE, aes(x=exercicio, y=valor,text=paste("UF: ", uf)), width=0.25, alpha=0.5)+
+  geom_hline(yintercept=5, colour = "red", width=0.1, linetype = "dashed") +
+  #geom_hline(yintercept=44.5, colour = "orange", width=0.1) +
+  geom_smooth(method = "auto", inherit.aes =FALSE,aes(x=exercicio, y=valor) )+
+  theme(axis.text.x = element_text( hjust = 0.1)) +
+  labs(title = "Resultado Previdenciario como % da RCL",
+       x = "Ano",
+       y = "%")+ theme_classic()+ 
+  scale_color_manual(breaks = c("red", "blue"),
+                        values=c("red", "blue"))
+
+(prev_plot <- ggplotly(prev_plot))
+```
+
+
+
+### Investimento
+
+```{r}
+
+
+invest_uf_df<- invest_df %>% filter (uf == "RJ")
+invest_uf_df_line<- invest_df %>% filter (uf == "RJ") %>% select(-cores)
+invest_todos <-invest_df %>% filter (uf != "RJ")
+
+invest_plot <- ggplot(invest_todos, aes(x=exercicio, y=valor, color = cores)) +
+  geom_jitter( aes(text=paste("UF: ", uf)), width=0.25, alpha=0.5) +
+ 
+  geom_point(data = invest_uf_df, aes(x=exercicio, y=valor,text=paste("UF: ", uf), size = 10))+
+  
+  geom_line(data = invest_uf_df_line,  inherit.aes =FALSE, aes(x=exercicio, y=valor,text=paste("UF: ", uf)), width=0.25, alpha=0.5)+
+  geom_hline(yintercept=5, colour = "red", width=0.1, linetype = "dashed") +
+  #geom_hline(yintercept=44.5, colour = "orange", width=0.1) +
+  geom_smooth(method = "auto", inherit.aes =FALSE,aes(x=exercicio, y=valor) )+
+  theme(axis.text.x = element_text( hjust = 0.1)) +
+  labs(title = "Investimento como % da RCL",
+       x = "Ano",
+       y = "%")+ theme_classic()+ 
+  scale_color_manual(breaks = c("red", "blue"),
+                        values=c("red", "blue"))
+
+(invest_plot <- ggplotly(invest_plot))
+
+```
+
