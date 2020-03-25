@@ -1,0 +1,421 @@
+---
+title: "rreo_rgf_uf"
+output: html_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+options(scipen=999)
+```
+
+### Como obter para as UFs, para o periodo de 2015 a 2019, os dados da RCL, limite da despesa com pessoal, limite da DCL, despesa liquidada com investimento, resultado previdenciario?
+
+
+** acesse o vídeo explicativo https://www.youtube.com/user/4ndr3f3rr4r1/ **
+
+### Acesse os dados abertos (API) do Tesouro Nacional para obter os dado
+
+
+### 0) anexar as libraries e criar funções
+
+Utilizei as libraries abaixo:
+
+```{r message=FALSE, warning=FALSE}
+library(dplyr)
+library(data.table)
+library(rjson)
+library(stringr)
+library(jsonlite)
+library(httr)
+library(purrr)
+library(tidyverse)
+library(readxl)
+library(DT)
+#library(xlsx)
+library(plotly)
+```
+***         
+
+
+Criei a função json2df(). A função baixa o arquivo JSON e armazenar os dados em uma data frame.
+
+A função foi inspirada no código do Marcos F Silva https://www.rpubs.com/marcosfs2006/api_siconfi.
+
+
+
+```{r, json2df}
+
+json2df = function(a){ 
+
+# "a" é a URL
+f_api <-   GET(a)
+
+f_txt <- content(f_api, as="text", encoding="UTF-8")
+
+f_json <- fromJSON(f_txt, flatten = FALSE)
+
+f_df <-as.data.frame(f_json[[1]]) 
+
+}
+```
+
+
+
+A função bind_json2df() agrupa os relatórios individuais em uma única data frame.
+
+
+```{r, bind_json2df}
+# função para juntar data frames
+
+bind_json2df = function(a){ map(a,json2df)}
+```
+
+A função relatorios() acessa as urls, baixa os arquivos JSON, transforma os arquivos individuais em data frames, agrupa as data frames em uma única data frame. 
+
+
+```{r, relatorios}
+
+# funcao para gerar df com os dados dos relatórios
+relatorios = function(a){map_dfr(bind_json2df(a), bind_rows)}
+
+```
+  
+   
+
+### 1) baixar tabela com dados dos entes
+
+
+Utilizei a função json2df para criar uma data frame com os dados dos entes da federação.
+
+```{r, entes}
+# acessar url com dados dos entes
+
+entes<- json2df("http://apidatalake.tesouro.gov.br/ords/siconfi/tt/entes")
+
+datatable(entes)
+```
+  
+      
+
+
+### 2) obter os extratos de relatórios e matrizes entregues  
+
+Para obter os extratos devemos informar o código IBGE e a ano referência.
+
+
+![](extrato.png) 
+
+Abaixo o resultado para o estado do Ceará.
+
+```{r, exemplo extrato}
+
+# apresentar exemplo da estrutura do extrato
+asssembleia_ceara <- json2df( "http://apidatalake.tesouro.gov.br/ords/siconfi/tt/extrato_entregas?id_ente=23&an_referencia=2019")
+
+datatable(asssembleia_ceara)
+
+```
+     
+
+
+É importante ressaltar que os dados são de responsabilidade dos entes.
+
+Os municípios devem encaminhar os demonstrativos para o Tesouro Nacional, que por sua vez, disponibiliza os dados na API.
+
+De acordo com o Tesouro Nacional a base de dados apresenta alguns problemas. Destaco dois dos problemas:
+
+1) incompleição: aproximadamente 5% dos municípios deixaram de encaminhar os demonstrativos.
+2) impureza: alguns demonstrativos apresentam, por exemplo, saldos zerados. 
+
+fonte: https://siconfi.tesouro.gov.br/siconfi/pages/public/conteudo/conteudo.jsf?id=22703  
+
+   
+
+
+#### 2.1) rotina para baixar extrato de vários entes
+
+Fiz um loop com os exercicios (2015 e 2019) e com os códigos ibge da tabela ente (entes$cod_ibge) para acessar todos os extratos disponíveis.   
+
+
+```{r, loop para baixar extratos}
+# arq para coletar todas as urls dos extratos de entregas
+arq<- c()
+
+#  filtro para obter extratos das UF
+entes_knit<-entes%>%filter(10 < cod_ibge, cod_ibge< 99)
+
+
+for (y in c(2015, 2016, 2017, 2018, 2019)){
+# loop por todos os entes (cod_ibge) da tabela entes para acessar API, baixar arquivo e variável com todos as urls
+for (i in entes_knit$cod_ibge){
+  
+files_json_ibge <- 
+  str_replace("http://apidatalake.tesouro.gov.br/ords/siconfi/tt/extrato_entregas?id_ente=XXXXXX&an_referencia=yyyy","XXXXXX",toString(i))
+
+files_json <- 
+  str_replace(files_json_ibge ,"yyyy",toString(y))
+
+arq<- c(arq, files_json)
+}
+}
+# criar data frame com ente, cod_ibge e url
+arq_ente<- data.frame ( "ente" =  entes_knit$ente, "cod_ibge" = entes_knit$cod_ibge, "url_extrato"=arq  )
+
+  
+# criar variáveis do loop
+extratos <- c()
+extratos_urls<-c()
+status_api<- c()
+status_cod_ibge<- c()
+
+# loop em arq para baixar o extrato individual de cada ente
+for (i in arq){
+# acessa o API e baixa o arquivo JSON  
+ext_api<-   GET(i)
+
+ext_txt <- content(ext_api, as="text", encoding="UTF-8")
+
+ext_json <- fromJSON(ext_txt, flatten = FALSE)
+
+ext  <-as.data.frame(ext_json[["items"]]) 
+
+# juntar os extratos
+extratos<- rbind(ext, extratos)
+
+# verificar status da consulta
+status_api<- c(status_code(ext_api),status_api )
+
+# verificar se acessou corretamente a API
+status_cod_ibge<- c(status_cod_ibge, ext_json[["items"]][["cod_ibge"]] )
+}
+
+```
+   
+***   
+
+
+### 3) utilizar os dados dos extratos para gerar as URLs utilizadas para acessar a API
+
+Para obter o RGF precisamos informar, dentre outros, os itens abaixo:  
+1) tipo do demonstrativo (RGF ou RGF Simplificado)   
+2) código do poder (E = Executivo, L = Legislativo, J = Judiciário, M = Ministério Público, D = Defensoria Pública)
+
+Contudo o tipo do demonstrativo e código do poder estão ausentes da tabela extratos. No chunk abaixo adicionamos à tabela extratos o tipo do demonstrativo e código do poder além de outras variáveis (http://apidatalake.tesouro.gov.br/docs/siconfi/#/RGF/get_rgf).   
+
+
+#### 3.1) criar nova variáveis para facilitar a criação das urls e construção de futuros filtros.
+
+```{r, adicionar variáveis à df extrato (tipo, poder, uf, ente, regiao, esfera, capital))}
+
+
+# tornar amigavel a df extratos
+extratos<- extratos%>%
+  mutate (data = as.Date (data_status))
+
+# adicionar variável "tipo" (nome reduzido do entregavel) 
+extratos<- extratos%>%
+  mutate (tipo =case_when(
+ entregavel == "Balanço Anual (DCA)" ~ "DCA", 
+ entregavel == "MSC Agregada" ~ "MSCC",
+ entregavel == "MSC Encerramento" ~ "MSCE",
+ entregavel == "Relatório de Gestão Fiscal" ~ "RGF",
+ entregavel == "Relatório de Gestão Fiscal Simplificado" ~ "RGF Simplificado",
+ entregavel == "Relatório Resumido de Execução Orçamentária" ~ "RREO",
+ entregavel == "Relatório Resumido de Execução Orçamentária Simplificado" ~ "RREO Simplificado"
+))
+
+
+# adicionar variável "poder" (L/legislativo, E/executivo, J/Judiciário...)
+extratos<-extratos%>%
+  mutate (poder = case_when(
+    str_detect(instituicao,'Assembleia Legislativa') ~ "L",
+    str_detect(instituicao,'Câmara de Vereadores') ~ "L",
+    str_detect(instituicao,'Senado Federal') ~ "L",
+    str_detect(instituicao,'Câmara dos Deputados') ~ "L",
+    str_detect(instituicao,'Câmara Legislativa') ~ "L",
+    str_detect(instituicao,'Prefeitura Municipal') ~ "E",
+    str_detect(instituicao,'Governo do') ~ "E",
+    str_detect(instituicao,'Governo Federal') ~ "E",
+    str_detect(instituicao,'Tribunal') ~ "J",
+    str_detect(instituicao,'Conselho da Justiça Federal') ~ "J",
+    str_detect(instituicao,'Conselho Nacional de Justiça') ~ "J",
+    str_detect(instituicao,'Ministério Público') ~ "M",
+    str_detect(instituicao,'Defensoria') ~ "D",
+    str_detect(instituicao,'CONSÓRCIO') ~ "C",
+    str_detect(instituicao,'CONSORCIO') ~ "C",
+    str_detect(instituicao,'Consórcio') ~ "C",
+    TRUE ~ "O"
+  ))
+
+# mesclar df entes e extratos para carregar na df extratos as variáveis (uf, ente, regiao, esfera, capital)
+entes_merge<-entes%>%
+  select( ente, uf, regiao, esfera, capital, cod_ibge)
+
+extratos<- merge(extratos, entes_merge, by = "cod_ibge")
+
+# cria variável ente_uf para diferenciar cidades com mesmo nome
+extratos<-extratos%>%
+  mutate(ente_uf = paste0(ente,"-",uf))
+```
+***      
+
+
+
+##### 3) *extratos_relatorios* para RREO, RGF e DCA.
+
+Agrupei em uma única data frame o RREO, RGF e DCA. 
+
+
+```{r, extratos_relatorios}
+# criar df extratos_relatorios (excluir MSCC e MSCE)
+extratos_relatorios<-extratos%>%
+  filter(tipo != ("MSCC"),tipo != ("MSCE") )
+
+# criar link para API
+extratos_relatorios<-extratos_relatorios%>%
+ mutate (url_api =case_when(
+ tipo == "DCA" ~ paste0("http://apidatalake.tesouro.gov.br/ords/siconfi/tt/dca?an_exercicio=",exercicio,"&id_ente=",cod_ibge), 
+ tipo == "MSCA" ~ "MSCA",
+ tipo == "MSCE" ~ "MSCE",
+ tipo == "RGF" ~ paste0("http://apidatalake.tesouro.gov.br/ords/siconfi/tt/rgf?an_exercicio=",exercicio,"&in_periodicidade=",periodicidade,"&nr_periodo=",periodo,"&co_tipo_demonstrativo=RGF&co_poder=",poder,"&id_ente=",cod_ibge),
+ tipo == "RGF Simplificado" ~ paste0("http://apidatalake.tesouro.gov.br/ords/siconfi/tt/rgf?an_exercicio=",exercicio,"&in_periodicidade=",periodicidade,"&nr_periodo=",periodo,"&co_tipo_demonstrativo=RGF%20Simplificado&co_poder=",poder,"&id_ente=",cod_ibge),
+ tipo == "RREO" ~ paste0("http://apidatalake.tesouro.gov.br/ords/siconfi/tt/rreo?an_exercicio=",exercicio,"&nr_periodo=",periodo,"&co_tipo_demonstrativo=RREO&id_ente=",cod_ibge),
+ tipo == "RREO Simplificado" ~ paste0("http://apidatalake.tesouro.gov.br/ords/siconfi/tt/rreo?an_exercicio=",exercicio,"&nr_periodo=",periodo,"&co_tipo_demonstrativo=RREO%20Simplificado&id_ente=",cod_ibge)
+ 
+) )
+
+```
+***         
+
+
+
+### 4) acessar a API, baixar os dados e apresentar a informação no formato de tabelas e/ou gráficos  
+
+
+
+```{r warning=FALSE}
+# selecionar o RGF (tipo == "RGF") do terceiro quadrimenestre (periodo ==3) do poder executivo (poder == "E")
+# rgf_url<-extratos_relatorios%>%
+#  filter(  tipo == "RGF", poder =="E", periodo == 3)
+
+# obter a RGF a partir da URL
+# rgf <-relatorios(rgf_url$url_api)
+
+rgf<- read_csv("rgf.csv")
+
+```
+
+```{r}
+
+
+# selecionar o RREO (tipo == "RREO") do sexto bimenestre (periodo == 6) do poder executivo (poder == "E")
+#rreo_url<-extratos_relatorios%>%
+ # filter(  tipo == "RREO", poder =="E", periodo == 6)
+
+# obter o RREO a partir da URL
+# rreo <-relatorios(rreo_url$url_api)
+
+rreo<- read_csv("rreo.csv")
+```
+
+
+```{r}
+df_rcl<- rreo %>% filter( cod_conta == "ReceitasCorrentesLiquidasExcetoTransferenciasEFUNDEB", coluna =="TOTAL (ÚLTIMOS 12 MESES)") %>% group_by(instituicao, uf, exercicio, coluna, conta, periodo, periodicidade)   %>% summarise(valor = (valor)) %>% mutate (cores = "rcl")
+```
+
+
+
+```{r}
+
+
+df_invest<- rreo %>% filter(coluna %in% c("DESPESAS LIQUIDADAS ATÉ O BIMESTRE (h)","Até o Bimestre (h)", "	DESPESAS LIQUIDADAS ATÉ O BIMESTRE (h)"), conta == "INVESTIMENTOS") %>% group_by(instituicao, uf, exercicio, coluna, conta, periodo, periodicidade)  %>% summarise(valor = sum(valor)) %>% mutate (cores = "a definir")) 
+
+
+# DESPESAS LIQUIDADAS ATÉ O BIMESTRE RESULTADO PREVIDENCIÁRIO startsWith (rreo$conta, "INVES"), startsWith (rreo$coluna,"DESPESAS PAGAS ATÉ"
+
+```
+
+
+
+```{r}
+df_prev<- rreo %>%  filter(startsWith (coluna,"DESPESAS LIQUIDADAS ATÉ O BIMESTRE")|(coluna == "Até o Bimestre / 2015"),startsWith (conta, "RESULTADO PREVIDENCIÁRIO")) %>% group_by(instituicao, uf, exercicio, coluna, conta, periodo, periodicidade)  %>% summarise(valor = sum(valor)) 
+#df_prev <- df_prev %>% mutate (recente = as.integer(str_sub(coluna, start = -4))) %>% filter (exercicio == recente)%>% group_by(instituicao, uf, exercicio, coluna, periodo, periodicidade)  %>% summarise(valor = sum(valor)) 
+(df_prev_ba<-df_prev %>%  filter(uf == "BA") %>% group_by(uf, exercicio) %>% summarise (q = n()))
+
+
+df_prev_rn_2015<- rreo %>%  filter(uf == "RN",coluna == "Até o Bimestre / 2015",startsWith (rreo$conta, "RESULTADO PREVIDENCIÁRIO")) %>% group_by(instituicao, uf, exercicio, coluna,  periodo, periodicidade)  %>% summarise(valor = sum(valor)) 
+
+
+df_prev_ba_2016<- rreo %>%  filter(uf == "BA",coluna == "Até o Bimestre / 2016",startsWith (rreo$conta, "RESULTADO PREVIDENCIÁRIO")) %>% group_by(instituicao, uf, exercicio, coluna,  periodo, periodicidade)  %>% summarise(valor = sum(valor)) 
+
+
+df_prev_rn_2018<-rreo %>%   filter(exercicio == 2018,startsWith (rreo$conta, "Resultado Previdenciário"), startsWith (rreo$coluna,"Exercício"), (startsWith (rreo$uf, "RN"))) %>% group_by(instituicao, uf, exercicio, coluna, periodo, periodicidade)  %>% summarise(valor = sum(valor)) 
+
+#df_prev_rn_2018<-df_prev_rn_2018 %>% mutate (coluna = "DESPESAS LIQUIDADAS ATÉ O BIMESTRE / 2018")%>%  filter(exercicio == 2018,startsWith (rreo$conta, "Resultado Previdenciário"), startsWith (rreo$coluna,"Exercício"), (startsWith (rreo$uf, "RN"))) %>% group_by(instituicao, uf, exercicio, periodo, periodicidade)  %>% summarise(resultado = sum(valor)) 
+
+df_prev<- rbind(df_prev,df_prev_rn_2015, df_prev_ba_2016)
+
+df_prev <- df_prev %>% mutate (recente = as.integer(str_sub(coluna, start = -4))) %>% filter (exercicio == recente)%>% group_by(instituicao, uf, exercicio, coluna, periodo, periodicidade)  %>% summarise(valor = sum(valor))
+
+df_prev<- rbind(df_prev,df_prev_rn_2018) %>% mutate (cores = if_else(valor > 0, "superavitário","deficitário"), conta = "Resultado Previdenciário")
+
+(df_prev_rn<-df_prev %>%  filter(uf == "BA") %>% group_by(uf, exercicio) %>% summarise (q = n()))
+
+df_prev_rn<- rbind(df_prev_rn,df_prev_rn_2018)
+
+(df_prev_rn<-df_prev %>%  filter(uf == "RN") %>% group_by(uf, exercicio) %>% summarise (q = n()))
+
+
+
+# RN Até o Bimestre 2015
+
+
+
+```
+
+
+
+```{r}
+
+df_pessoal<- rgf %>% filter(startsWith(rgf$coluna, "%"),startsWith(cod_conta , "DespesaComPessoalTotal")) %>% group_by(instituicao, uf, exercicio, coluna, conta, periodo, periodicidade)  %>% summarise(valor = valor) %>% mutate (cores = if_else(valor < 49, "dentro do limite","acima do limite"))
+
+
+(df_pessoal %>% group_by(uf) %>% summarise(q =n()))
+
+
+
+
+```
+
+
+```{r}
+df_dcl<- rgf %>% filter(coluna == "Até o 3º Quadrimestre", conta == "% da DCL sobre a RCL (III/RCL)") %>% group_by(instituicao, uf, exercicio, coluna, conta, periodo, periodicidade)   %>% summarise(valor = valor)%>% mutate (cores = if_else(valor < 200,"dentro do limite","acima do limite"))
+
+df_dcl_ap <- df_dcl %>% filter (uf == "AP", exercicio == 2016)
+
+write_csv (df_dcl_ap,"df_dcl_ap.csv")
+
+df_dcl_ap_2017<-as.data.frame(read_csv ("df_dcl_ap.csv") %>% mutate (exercicio = 2017 , valor = 0))
+
+df_dcl <- rbind.data.frame(df_dcl, df_dcl_ap_2017)
+
+# http://sigdoc.ap.gov.br/public/verArquivo.jsf?token=e44b959457ecc1d5ae2084503eb31c08&tid=e732b253daacb77745d5a2c464e0260f
+
+
+(df_dcl %>% group_by(uf) %>% summarise(q =n()))
+
+```
+
+```{r}
+df_limites <- rbind(df_dcl, df_invest, df_pessoal, df_prev, df_rcl)
+
+write_csv(df_limites,"df_limites.csv")
+```
+  
+
+
+##### Referências bacanas
+
+função para transformar json em data frame: https://www.rpubs.com/marcosfs2006/api_siconfi
+
+dica de encoding: http://www.leg.ufpr.br/~walmes/ensino/ce083-2014-02/ce083-2014-02-aula10.html

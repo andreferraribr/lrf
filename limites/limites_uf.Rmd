@@ -8,64 +8,29 @@ output:
 runtime : shiny 
 ---
 
-```{r setup, include=FALSE}
+```{r libraries, include=FALSE}
 library(flexdashboard)
 library(shiny)
-#library(httr)
 library(tidyverse)
 library(readxl)
 library(DT)
 library(plotly)
-#library(leaflet)
-#library(brazilmaps)
-#library(shinyWidgets)
-#library(shiny)
-#library(sf)
-library(vroom)
-#library(spdplyr)
-#library(htmltools)
 ```
 
-```{r}
+
+
+
+```{r, importar df_limites}
+# dados originados a partir de rreo_rgf_uf.Rmd
+# rotina criada para extrair RREO e RGF do SICONFI API http://apidatalake.tesouro.gov.br/docs/siconfi
+
 # importar df com os dados
-
-df_limites<- read_csv("df_limites.csv")
-
-
+df_limites<- read_csv("df_limites.csv")%>% arrange(uf)
 
 ```
 
-
-Inputs {.sidebar}
--------------------------------------
-```{r, input e reactive UF}
-# atenção, variáveis terminam com "uf"
-selectInput("uf", label = h3("escolha o Estado:"), 
-    choices = unique(df_limites$uf), 
-    selected = "SC")
-
-
-limites_reactive <- reactive({ df_limites%>% filter (uf == input$uf)})
-
-
-pessoal_df<-df_limites %>% filter(startsWith(conta, "DESPESA"))
-dcl_df<-df_limites %>% filter(conta == "% da DCL sobre a RCL (III/RCL)")
-
-
-rcl_df<-df_limites %>% filter(startsWith(conta, "RECEI")) %>% select(uf,exercicio, valor) %>% mutate (rcl = valor, uf_exercicio = paste0(uf,"-",exercicio))%>% select(uf_exercicio, rcl)
-prev_df<-df_limites %>% filter (startsWith(conta, "Resultado")) %>% mutate (resultado = valor, uf_exercicio = paste0(uf,"-",exercicio))
-prev_df<- left_join(prev_df, rcl_df) %>% mutate (valor = resultado / rcl *100)%>% mutate (cores = if_else(valor > 0, "superavitário","deficitário"))
-
-#prev_df$cores <- factor(prev_df$cores, levels = c("superavitário","deficitário"))
-
-invest_df<-df_limites %>% filter(startsWith(conta, "INVEST"))%>% mutate (investimento = valor, uf_exercicio = paste0(uf,"-",exercicio))
-
-
-invest_df<- left_join(invest_df, rcl_df) %>% mutate (valor = investimento / rcl *100)%>% mutate (cores = if_else(valor > 5, "maior que 5% da RCL","menor ou igual a 5% da RCL"))
-
-levels(invest_df$cores) <- c("menor ou igual a 5% da RCL","maior que 5% da RCL")
-
-
+```{r, funcao plot_df}
+# https://thinkr-open.github.io/building-shiny-apps-workflow/structure.html#a-practical-walk-through
 
 plot_df = function(df,corte){
   p <- ggplot(df, aes(x=exercicio, y=valor, color = cores)) +
@@ -73,14 +38,13 @@ plot_df = function(df,corte){
  
   geom_point(data = df %>% filter (uf == input$uf ), aes(x=exercicio, y=valor,text=paste("UF: ", uf), size = 10))+
   # inherit.aes =FALSE para nao herdar aes do geoms anteriores
-  geom_line(data = df %>% filter (uf == input$uf ),  inherit.aes =FALSE, aes(x=exercicio, y=valor,text=paste("UF: ", uf)), width=0.25, alpha=0.5)+
-  geom_hline(yintercept=corte, colour = "red", width=0.1, linetype = "dashed") +
-  #geom_hline(yintercept=44.5, colour = "orange", width=0.1) +
-  geom_smooth( method = "auto", inherit.aes =FALSE,aes(x=exercicio, y=valor), color = "gray" )+
-  theme(axis.text.x = element_text( hjust = 0.1)) +
+  geom_line(data = df %>% filter (uf == input$uf ),  inherit.aes =FALSE, aes(x=exercicio, y=valor))+
+  geom_hline(yintercept=corte, colour = "red", linetype = "dashed") +
+  # https://ggplot2.tidyverse.org/reference/geom_smooth.html  
+  geom_smooth( method = "loess", inherit.aes =FALSE,aes(x=exercicio, y=valor), color = "gray" )+
   labs(x = "Ano",
        y = "%")+ theme_classic()+ 
-  # alterar mutate cores para pessoal(descumprir limite legal, descumprir limite prudencial, cumprir limite), dcl (cumprir e descumprir), invest (acima de 10%, abaixo de 10%), prev (superavitario, deficitario)
+
   scale_color_manual(breaks = levels(df$cores),
                         values=c("red", "blue"))
 
@@ -90,14 +54,57 @@ plot_df = function(df,corte){
 ```
 
 
+Gráficos
+=======================================================================
+
+
+Inputs {.sidebar}
+-------------------------------------
+```{r, input$uf}
+# atenção, variáveis terminam com "uf"
+selectInput("uf", label = h3("escolha o Estado:"), 
+    choices = unique(df_limites$uf), 
+    selected = "SC")
+```
+
+
+
+```{r, reactive}
+limites_reactive <- reactive({ df_limites%>% filter (uf == input$uf)})
+
+
+
+```
+
+
+```{r dfs para plots}
+pessoal_df<-df_limites %>% filter(startsWith(conta, "DESPESA"))
+dcl_df<-df_limites %>% filter(conta == "% da DCL sobre a RCL (III/RCL)")
+
+
+rcl_df<-df_limites %>% filter(startsWith(conta, "RECEI")) %>% select(uf,exercicio, valor) %>% mutate (rcl = valor, uf_exercicio = paste0(uf,"-",exercicio))%>% select(uf_exercicio, rcl)
+prev_df<-df_limites %>% filter (startsWith(conta, "Resultado")) %>% mutate (resultado = valor, uf_exercicio = paste0(uf,"-",exercicio))
+prev_df<- left_join(prev_df, rcl_df) %>% mutate (valor = resultado / rcl *100)%>% mutate (cores = if_else(valor > 0, "superavitário","deficitário"))
+
+
+invest_df<-df_limites %>% filter(startsWith(conta, "INVEST"))%>% mutate (investimento = valor, uf_exercicio = paste0(uf,"-",exercicio))
+
+
+invest_df<- left_join(invest_df, rcl_df) %>% mutate (valor = investimento / rcl *100)%>% mutate (cores = if_else(valor > 5, "maior que 5% da RCL","menor ou igual a 5% da RCL"))
+
+levels(invest_df$cores) <- c("menor ou igual a 5% da RCL","maior que 5% da RCL")
+
+```
+
+
 Row
 -----------------------------------------------------------------------
 
 
 
-### Despesa Pessoal
+### Despesa Pessoal / RCL
 
-```{r}
+```{r plot_pessoal}
 renderPlotly(
   plot_df(pessoal_df, 49)
 )
@@ -105,8 +112,8 @@ renderPlotly(
 
 
 
-### DCL
-```{r}
+### Dívida Consolidada Líquida / RCL (ou RCL ajustada)
+```{r plot_dcl}
 
 renderPlotly(
   plot_df(dcl_df, 200)
@@ -122,10 +129,10 @@ Row
 
 
 
-### Previdencia
+### Resultado Previdenciário / RCL
 
 
-```{r}
+```{r plot_previdencia}
 renderPlotly(
   plot_df(prev_df, 0)
 )
@@ -133,12 +140,43 @@ renderPlotly(
 
 
 
-### Investimento
+### Investimento / RCL
 
-```{r}
+```{r plot_invest}
 
 renderPlotly(
   plot_df(invest_df, 5)
+)
+```
+
+Tabela
+=======================================================================
+
+```{r tabela}
+
+DTOutput("dados")
+   
+ output$dados<- renderDT({
+  datatable((df_limites),
+      extensions = 'Buttons',
+      options = list( 
+                  dom = "Blfrtip"
+                  , buttons = 
+                    list("copy", list(
+                      extend = "collection"
+                      , buttons = c("csv", "excel", "pdf")
+                      , text = "Download" ) ),
+                  lengthMenu = list( c(-1, 25, 50),
+                                     c( "tudo",25, 50)),
+                  pageLength = 25 ))%>%
+        
+        
+          formatRound("valor",
+                      digits = 2,
+                      interval = 3,
+                      mark = ".",
+                      dec.mark = ",")
+}
 )
 ```
 
