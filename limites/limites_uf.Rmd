@@ -24,30 +24,41 @@ library(plotly)
 # dados originados a partir de rreo_rgf_uf.Rmd
 # rotina criada para extrair RREO e RGF do SICONFI API http://apidatalake.tesouro.gov.br/docs/siconfi
 
-# importar df com os dados
+# importar df com os dados e classicar por ordem crescente de UF
 df_limites<- read_csv("df_limites.csv")%>% arrange(uf)
 
 ```
 
 ```{r, funcao plot_df}
+# orientações interessantes na publicação do Colin Fay, Vincent Guyader, Cervan Girard, Sébastien Rochette
 # https://thinkr-open.github.io/building-shiny-apps-workflow/structure.html#a-practical-walk-through
 
+# criar função para plotar os gráficos
+# argumento df para dataframe
+# argumento corte para linha horizontal dividindo valores considerados bons (azul) e ruins (vermelhos)
 plot_df = function(df,corte){
   p <- ggplot(df, aes(x=exercicio, y=valor, color = cores)) +
-  geom_jitter( data = df %>% filter (uf != input$uf), aes(text=paste("UF: ", uf)), width=0.25, alpha=0.5) +
- 
-  geom_point(data = df %>% filter (uf == input$uf ), aes(x=exercicio, y=valor,text=paste("UF: ", uf), size = 10))+
-  # inherit.aes =FALSE para nao herdar aes do geoms anteriores
-  geom_line(data = df %>% filter (uf == input$uf ),  inherit.aes =FALSE, aes(x=exercicio, y=valor))+
-  geom_hline(yintercept=corte, colour = "red", linetype = "dashed") +
-  # https://ggplot2.tidyverse.org/reference/geom_smooth.html  
-  geom_smooth( method = "loess", inherit.aes =FALSE,aes(x=exercicio, y=valor), color = "gray" )+
-  labs(x = "Ano",
-       y = "%")+ theme_classic()+ 
-
-  scale_color_manual(breaks = levels(df$cores),
+  # geom_jitter exclui a UF selecionada para evitar a apresentação de dois pontos para a mesma UF.
+  # Caso contrário teríamos um ponto plotado pelo geom_jitter e outro plotado pelo geom_point
+    geom_jitter( data = df %>% filter (uf != input$uf), aes(text=paste("UF: ", uf)), width=0.25, alpha=0.5) +
+  # plotar o point da UF selecionada
+    geom_point(data = df %>% filter (uf == input$uf ), aes(x=exercicio, y=valor,text=paste("UF: ", uf), size = 10))+
+  # inherit.aes =FALSE para nao herdar aes do geoms anteriores. Caso contrário a linha teria duas cores
+    geom_line(data = df %>% filter (uf == input$uf ),  inherit.aes =FALSE, aes(x=exercicio, y=valor))+
+  # plotar linha vermelha tracejada dividindo resultados bons (azul), ruins (vermelho). O argumento "corte" define a altura da linha.
+    geom_hline(yintercept=corte, colour = "red", linetype = "dashed") +
+  # https://ggplot2.tidyverse.org/reference/geom_smooth.html
+  # inherit.aes =FALSE para evitar duas linhas de tendência.
+  # Caso contrário teríamos uma linha de tendência para a cada factor level (coluna cores).
+  # Uma linha de tendência para os pontos de cor vermelha e outra linha de tendência para os pontos de cor azul  
+    geom_smooth( method = "loess", inherit.aes =FALSE,aes(x=exercicio, y=valor), color = "gray" )+
+    # definir informação dos eixos
+    labs( x = "Ano",
+          y = "%")+ theme_classic()+ 
+  # escala de cor. Os levels são definidos na coluna cores da df_limites.
+    scale_color_manual(breaks = levels(df$cores),
                         values=c("red", "blue"))
-
+  # optei por esconder a legenda (showlegend = FALSE)
 (p <- ggplotly(p))%>% layout(showlegend = FALSE)
 }
 
@@ -61,37 +72,66 @@ Gráficos
 Inputs {.sidebar}
 -------------------------------------
 ```{r, input$uf}
-# atenção, variáveis terminam com "uf"
+# input para selecionar a UF
 selectInput("uf", label = h3("escolha o Estado:"), 
     choices = unique(df_limites$uf), 
     selected = "SC")
 ```
 
 
-
-```{r, reactive}
-limites_reactive <- reactive({ df_limites%>% filter (uf == input$uf)})
-
-
-
-```
-
-
 ```{r dfs para plots}
-pessoal_df<-df_limites %>% filter(startsWith(conta, "DESPESA"))
-dcl_df<-df_limites %>% filter(conta == "% da DCL sobre a RCL (III/RCL)")
+# filtrar df_limites para criar df com dados da despesa de pessoal
+pessoal_df<-df_limites %>%
+            filter(startsWith(conta, "DESPESA"))
+
+# filtrar df_limites para criar df com dados da dívida consolidada líquida
+dcl_df<-    df_limites %>%
+            filter(conta == "% da DCL sobre a RCL (III/RCL)")
+
+# filtrar df_limites para criar df com dados da receita corrente líquida
+rcl_df<-    df_limites %>%
+            filter(startsWith(conta, "RECEI")) %>%
+# selecionar as colunas uf, exercício e valor para posteriormente fazer left_join com as dfs prev_df e invest_df  
+            select(uf,exercicio, valor)%>%
+# mutate para 'alterar' o nome da coluna valor para rcl
+# mutate para criar coluna uf_exercicio, variável a ser utilizada para fazer a left_join entre:
+# 1) rcl_df e prev_df
+# 2) rcl_df e invest_df
+            mutate (rcl = valor, uf_exercicio = paste0(uf,"-",exercicio))%>%
+            select(uf_exercicio, rcl)
+
+# filtrar df_limites para criar df com dados do resultado previdenciário
+prev_df<-   df_limites %>%
+            filter (startsWith(conta, "Resultado")) %>%
+# mutate para 'alterar' o nome da coluna valor para resultado
+# mutate para criar coluna uf_exercicio, variável a ser utilizada para fazer a left_join entre rcl_df e prev_df  
+            mutate (resultado = valor, uf_exercicio = paste0(uf,"-",exercicio))
+# fazer o left_join para trazer o valor da rcl para a prev_df
+prev_df<-   left_join(prev_df, rcl_df) %>%
+# mutate para criar a coluna valor  = resultado / rcl *100 (relação entre o resultado previdenciário e a RCL)
+            mutate (valor = resultado / rcl *100)%>%
+# mutate para arrendondar valor  
+            mutate (valor = round(valor, digits = 2)) %>%
+# mutate para estabelecer as cores  
+            mutate (cores = if_else(valor > 0, "superavitário","deficitário"))
+
+# filtrar df_limites para criar df com dados da despesa com investimento
+invest_df<- df_limites %>%
+            filter(startsWith(conta, "INVEST"))%>%
+# mutate para 'alterar' o nome da coluna valor para investimento
+# mutate para criar coluna uf_exercicio, variável a ser utilizada para fazer a left_join entre rcl_df e invest_df    
+            mutate (investimento = valor, uf_exercicio = paste0(uf,"-",exercicio))
 
 
-rcl_df<-df_limites %>% filter(startsWith(conta, "RECEI")) %>% select(uf,exercicio, valor) %>% mutate (rcl = valor, uf_exercicio = paste0(uf,"-",exercicio))%>% select(uf_exercicio, rcl)
-prev_df<-df_limites %>% filter (startsWith(conta, "Resultado")) %>% mutate (resultado = valor, uf_exercicio = paste0(uf,"-",exercicio))
-prev_df<- left_join(prev_df, rcl_df) %>% mutate (valor = resultado / rcl *100)%>% mutate (cores = if_else(valor > 0, "superavitário","deficitário"))
-
-
-invest_df<-df_limites %>% filter(startsWith(conta, "INVEST"))%>% mutate (investimento = valor, uf_exercicio = paste0(uf,"-",exercicio))
-
-
-invest_df<- left_join(invest_df, rcl_df) %>% mutate (valor = investimento / rcl *100)%>% mutate (cores = if_else(valor > 5, "maior que 5% da RCL","menor ou igual a 5% da RCL"))
-
+invest_df<- left_join(invest_df, rcl_df) %>%
+# mutate para criar a coluna valor  = investmento / rcl *100 (relação entre a despesa com investimento e a RCL)  
+            mutate (valor = investimento / rcl *100)%>%
+            mutate (valor = round(valor, digits = 2)) %>% 
+# mutate para estabelecer as cores 
+            mutate (cores = if_else(valor > 5, "maior que 5% da RCL","menor ou igual a 5% da RCL"))
+# ajustar os levels para:
+# 1) "menor ou igual a 5% da RCL" ser vermelho
+# 2) "maior que 5% da RCL" ser azul
 levels(invest_df$cores) <- c("menor ou igual a 5% da RCL","maior que 5% da RCL")
 
 ```
@@ -105,19 +145,16 @@ Row
 ### Despesa Pessoal / RCL
 
 ```{r plot_pessoal}
-renderPlotly(
-  plot_df(pessoal_df, 49)
-)
+# utilizar a função plot_df para plotar a df pessoal_df com a linha de corte em 49% da RCL
+renderPlotly(plot_df(pessoal_df, 49))
 ```
 
 
 
 ### Dívida Consolidada Líquida / RCL (ou RCL ajustada)
 ```{r plot_dcl}
-
-renderPlotly(
-  plot_df(dcl_df, 200)
-)
+# utilizar a função plot_df para plotar a df dcl_df com a linha de corte em 200% da RCL
+renderPlotly(plot_df(dcl_df, 200))
 ```
 
 
@@ -133,9 +170,9 @@ Row
 
 
 ```{r plot_previdencia}
-renderPlotly(
-  plot_df(prev_df, 0)
-)
+
+# utilizar a função plot_df para plotar a df prev_df com a linha de corte em 0% da RCL
+renderPlotly(plot_df(prev_df, 0))
 ```
 
 
@@ -143,16 +180,18 @@ renderPlotly(
 ### Investimento / RCL
 
 ```{r plot_invest}
-
-renderPlotly(
-  plot_df(invest_df, 5)
-)
+# utilizar a função plot_df para plotar a df invest_df com a linha de corte em 5% da RCL
+renderPlotly(plot_df(invest_df, 5))
 ```
 
 Tabela
 =======================================================================
 
 ```{r tabela}
+# apresentar tabela com todos os dados e com opção de download
+#opção para baixar todos os dados: dica de Cristian E. Nuno
+#https://github.com/rstudio/DT/issues/267#issuecomment-347030730
+#https://github.com/cenuno/shiny/tree/master/DT-Download-All-Rows-Button#customizing-dt-download-button
 
 DTOutput("dados")
    
@@ -160,23 +199,20 @@ DTOutput("dados")
   datatable((df_limites),
       extensions = 'Buttons',
       options = list( 
-                  dom = "Blfrtip"
-                  , buttons = 
+                  dom = "Blfrtip",
+                  buttons = 
                     list("copy", list(
-                      extend = "collection"
-                      , buttons = c("csv", "excel", "pdf")
-                      , text = "Download" ) ),
+                      extend = "collection",
+                      buttons = c("csv", "excel", "pdf"),
+                      text = "Download" ) ),
                   lengthMenu = list( c(-1, 25, 50),
                                      c( "tudo",25, 50)),
                   pageLength = 25 ))%>%
-        
-        
-          formatRound("valor",
+                  formatRound("valor",
                       digits = 2,
                       interval = 3,
                       mark = ".",
                       dec.mark = ",")
-}
-)
+})
 ```
 
